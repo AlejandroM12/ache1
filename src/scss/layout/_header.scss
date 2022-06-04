@@ -1,0 +1,87 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+@media screen and (max-width: 1000px) {
+  .header-container {
+    width: 100%;
+    height: 100vh;
+    
+    .menu {
+      background: transparent;
+      width: 100%;
+      .fs-1 {
+        font-size: 30px;
+        background: #d0c5fb;
+        color: #141414;
+      }
+      .btnToggle {
+        z-index: 2;
+        position: relative;
+        background-color: #d0c5fb;
+        border: none;
+        top: 30px;
+        left: 20px;
+      }
+      .ul {
+        position: absolute;
+        top: -100%;
+        transition: top 0.5s;
+        width: 50%;
+        height: 100%;
+        z-index: 1;
+        .li {
+          padding: 10px 0;
+          a {
+            @include linksMenu;
+          }
+        }
+      }
+    }
+    .btnSelected{
+        @include linkSelect;
+    }
+  }
+}
+@media screen and (min-width: 1001px) {
+  .header-container {
+    background: transparent;
+    width: 100%;
+    height: 100vh;
+    .logo{
+        display: inline;
+        position: absolute;
+        padding: 30px;
+        margin-left: 15px;
+        img{
+            width: 115.78px;
+            height: 30.91px;
+        }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background: transparent;
+      height: 84px;
+      margin-right: 50px;
+      .logo {
+        text-align: start;
+      }
+      .btnToggle {
+        display: none;
+      }
+      .ul {
+        @include flexCenter;
+        background: transparent;
+        .li {
+          padding: 0 20px;
+          a{
+              @include linksMenu;
+          }
+        }
+      }
+    }
+    .btnSelected{
+        @include linkSelect;
+    }
+  }
+}

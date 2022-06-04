@@ -3,3 +3,18 @@
     justify-content: center;
     align-items: center;
 }
+@mixin linksMenu {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-family: $semi-bold;
+    font-size: $size;
+    line-height: 22px;
+    color: $white;
+}
+@mixin linkSelect{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: $size;
+    line-height: 22px;
+}
