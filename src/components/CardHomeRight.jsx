@@ -52,54 +52,55 @@ const CardHomeRight = () => {
       </div>
       {btnDot === 1 && (
         <div className="content-card-right">
-          <h1 className="card-title-right">Ux</h1>
+          <h1 className="card-title-right">Branding</h1>
           <p className="card-description-right">
-            We carry out a survey of the market and the competition. We plan and
-            design the correct flow for your website to be successful.
+            Design your brand identity from scratch. Create a unique language
+            that identifies you in the market.
           </p>
           <img src="" alt="" />
           <Link to="/">
-            <Button buttonLabel="How we work?" />
+            <Button buttonLabel="I want start" />
           </Link>
         </div>
       )}
       {btnDot === 2 && (
         <div className="content-card-right">
-          <h1 className="card-title-right">Web apps</h1>
+          <h1 className="card-title-right">Social media</h1>
           <p className="card-description-right">
-            You need to organize your business, nothing better than having your
-            own online system that your entire team can access.
+            We perform a competitive analysis to create your brand strategy on
+            social networks. Guidelines for communication, promotion and user
+            monitoring.
           </p>
           <img src="" alt="" />
           <Link to="/">
-            <Button buttonLabel="Biggest systems" />
+            <Button buttonLabel="Your brand UP!" />
           </Link>
         </div>
       )}
       {btnDot === 3 && (
         <div className="content-card-right">
-          <h1 className="card-title-right">Apps mobile</h1>
+          <h1 className="card-title-right">Marketing</h1>
           <p className="card-description-right">
-            It makes your app unique. From usability analysis to testing to
-            launch your MVP.
+            Use our services and build a solid digital presence across digital
+            marketing, creative web design, quality content, SEO, and media
+            campaigns.
           </p>
           <img src="" alt="" />
           <Link to="/">
-            <Button buttonLabel="Our tecnologies" />
+            <Button buttonLabel="Grow up now" />
           </Link>
         </div>
       )}
       {btnDot === 4 && (
         <div className="content-card-right">
-          <h1 className="card-title-right">Best webs</h1>
+          <h1 className="card-title-right">Editorial</h1>
           <p className="card-description-right">
-            The culture of mobile first. Having a responsive website is not only
-            important, it is essential. Today users access 80% of the web on
-            their mobile phone. Do not stay behind, renew yourself!
+            Make your project a reality and turn it into a successful book. Hand
+            in hand with the best editorial designers on the market.
           </p>
           <img src="" alt="" />
           <Link to="/">
-            <Button buttonLabel="We can do it!" />
+            <Button buttonLabel="Let´s talk" />
           </Link>
         </div>
       )}
