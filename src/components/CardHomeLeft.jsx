@@ -8,42 +8,42 @@ const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
   return (
     <ContainerLeft>
-      <div className="dots">
-        <div className="dots-icon">
+      <div className="dots-left">
+        <div className="dots-icon-left">
           <img
             src={dots}
             alt=""
-            className={btnState === 1 ? "active" : ""}
+            className={btnState === 1 ? "active-left" : ""}
             onClick={() => {
               setBtnState(1);
             }}
           />
         </div>
-        <div className="dots-icon">
+        <div className="dots-icon-left">
           <img
             src={dots}
             alt=""
-            className={btnState === 2 ? "active" : ""}
+            className={btnState === 2 ? "active-left" : ""}
             onClick={() => {
               setBtnState(2);
             }}
           />
         </div>
-        <div className="dots-icon">
+        <div className="dots-icon-left">
           <img
             src={dots}
             alt=""
-            className={btnState === 3 ? "active" : ""}
+            className={btnState === 3 ? "active-left" : ""}
             onClick={() => {
               setBtnState(3);
             }}
           />
         </div>
-        <div className="dots-icon">
+        <div className="dots-icon-left">
           <img
             src={dots}
             alt=""
-            className={btnState === 4 ? "active" : ""}
+            className={btnState === 4 ? "active-left" : ""}
             onClick={() => {
               setBtnState(4);
             }}
