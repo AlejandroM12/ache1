@@ -3,8 +3,7 @@
 @media screen and (max-width: 1000px) {
   .header-container {
     width: 100%;
-    height: 100vh;
-    
+    height: auto;
     .menu {
       background: transparent;
       width: 100%;
@@ -36,8 +35,8 @@
         }
       }
     }
-    .btnSelected{
-        @include linkSelect;
+    .btnSelected {
+      @include linkSelect;
     }
   }
 }
@@ -46,22 +45,22 @@
     background: transparent;
     width: 100%;
     height: 100vh;
-    .logo{
-        display: inline;
-        position: absolute;
-        padding: 30px;
-        margin-left: 15px;
-        img{
-            width: 115.78px;
-            height: 30.91px;
-        }
+    .logo {
+      display: inline;
+      position: absolute;
+      padding: 10px;
+      margin-left: 15px;
+      img {
+        width: 115.78px;
+        height: 30.91px;
+      }
     }
     .menu {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       background: transparent;
-      height: 84px;
+      height: 50px;
       margin-right: 50px;
       .logo {
         text-align: start;
@@ -74,14 +73,14 @@
         background: transparent;
         .li {
           padding: 0 20px;
-          a{
-              @include linksMenu;
+          a {
+            @include linksMenu;
           }
         }
       }
     }
-    .btnSelected{
-        @include linkSelect;
+    .btnSelected {
+      @include linkSelect;
     }
   }
 }
