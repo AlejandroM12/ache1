@@ -7,3 +7,4 @@ const ContainerLeft = ({children}) =>{
           </div>
     )
 }
+export default ContainerLeft;

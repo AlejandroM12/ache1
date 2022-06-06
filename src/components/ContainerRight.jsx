@@ -9,3 +9,4 @@ const ContainerRight = ({children}) =>{
         </>
     )
 }
+export default ContainerRight;
