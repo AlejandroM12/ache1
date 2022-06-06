@@ -18,3 +18,18 @@
     font-size: $size;
     line-height: 22px;
 }
+@mixin cardTitleLeft{
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 64px;
+    color: $black;
+}
+@mixin cardDescriptionLeft{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: $grays;
+}
