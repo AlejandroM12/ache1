@@ -25,6 +25,14 @@
     font-size: 64px;
     color: $black;
 }
+@mixin cardTitleRight {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 64px;
+    line-height: 69px;
+    color: $white;
+}
 @mixin cardDescriptionLeft{
     font-family: $font-poppins;
     font-style: normal;
@@ -32,4 +40,12 @@
     font-size: 24px;
     line-height: 36px;
     color: $grays;
+}
+@mixin cardDescriptionRight{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: $white;
 }
