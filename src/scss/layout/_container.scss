@@ -26,6 +26,13 @@
 
 .rightside {
   background: $background-container-blue;
+  .height-right{
+    height: 100%;
+    width: 100%;
+  }
+  .width-right{
+    width: 100%;
+  }
 }
 .content_container {
   max-width: 1300px;
@@ -48,7 +55,17 @@
     .content {
       height: 40vh;
     }
+    .height-left{
+      height: 100%;
+      width: 100%;
+      margin-top: 30px;
+    }
+    .width-left{
+      width: 100%;
+    }
+
   }
+  
   .header {
     position: absolute;
     left: 0;

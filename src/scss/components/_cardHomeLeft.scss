@@ -5,11 +5,13 @@
     justify-content: center;
     gap: 15px;
     margin-left: 50px;
+    margin-top: 60px;
     .card-title-left{
         @include cardTitleLeft;
     }
     .card-description-left{
         @include cardDescriptionLeft;
+        width: 70%;
     }
 }
 .dots-left{
@@ -18,7 +20,7 @@
     
     .dots-icon-left{
         width: 100%;
-        height: 100px;
+        height: 85px;
         img{
             cursor: pointer;
         }
