@@ -10,40 +10,58 @@ import arrow from "../../assets/Icons/arrow.svg";
 import Icon from "../../components/IconContact";
 import CardHomeLeft from "../../components/CardHomeLeft";
 import CardHomeRight from "../../components/CardHomeRight";
+import { useState } from "react";
 
 const Home = () => {
+  const [change, setChange] = useState(false);
+  const handleInter = () => {
+    setChange(true);
+  };
+  return (
+    <Container>
+      <ContainerHeader>
+        <Header />
+      </ContainerHeader>
+      <ContainerLeft>
+        {change === false ? (
+          <div className="content-left">
+            <Lottie animationData={animationData} />
+          </div>
+        ) : (
+          <CardHomeLeft />
+        )}
+      </ContainerLeft>
 
-    return (
-            <Container>
-                <ContainerHeader>
-                    <Header />
-                </ContainerHeader>
-                <ContainerLeft>
-                    <div className="content-left">
-                    <Lottie 
-                        animationData={animationData}
-                    />
-                    </div>
-                    <CardHomeLeft />
-                </ContainerLeft>
-                
-                <ContainerRight>
-                    <div className="logo-home">
-                    <img src={logo} alt="ache1 logo" />
-                    </div>
-                    <div className="content-right">
-                        <h1>You have <br/> an idea?</h1>
-                        <p>Bring your idea, we make it happen.<br/>
-                           Bring your brand, we make it growth.</p>
-                        <h2>Let´s create</h2>
-                    </div>
-                    <a href="#" className="arrow-redir">
-                    <img src={arrow} alt="icon arrow" className="arrow"/>
-                    </a>
-                    <CardHomeRight />
-                    <Icon />
-                </ContainerRight>
-            </Container>
-    )
-}
+      <ContainerRight>
+        <div className="logo-home">
+          <img src={logo} alt="ache1 logo" />
+        </div>
+        {change === false ? (
+          <>
+            <div className="content-right">
+              <h1>
+                You have <br /> an idea?
+              </h1>
+              <p>
+                Bring your idea, we make it happen.
+                <br />
+                Bring your brand, we make it growth.
+              </p>
+              <h2>Let´s create</h2>
+            </div>
+            <button  className="arrow-redir" onClick={handleInter}>
+                <img src={arrow} alt="icon arrow" className="arrow" />
+            </button>
+          </>
+        ) : (
+          <>
+            <CardHomeRight />
+          </>
+        )}
+
+        <Icon />
+      </ContainerRight>
+    </Container>
+  );
+};
 export default Home;
