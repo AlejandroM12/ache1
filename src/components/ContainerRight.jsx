@@ -1,7 +1,7 @@
 const ContainerRight = ({ children }) => {
   return (
     <>
-      <div className="container rightside">
+      <div className="container rightside background">
         <div className="content">{children}</div>
       </div>
     </>
