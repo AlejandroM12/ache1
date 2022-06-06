@@ -51,9 +51,9 @@ const CardHomeLeft = () => {
         </div>
       </div>
       {btnState === 1 && (
-        <div className="content-card">
-          <h1 className="card-title">Ux</h1>
-          <p className="card-description">
+        <div className="content-card-left">
+          <h1 className="card-title-left">Ux</h1>
+          <p className="card-description-left">
             We carry out a survey of the market and the competition. We plan and
             design the correct flow for your website to be successful.
           </p>
@@ -64,9 +64,9 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 2 && (
-        <div className="content-card">
-          <h1 className="card-title">Web apps</h1>
-          <p className="card-description">
+        <div className="content-card-left">
+          <h1 className="card-title-left">Web apps</h1>
+          <p className="card-description-left">
             You need to organize your business, nothing better than having your
             own online system that your entire team can access.
           </p>
@@ -77,9 +77,9 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 3 && (
-        <div className="content-card">
-          <h1 className="card-title">Apps mobile</h1>
-          <p className="card-description">
+        <div className="content-card-left">
+          <h1 className="card-title-left">Apps mobile</h1>
+          <p className="card-description-left">
             It makes your app unique. From usability analysis to testing to
             launch your MVP.
           </p>
@@ -90,9 +90,9 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 4 && (
-        <div className="content-card">
-          <h1 className="card-title">Best webs</h1>
-          <p className="card-description">
+        <div className="content-card-left">
+          <h1 className="card-title-left">Best webs</h1>
+          <p className="card-description-left">
             The culture of mobile first. Having a responsive website is not only
             important, it is essential. Today users access 80% of the web on
             their mobile phone. Do not stay behind, renew yourself!

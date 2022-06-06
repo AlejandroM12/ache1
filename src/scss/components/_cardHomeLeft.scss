@@ -1,14 +1,14 @@
-.content-card{
+.content-card-left{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
     margin-left: 50px;
-    .card-title{
+    .card-title-left{
         @include cardTitleLeft;
     }
-    .card-description{
+    .card-description-left{
         @include cardDescriptionLeft;
     }
 }
