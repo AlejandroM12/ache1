@@ -1,0 +1,29 @@
+.content-card-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 50px;
+    .card-title-right{
+        @include cardTitleRight;
+    }
+    .card-description-right{
+        @include cardDescriptionRight;
+    }
+}
+.dots-right{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    .dots-icon-right{
+        width: 100%;
+        height: 100px;
+        img{
+            cursor: pointer;
+        }
+    }
+}
+.active-right{
+    background: $white;
+}
