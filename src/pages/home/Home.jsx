@@ -9,6 +9,7 @@ import animationData from "../../assets/lotties/animation-home.json";
 import arrow from "../../assets/Icons/arrow.svg";
 import Icon from "../../components/IconContact";
 import CardHomeLeft from "../../components/CardHomeLeft";
+import CardHomeRight from "../../components/CardHomeRight";
 
 const Home = () => {
 
@@ -39,6 +40,7 @@ const Home = () => {
                     <a href="#" className="arrow-redir">
                     <img src={arrow} alt="icon arrow" className="arrow"/>
                     </a>
+                    <CardHomeRight />
                     <Icon />
                 </ContainerRight>
             </Container>
