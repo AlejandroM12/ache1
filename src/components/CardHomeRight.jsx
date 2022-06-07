@@ -51,7 +51,7 @@ const CardHomeRight = () => {
         </div>
       </div>
       {btnDot === 1 && (
-        <div className="content-card-right">
+        <div className="content-card-right" data-aos="fade-up">
           <h1 className="card-title-right">Branding</h1>
           <p className="card-description-right">
             Design your brand identity from scratch. Create a unique language
@@ -64,7 +64,7 @@ const CardHomeRight = () => {
         </div>
       )}
       {btnDot === 2 && (
-        <div className="content-card-right">
+        <div className="content-card-right" data-aos="fade-up">
           <h1 className="card-title-right">Social media</h1>
           <p className="card-description-right">
             We perform a competitive analysis to create your brand strategy on
@@ -78,7 +78,7 @@ const CardHomeRight = () => {
         </div>
       )}
       {btnDot === 3 && (
-        <div className="content-card-right">
+        <div className="content-card-right" data-aos="fade-up">
           <h1 className="card-title-right">Marketing</h1>
           <p className="card-description-right">
             Use our services and build a solid digital presence across digital
@@ -92,7 +92,7 @@ const CardHomeRight = () => {
         </div>
       )}
       {btnDot === 4 && (
-        <div className="content-card-right">
+        <div className="content-card-right" data-aos="fade-up">
           <h1 className="card-title-right">Editorial</h1>
           <p className="card-description-right">
             Make your project a reality and turn it into a successful book. Hand

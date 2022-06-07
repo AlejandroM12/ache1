@@ -18,7 +18,7 @@ const Home = () => {
     setChange(true);
   };
   return (
-    <Container>
+    <Container >
       <ContainerHeader>
         <Header />
       </ContainerHeader>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         {change === false ? (
           <>
-            <div className="content-right">
+            <div className="content-right" data-aos="fade-right" data-aos-delay="100" data-aos-easing="ease-in-out">
               <h1>
                 You have <br /> an idea?
               </h1>

@@ -3,7 +3,7 @@
 const Container = ({ children }) => {
   return (
     <>
-      <div className="site">
+      <div className="site" >
         <div className="sitebackground">
           <div className="container leftside"></div>
           <div className="container rightside"></div>

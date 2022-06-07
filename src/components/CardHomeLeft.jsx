@@ -51,7 +51,7 @@ const CardHomeLeft = () => {
         </div>
       </div>
       {btnState === 1 && (
-        <div className="content-card-left">
+        <div className="content-card-left" data-aos="fade-up">
           <h1 className="card-title-left">Ux</h1>
           <p className="card-description-left">
             We carry out a survey of the market and the competition. We plan and
@@ -64,7 +64,7 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 2 && (
-        <div className="content-card-left">
+        <div className="content-card-left" data-aos="fade-up">
           <h1 className="card-title-left">Web apps</h1>
           <p className="card-description-left">
             You need to organize your business, nothing better than having your
@@ -77,7 +77,7 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 3 && (
-        <div className="content-card-left">
+        <div className="content-card-left" data-aos="fade-up">
           <h1 className="card-title-left">Apps mobile</h1>
           <p className="card-description-left">
             It makes your app unique. From usability analysis to testing to
@@ -90,7 +90,7 @@ const CardHomeLeft = () => {
         </div>
       )}
       {btnState === 4 && (
-        <div className="content-card-left">
+        <div className="content-card-left" data-aos="fade-up">
           <h1 className="card-title-left">Best webs</h1>
           <p className="card-description-left">
             The culture of mobile first. Having a responsive website is not only
