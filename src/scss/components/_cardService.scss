@@ -1,4 +1,4 @@
-.card-about-container {
+.card-service-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,10 +6,10 @@
   background: $white;
   z-index: 10;
   padding: 30px;
-  transform: translate(100px);
+  transform: translate(50px);
   width: 550px;
   height: 600px;
-  .card-about-title {
+  .card-service-title {
     font-family: $font-alfa;
     font-style: normal;
     font-weight: $semi-bold;
@@ -17,7 +17,7 @@
     line-height: 55px;
     color: $black;
   }
-  .card-about-list {
+  .card-service-list {
     display: flex;
     flex-direction: row;
     font-family: $font-poppins;
@@ -41,7 +41,7 @@
       }
     }
 
-    .arrow-about {
+    .arrow-service {
       width: 24px;
       height: 13px;
       display: inline;

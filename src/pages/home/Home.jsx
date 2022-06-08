@@ -10,6 +10,7 @@ import CardHomeLeft from "../../components/CardHomeLeft";
 import CardHomeRight from "../../components/CardHomeRight";
 import { useState } from "react";
 import Header from "../../layout/Header";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [change, setChange] = useState(false);
@@ -61,8 +62,9 @@ const Home = () => {
               <CardHomeRight />
             </>
           )}
-
-          <Icon />
+          <Link to="/" className="icon-contact">
+            <Icon size={45} color="white" />
+          </Link>
         </ContainerRight>
       </Container>
     </>

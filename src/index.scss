@@ -13,13 +13,14 @@
 
 /* pages */
 @import './scss/pages/home';
-@import './scss/pages/about';
+@import './scss/pages/services';
 
 /* components */
 @import './scss/components/navbar';
 @import './scss/components/containerRight';
 @import './scss/components/cardHomeLeft';
 @import './scss/components/cardHomeRight';
+@import './scss/components/RightContent';
 @import './scss/components/iconContact';
 @import './scss/components/logo';
-@import './scss/components/cardAbout';
+@import './scss/components/cardService';
