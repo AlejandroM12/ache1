@@ -5,7 +5,9 @@ html, body{
 }
 body{
     scroll-behavior: smooth;
+    overflow: hidden;
 }
+
 .btn{
     color: $white;
     background: $background-button;
@@ -18,4 +20,6 @@ body{
     font-style: normal;
     font-size: 20px;
     line-height: 22px;
+    cursor: pointer;
+    position: relative;
 }
