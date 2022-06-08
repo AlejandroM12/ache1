@@ -36,20 +36,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .leftside-section {
-    .content-section {
-      height: 40vh;
-    }
-    //   .height-left{
-    //     height: 100%;
-    //     width: 100%;
-    //     margin-top: 30px;
-    //   }
-    //   .width-left{
-    //     width: 100%;
-    //   }
-  }
 }
 .content-section {
   flex: 1 1 auto;
@@ -62,6 +48,6 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 260px;
+  height: 218px;
   padding: 1em;
 }
