@@ -1,5 +1,4 @@
 import ContainerSection from "../../layout/ContainerSection";
-import Logo from "../../components/Logo";
 import logoSection from "../../assets/Icons/logoSection.svg";
 import ContainerHeaderSection from "../../components/ContainerHeaderSection";
 import Navbar from "../../components/Navbar";
@@ -9,13 +8,14 @@ import ContainerRightSection from "../../components/ContainerRightSection";
 import RightContentService from "../../components/RightContentService";
 import Icon from "../../components/IconContact";
 import { Link } from "react-router-dom";
+import LogoSection from "../../components/LogoSection";
 
 const Services = () => {
   return (
     <>
       <ContainerSection>
         <ContainerHeaderSection>
-          <Logo logo={logoSection} />
+          <LogoSection logo={logoSection}></LogoSection>
           <Navbar />
         </ContainerHeaderSection>
         <ContainerLeftSection>
@@ -25,8 +25,8 @@ const Services = () => {
           <RightContentService />
         </ContainerRightSection>
         <Link to="/" className="icon-contact">
-            <Icon size={45} color="#6C63FF" fill="#6C63FF"/>
-          </Link>
+          <Icon size={45} color="#6C63FF" fill="#6C63FF" />
+        </Link>
       </ContainerSection>
     </>
   );
