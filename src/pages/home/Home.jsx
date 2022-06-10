@@ -1,6 +1,10 @@
-import ContainerRight from "../../components/ContainerRight";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "../../layout/Container";
-import logo from "../../assets/Home/home-design-title.svg";
+import ContainerRight from "../../components/ContainerRight";
+import Header from "../../layout/Header";
+import LogoHome from "../../components/LogoHome";
+import logoTitle from "../../assets/Home/home-design-title.svg";
 import ContainerLeft from "../../components/ContainerLeft";
 import Lottie from "lottie-react";
 import animationData from "../../assets/lotties/animation-home.json";
@@ -8,11 +12,10 @@ import arrow from "../../assets/Icons/arrow.svg";
 import Icon from "../../components/IconContact";
 import CardHomeLeft from "../../components/CardHomeLeft";
 import CardHomeRight from "../../components/CardHomeRight";
-import { useState } from "react";
-import Header from "../../layout/Header";
-import { Link } from "react-router-dom";
+import logoHome from "../../assets/Home/ache1-logo.svg";
+import Navbar from "../../components/Navbar";
 
-const Home = () => {
+const Home = ({ pivot, setPivot }) => {
   const [change, setChange] = useState(false);
   const handleInter = () => {
     setChange(true);
@@ -20,7 +23,15 @@ const Home = () => {
   return (
     <>
       <Container>
-        <Header />
+        <Header>
+          <LogoHome
+            logo={logoHome}
+            onClick={() => {
+              setPivot(1);
+            }}
+          />
+          <Navbar pivot={pivot} setPivot={setPivot} />
+        </Header>
         <ContainerLeft>
           {change === false ? (
             <div className="content-left">
@@ -33,7 +44,7 @@ const Home = () => {
 
         <ContainerRight>
           <div className="logo-home">
-            <img src={logo} alt="ache1 logo" />
+            <img src={logoTitle} alt="ache1 logo" />
           </div>
           {change === false ? (
             <>
