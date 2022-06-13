@@ -6,7 +6,7 @@ import Header from "../../layout/Header";
 import LogoHome from "../../components/LogoHome";
 import logoTitle from "../../assets/Home/home-design-title.svg";
 import ContainerLeft from "../../components/ContainerLeft";
-import Lottie from "lottie-react";
+import UseLottieAnimation from "../../components/useLottieAnimation";
 import animationData from "../../assets/lotties/animation-home.json";
 import arrow from "../../assets/Icons/arrow.svg";
 import Icon from "../../components/IconContact";
@@ -20,6 +20,7 @@ const Home = ({ pivot, setPivot }) => {
   const handleInter = () => {
     setChange(true);
   };
+
   return (
     <>
       <Container>
@@ -35,7 +36,7 @@ const Home = ({ pivot, setPivot }) => {
         <ContainerLeft>
           {change === false ? (
             <div className="content-left">
-              <Lottie animationData={animationData} />
+              <UseLottieAnimation animationData={animationData} autoplay={true} loop={true} />
             </div>
           ) : (
             <CardHomeLeft />
