@@ -35,8 +35,12 @@ const Home = ({ pivot, setPivot }) => {
         </Header>
         <ContainerLeft>
           {change === false ? (
-            <div className="content-left">
-              <UseLottieAnimation animationData={animationData} autoplay={true} loop={true} />
+            <div className="content-left" data-aos="fade-up">
+              <UseLottieAnimation
+                animationData={animationData}
+                autoplay={true}
+                loop={true}
+              />
             </div>
           ) : (
             <CardHomeLeft />
@@ -49,23 +53,38 @@ const Home = ({ pivot, setPivot }) => {
           </div>
           {change === false ? (
             <>
-              <div
-                className="content-right"
-                data-aos="fade-right"
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out"
-              >
-                <h1>
+              <div className="content-right">
+                <h1
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                  data-aos-easing="ease-in-out"
+                >
                   You have <br /> an idea?
                 </h1>
-                <p>
+                <p
+                  data-aos="fade-right"
+                  data-aos-delay="2000"
+                  data-aos-easing="ease-in-out"
+                >
                   Bring your idea, we make it happen.
                   <br />
                   Bring your brand, we make it growth.
                 </p>
-                <h2>Let´s create</h2>
+                <h2
+                  data-aos="fade-right"
+                  data-aos-delay="3000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Let´s create
+                </h2>
               </div>
-              <button className="arrow-redir" onClick={handleInter}>
+              <button
+                className="arrow-redir"
+                onClick={handleInter}
+                data-aos="fade-up"
+                data-aos-delay="4000"
+                data-aos-easing="ease-in-out"
+              >
                 <img src={arrow} alt="icon arrow" className="arrow" />
               </button>
             </>
@@ -74,11 +93,10 @@ const Home = ({ pivot, setPivot }) => {
               <CardHomeRight />
             </>
           )}
-          
         </ContainerRight>
         <Link to="/" className="icon-contact">
-            <Icon size={45} color="white" />
-          </Link>
+          <Icon size={45} color="white" />
+        </Link>
       </Container>
     </>
   );
