@@ -74,10 +74,11 @@ const Home = ({ pivot, setPivot }) => {
               <CardHomeRight />
             </>
           )}
-          <Link to="/" className="icon-contact">
+          
+        </ContainerRight>
+        <Link to="/" className="icon-contact">
             <Icon size={45} color="white" />
           </Link>
-        </ContainerRight>
       </Container>
     </>
   );
