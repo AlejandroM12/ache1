@@ -3,10 +3,15 @@ import Button from "./Button";
 import ContainerLeft from "./ContainerLeft";
 import dots from "../assets/Icons/dots.svg";
 import { useState } from "react";
+import { useModal } from "../hooks/useModal";
+import ModalApp from "./ModalsComponents/ModalApp";
+import ModalUx from "./ModalsComponents/ModalUx";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
-  return (
+  const [ isOpenModalApp, openModalApp, closeModalApp ] = useModal(false);
+  const [ isOpenModalUX, openModalUx, closeModalUx ] = useModal(false);
+  return (<>
     <ContainerLeft>
       <div className="dots-left">
         <div className="dots-icon-left">
@@ -58,9 +63,7 @@ const CardHomeLeft = () => {
             design the correct flow for your website to be successful.
           </p>
           <img src="" alt="" />
-          <Link to="/">
-            <Button buttonLabel="How we work?" />
-          </Link>
+            <Button buttonLabel="How we work?" onClick={openModalUx}/>
         </div>
       )}
       {btnState === 2 && (
@@ -84,9 +87,7 @@ const CardHomeLeft = () => {
             launch your MVP.
           </p>
           <img src="" alt="" />
-          <Link to="/">
-            <Button buttonLabel="Our tecnologies" />
-          </Link>
+            <Button buttonLabel="Our tecnologies" onClick={openModalApp}/>
         </div>
       )}
       {btnState === 4 && (
@@ -104,6 +105,15 @@ const CardHomeLeft = () => {
         </div>
       )}
     </ContainerLeft>
+    { isOpenModalApp && (
+      <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp}/>
+    )}
+    {isOpenModalUX && (
+      <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx}/>
+    )
+
+    }
+    </>
   );
 };
 

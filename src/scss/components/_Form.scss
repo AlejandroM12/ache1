@@ -1,7 +1,7 @@
 .form {
   background-color: $white;
   box-shadow: 0px 0px 10px 5px rgba(158, 158, 158, 0.17);
-  margin: auto;
+  margin: -1rem 0rem 20rem 0rem;
   width: 100%;
   max-width: 545px;
   padding: 0.5em 3em;
@@ -10,7 +10,7 @@
   .form-container {
     margin-top: 3em;
     display: grid;
-    gap: 2.5em;
+    gap: 0.5rem;
     .form-title {
       font-family: $font-poppins;
       font-style: normal;
@@ -112,7 +112,7 @@
         font-style: normal;
         font-weight: $semi-bold;
         font-size: 1rem;
-        line-height: 3.75rem;
+        line-height: 2.8rem;
         background: url(../../assets/Icons/arrow-select.svg) no-repeat right
           0.8em center / 1.4em;
         color: $items-links;

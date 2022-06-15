@@ -10,6 +10,7 @@
 @import './scss/layout/header';
 @import './scss/layout/container';
 @import './scss/layout/containerSection';
+@import './scss/layout/containerModal';
 
 /* pages */
 @import './scss/pages/home';
@@ -27,3 +28,5 @@
 @import './scss/components/iconContact';
 @import './scss/components/logo';
 @import './scss/components/cardService';
+@import './scss/components/modalApp';
+@import './scss/components/modalUx';

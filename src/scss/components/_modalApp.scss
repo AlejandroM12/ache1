@@ -1,0 +1,44 @@
+.modal-app-title-left{
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3.75rem;
+    line-height: 4.313rem;
+    color: $black;
+    text-align: center;
+}
+.modal-app-description-left{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: $grays;
+    text-align: start;
+    padding: 1rem 3rem;
+    span{
+        font-weight: $bold;
+    }
+}
+.modal-title-app-right{
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3rem;
+    line-height: 3.438rem;
+    color: $white;
+    width: 100%;
+    max-width: 411px;
+    margin-top: -3rem;
+}
+.modal-app-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7rem;
+    padding-top: 5rem;
+    img{
+        width: 100%;
+        max-width: 190px;
+    }
+}

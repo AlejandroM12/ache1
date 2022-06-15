@@ -1,0 +1,45 @@
+.lottie-modal-ux{
+    width: 100%;
+    max-width: 339px;
+    margin: 0 auto;
+    padding: 2.5rem 0 0 3.35rem;
+    text-align: end;
+}
+.modal-ux-title-left{
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3rem;
+    line-height: 3.438rem;
+    color: $black;
+    text-align: start;
+    margin-left: 2.2rem;
+    margin-bottom: 1rem;
+}
+.modal-ux-description-left{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: $grays;
+    text-align: start;
+    padding: 0 2.5rem;
+    span{
+        font-weight: $bold;
+    }
+}
+.modal-title-ux-right{
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3rem;
+    line-height: 3.438rem;
+    color: $white;
+    padding: 4rem 3rem;
+}
+.ux-modal-img{
+    width: 100%;
+    max-width: 863px;
+    margin-left: 1.5rem;
+}
