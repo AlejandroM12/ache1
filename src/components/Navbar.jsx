@@ -54,22 +54,10 @@ const Navbar = () => {
           </li>
           <li className="li">
             <Link
-              to="/cases"
+              to="/contact"
               className={pivot === 4 ? "btnSelected" : ""}
               onClick={() => {
                 setPivot(4);
-                console.log(pivot);
-              }}
-            >
-              Cases
-            </Link>
-          </li>
-          <li className="li">
-            <Link
-              to="/contact"
-              className={pivot === 5 ? "btnSelected" : ""}
-              onClick={() => {
-                setPivot(5);
                 console.log(pivot);
               }}
             >

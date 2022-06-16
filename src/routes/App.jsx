@@ -3,7 +3,6 @@ import About from "../pages/about/About";
 import Services from "../pages/services/Services"
 import Home from "../pages/home/Home";
 import Contact from "../pages/contact/Contact";
-import Cases from "../pages/cases/Cases";
 
 const App = ({ pivot, setPivot }) => {
   return (
@@ -23,7 +22,6 @@ const App = ({ pivot, setPivot }) => {
         <Route path="/services" element={<Services/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cases" element={<Cases />} />
       </Routes>
     </BrowserRouter>
   );
