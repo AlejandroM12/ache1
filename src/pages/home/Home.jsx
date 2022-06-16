@@ -17,35 +17,35 @@ import Navbar from "../../components/Navbar";
 
 const Home = ({ pivot, setPivot }) => {
   const [change, setChange] = useState(false);
-  const [scrolled, setScrolled] = useState(false);	
+  const [scrolled, setScrolled] = useState(false);
   const handleInter = () => {
     setScrolled(true);
     setTimeout(() => {
       setChange(true);
-    }, 500)
+    }, 500);
   };
 
   const handleScroll = (e) => {
-    const wDelta = e.wheelDelta < 0 ? 'down' : 'up';
-    console.log(e.wheelDelta)
-    setScrolled(wDelta === 'down');
-    if(wDelta === 'down'){ setTimeout(() => {
-      setChange(true);
-    }, 500);}
- }
+    const wDelta = e.wheelDelta < 0 ? "down" : "up";
+    console.log(e.wheelDelta);
+    setScrolled(wDelta === "down");
+    if (wDelta === "down") {
+      setTimeout(() => {
+        setChange(true);
+      }, 500);
+    }
+  };
 
-useEffect(() => {
-  window.addEventListener('mousewheel', handleScroll);
-  return () => window.removeEventListener("mousewheel", handleScroll);
-}, [])
+  useEffect(() => {
+    window.addEventListener("mousewheel", handleScroll);
+    return () => window.removeEventListener("mousewheel", handleScroll);
+  }, []);
 
   return (
     <>
       <Container>
         <Header>
-          <LogoHome
-            logo={logoHome}
-          />
+          <LogoHome logo={logoHome} />
           <Navbar pivot={pivot} setPivot={setPivot} />
         </Header>
         <ContainerLeft>
@@ -76,28 +76,28 @@ useEffect(() => {
                 >
                   You have
                 </h1>
-                <h1 
+                <h1
                   className="content-right-title-two"
                   data-aos="fade-right"
                   data-aos-delay="1500"
                   data-aos-easing="ease-in-out"
-                  >
-                    an idea?</h1>
+                >
+                  an idea?
+                </h1>
                 <p
                   data-aos="fade-right"
                   data-aos-delay="2500"
                   data-aos-easing="ease-in-out"
                 >
                   Bring your idea, we make it happen.
-                  
                 </p>
-                <p 
+                <p
                   data-aos="fade-right"
                   data-aos-delay="3000"
                   data-aos-easing="ease-in-out"
                 >
                   Bring your brand, we make it growth.
-                  </p>
+                </p>
                 <h2
                   className="content-right-title-tree"
                   data-aos="fade-right"
@@ -107,14 +107,15 @@ useEffect(() => {
                   Let´s create
                 </h2>
               </div>
-              <div style={{transitionDuration: '500ms', transform: `translateY(${scrolled ? 100 : 0}px)`, opacity: scrolled ? 0.5 : 1 }}  className="content-down-arrow">
-                <button
-                  className="arrow-redir"
-                  onClick={handleInter}
-                  data-aos="fade-up"
-                  data-aos-delay="4000"
-                  data-aos-easing="ease-in-out"
-                >
+              <div
+                style={{
+                  transitionDuration: "500ms",
+                  transform: `translateY(${scrolled ? 100 : 0}px)`,
+                  opacity: scrolled ? 0.5 : 1,
+                }}
+                className="content-down-arrow"
+              >
+                <button className="arrow-redir" onClick={handleInter}>
                   <img src={arrow} alt="icon arrow" className="arrow" />
                 </button>
               </div>
