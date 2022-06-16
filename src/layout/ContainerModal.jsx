@@ -1,4 +1,4 @@
-import logoSection from "../assets/Home/ache1-logo.svg";
+import logoHome from "../assets/Home/ache1-logo.svg";
 import LogoHome from "../components/LogoHome";
 
 const ContainerModal = ({ children }) => {
@@ -13,7 +13,7 @@ const ContainerModal = ({ children }) => {
       </div>
       <div className="content-container-modal">
         <div className="header-modal">
-          <LogoHome logo={logoSection} />
+          <LogoHome logo={logoHome} />
         </div>
         {children}
       </div>

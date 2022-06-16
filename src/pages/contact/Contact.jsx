@@ -2,20 +2,20 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import ContainerSection from "../../layout/ContainerSection";
 import ContainerHeaderSection from "../../components/ContainerHeaderSection";
-import LogoSection from "../../components/LogoSection";
-import logoSection from "../../assets/Icons/logoSection.svg";
 import Navbar from "../../components/Navbar";
 import ContainerLeftSection from "../../components/ContainerLeftSection";
 import ContainerRightSection from "../../components/ContainerRightSection";
 import Icon from "../../components/IconContact";
 import Form from "../../components/Form";
 import animationCoffe from "../../assets/lotties/coffee-contact.json";
+import logoWhite from "../../assets/Icons/logo-white.svg";
+import LogoHome from "../../components/LogoHome";
 
 const Contact = () => {
   return (
     <ContainerSection>
       <ContainerHeaderSection>
-        <LogoSection logo={logoSection} />
+      <LogoHome logo={logoWhite}/>
         <Navbar />
       </ContainerHeaderSection>
       <Link to="/" className="icon-contact">

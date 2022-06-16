@@ -27,13 +27,13 @@ const Home = ({ pivot, setPivot }) => {
         <Header>
           <LogoHome
             logo={logoHome}
-            onClick={() => {
-              setPivot(1);
-            }}
           />
           <Navbar pivot={pivot} setPivot={setPivot} />
         </Header>
         <ContainerLeft>
+          <div className="logo-home">
+            <img src={logoTitle} alt="ache1 logo" />
+          </div>
           {change === false ? (
             <div className="content-left" data-aos="fade-up">
               <UseLottieAnimation
@@ -48,9 +48,6 @@ const Home = ({ pivot, setPivot }) => {
         </ContainerLeft>
 
         <ContainerRight>
-          <div className="logo-home">
-            <img src={logoTitle} alt="ache1 logo" />
-          </div>
           {change === false ? (
             <>
               <div className="content-right">
@@ -75,7 +72,7 @@ const Home = ({ pivot, setPivot }) => {
                   data-aos-delay="3000"
                   data-aos-easing="ease-in-out"
                 >
-                  Let´s create
+                  LetÂ´s create
                 </h2>
               </div>
               <button

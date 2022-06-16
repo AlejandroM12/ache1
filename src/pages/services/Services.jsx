@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import ContainerSection from "../../layout/ContainerSection";
-import logoSection from "../../assets/Icons/logoSection.svg";
 import ContainerHeaderSection from "../../components/ContainerHeaderSection";
 import Navbar from "../../components/Navbar";
 import CardServices from "../../components/CardServices";
 import Icon from "../../components/IconContact";
-import LogoSection from "../../components/LogoSection";
+import LogoHome from "../../components/LogoHome";
+import logoWhite from "../../assets/Icons/logo-white.svg";
 
 const Services = () => {
   return (
     <>
       <ContainerSection>
         <ContainerHeaderSection>
-          <LogoSection logo={logoSection}></LogoSection>
+        <LogoHome logo={logoWhite}/>
           <Navbar />
         </ContainerHeaderSection>
         <CardServices />
