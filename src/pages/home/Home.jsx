@@ -22,15 +22,16 @@ const Home = ({ pivot, setPivot }) => {
     setScrolled(true);
     setTimeout(() => {
       setChange(true);
-    }, 800)
+    }, 500)
   };
 
   const handleScroll = (e) => {
     const wDelta = e.wheelDelta < 0 ? 'down' : 'up';
+    console.log(e.wheelDelta)
     setScrolled(wDelta === 'down');
     if(wDelta === 'down'){ setTimeout(() => {
       setChange(true);
-    }, 800);}
+    }, 500);}
  }
 
 useEffect(() => {
