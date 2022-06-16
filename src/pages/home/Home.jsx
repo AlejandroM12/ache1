@@ -56,23 +56,37 @@ const Home = ({ pivot, setPivot }) => {
                   data-aos-delay="1000"
                   data-aos-easing="ease-in-out"
                 >
-                  You have <br /> an idea?
+                  You have
                 </h1>
+                <h1 
+                  className="content-right-title-two"
+                  data-aos="fade-right"
+                  data-aos-delay="1500"
+                  data-aos-easing="ease-in-out"
+                  >
+                    an idea?</h1>
                 <p
                   data-aos="fade-right"
-                  data-aos-delay="2000"
+                  data-aos-delay="2500"
                   data-aos-easing="ease-in-out"
                 >
                   Bring your idea, we make it happen.
-                  <br />
-                  Bring your brand, we make it growth.
+                  
                 </p>
-                <h2
+                <p 
                   data-aos="fade-right"
                   data-aos-delay="3000"
                   data-aos-easing="ease-in-out"
                 >
-                  LetÂ´s create
+                  Bring your brand, we make it growth.
+                  </p>
+                <h2
+                  className="content-right-title-tree"
+                  data-aos="fade-right"
+                  data-aos-delay="3500"
+                  data-aos-easing="ease-in-out"
+                >
+                  Let´s create
                 </h2>
               </div>
               <button
