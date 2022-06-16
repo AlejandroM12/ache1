@@ -3,7 +3,10 @@ import dotsWhite from "../assets/Icons/dots-white.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-
+import UseLottieAnimation from "../components/useLottieAnimation";
+import animationBranding from "../assets/lotties/branding.json";
+import socialMediaAnimation from "../assets/lotties/social-media.json";
+import marketingAnimation from "../assets/lotties/marketing.json";
 const CardHomeRight = () => {
   const [btnDot, setBtnDot] = useState(1);
   return (
@@ -52,6 +55,13 @@ const CardHomeRight = () => {
       </div>
       {btnDot === 1 && (
         <div className="content-card-right" data-aos="fade-up">
+          <div className="content-lottie-branding">
+            <UseLottieAnimation
+              animationData={animationBranding}
+              autoplay={true}
+              loop={true}
+            />
+          </div>
           <h1 className="card-title-right">Branding</h1>
           <p className="card-description-right">
             Design your brand identity from scratch. Create a unique language
@@ -65,6 +75,15 @@ const CardHomeRight = () => {
       )}
       {btnDot === 2 && (
         <div className="content-card-right" data-aos="fade-up">
+          <div className="content-lottie-socialMedia">
+            <UseLottieAnimation
+              animationData={socialMediaAnimation}
+              autoplay={true}
+              loop={true}
+              width={300}
+              height={300}
+            />
+          </div>
           <h1 className="card-title-right">Social media</h1>
           <p className="card-description-right">
             We perform a competitive analysis to create your brand strategy on
@@ -79,6 +98,15 @@ const CardHomeRight = () => {
       )}
       {btnDot === 3 && (
         <div className="content-card-right" data-aos="fade-up">
+          <div className="content-lottie-marketing">
+            <UseLottieAnimation
+              animationData={marketingAnimation}
+              autoplay={true}
+              loop={true}
+              width={200}
+              height={200}
+            />
+          </div>
           <h1 className="card-title-right">Marketing</h1>
           <p className="card-description-right">
             Use our services and build a solid digital presence across digital
