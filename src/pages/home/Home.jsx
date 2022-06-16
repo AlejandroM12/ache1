@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../layout/Container";
 import ContainerRight from "../../components/ContainerRight";
@@ -17,9 +17,26 @@ import Navbar from "../../components/Navbar";
 
 const Home = ({ pivot, setPivot }) => {
   const [change, setChange] = useState(false);
+  const [scrolled, setScrolled] = useState(false);	
   const handleInter = () => {
-    setChange(true);
+    setScrolled(true);
+    setTimeout(() => {
+      setChange(true);
+    }, 800)
   };
+
+  const handleScroll = (e) => {
+    const wDelta = e.wheelDelta < 0 ? 'down' : 'up';
+    setScrolled(wDelta === 'down');
+    if(wDelta === 'down'){ setTimeout(() => {
+      setChange(true);
+    }, 800);}
+ }
+
+useEffect(() => {
+  window.addEventListener('mousewheel', handleScroll);
+  return () => window.removeEventListener("mousewheel", handleScroll);
+}, [])
 
   return (
     <>
@@ -89,15 +106,17 @@ const Home = ({ pivot, setPivot }) => {
                   Let´s create
                 </h2>
               </div>
-              <button
-                className="arrow-redir"
-                onClick={handleInter}
-                data-aos="fade-up"
-                data-aos-delay="4000"
-                data-aos-easing="ease-in-out"
-              >
-                <img src={arrow} alt="icon arrow" className="arrow" />
-              </button>
+              <div style={{transitionDuration: '500ms', transform: `translateY(${scrolled ? 100 : 0}px)`, opacity: scrolled ? 0.5 : 1 }}  className="content-down-arrow">
+                <button
+                  className="arrow-redir"
+                  onClick={handleInter}
+                  data-aos="fade-up"
+                  data-aos-delay="4000"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src={arrow} alt="icon arrow" className="arrow" />
+                </button>
+              </div>
             </>
           ) : (
             <>
