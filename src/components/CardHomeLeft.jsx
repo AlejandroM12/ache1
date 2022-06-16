@@ -77,7 +77,7 @@ const CardHomeLeft = () => {
           </div>
         )}
         {btnState === 2 && (
-          <div className="content-card-left webApps" data-aos="fade-up">
+          <div className="content-card-left content-web-apps" data-aos="fade-up">
             <div className="content-lottie-webApps">
               <UseLottieAnimation
                 animationData={webAppsAnimation}
@@ -99,7 +99,7 @@ const CardHomeLeft = () => {
           </div>
         )}
         {btnState === 3 && (
-          <div className="content-card-left appsMobile" data-aos="fade-up">
+          <div className="content-card-left content-apps-mobile" data-aos="fade-up">
             <h1 className="card-title-left">Apps mobile</h1>
             <p className="card-description-left">
               It makes your app unique. From usability analysis to testing to
@@ -110,7 +110,7 @@ const CardHomeLeft = () => {
           </div>
         )}
         {btnState === 4 && (
-          <div className="content-card-left bestWebs" data-aos="fade-up">
+          <div className="content-card-left content-best-webs" data-aos="fade-up">
             <h1 className="card-title-left">Best webs</h1>
             <p className="card-description-left">
               The culture of mobile first. Having a responsive website is not
