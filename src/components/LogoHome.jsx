@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const LogoHome = (props) =>{
     return (
-        <Link to="/" className="logo">
+      <NavLink className={({ isActive }) => {
+        return isActive ? "logo" : "logo"
+      }} to='/' >
           <img src={props.logo} alt="ache1 logo" />
-        </Link>
+        </NavLink>
     )
 }
 export default LogoHome;

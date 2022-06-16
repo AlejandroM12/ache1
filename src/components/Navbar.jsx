@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import hamburguerIcon from "../assets/Icons/icon-menu.svg";
 import closeHamburguerIcon from "../assets/Icons/x.svg";
 const Navbar = () => {
@@ -19,19 +19,25 @@ const Navbar = () => {
         <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
           <ul>
               <li>
-                <Link to="/services" className="link-a">
+                <NavLink className={({ isActive }) => {
+                  return isActive ? 'active' : "link-a"
+                }} to='/services' >
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" className="link-a">
+              <NavLink className={({ isActive }) => {
+                  return isActive ? 'active' : "link-a"
+                }} to='/about' >
                   About
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/contact" className="link-a">
+              <NavLink className={({ isActive }) => {
+                  return isActive ? 'active' : "link-a"
+                }} to='/contact' >
                   Contact
-                </Link>
+                </NavLink>
               </li>
           </ul>
         </div>

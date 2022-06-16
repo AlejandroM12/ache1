@@ -12,8 +12,8 @@
     right: 25px;
     transform: translateY(-50%);
     display: none;
-    img{
-        width: 40px;
+    img {
+      width: 40px;
     }
   }
   .hamburguer-icon-close {
@@ -67,37 +67,44 @@
       display: block;
     }
     .navigation-menu.expanded {
-        display: block;
-        ul{
-            display: none;
+      display: block;
+      ul {
+        display: none;
+      }
+    }
+    .navigation-menu {
+      ul {
+        z-index: 999;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: $background-container-grays;
+        border-top: 1px solid black;
+        li {
+          text-align: center;
+          margin: 0;
+          &:hover {
+            background-color: $background-container-grays;
+          }
+          .link-a {
+            width: 100%;
+            padding: 1.5rem 0;
+            color: $black;
+          }
         }
       }
-    .navigation-menu{
-        ul {
-            z-index: 999;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            flex-direction: column;
-            width: 100%;
-            height: calc(100vh - 77px);
-            background-color: $background-container-grays;
-            border-top: 1px solid black;
-            li {
-              text-align: center;
-              margin: 0;
-              &:hover {
-                background-color: $background-container-grays;
-              }
-              .link-a {
-                width: 100%;
-                padding: 1.5rem 0;
-                color: $black;
-              }
-            }
-          }
     }
-    
   }
-  
+}
+.active{
+          width: 100%;
+          font-family: $font-poppins;
+          font-style: normal;
+          font-weight: $bold;
+          font-size: 1.25rem;
+          line-height: 1.375rem;
+          color: $white;
 }
