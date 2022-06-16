@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import hamburguerIcon from "../assets/Icons/icon-menu.svg";
 import closeHamburguerIcon from "../assets/Icons/x.svg";
 const Navbar = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isNavExpanded, setIsNavExpanded] = useState(true)
   return (
     <>
       <nav className="navigation">
