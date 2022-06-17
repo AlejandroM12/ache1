@@ -1,32 +1,32 @@
-.content-service{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    .content-card-right{
+.content-service {
+    @include flexCenter;
+    margin-top: 3rem;
+    .content-card-right {
+      width: 100%;
+      height: 100%;
+      .card-title-right {
+        font-family: $font-alfa;
+        font-style: normal;
+        font-weight: $semi-bold;
+        font-size: 4rem;
+        line-height: 4.313rem;
+        color: $black;
+      }
+      .card-description-right {
+        font-family: $font-poppins;
+        font-style: normal;
+        font-weight: $semi-bold;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        color: $grays;
+      }
+      .card-img-right {
         width: 100%;
-        height: 100%;
-        .card-title-right{
-            font-family: $font-alfa;
-            font-style: normal;
-            font-weight: $semi-bold;
-            font-size: 64px;
-            line-height: 69px;
-            color: $black;
-        }
-        .card-description-right{
-            font-family: $font-poppins;
-            font-style: normal;
-            font-weight: $semi-bold;
-            font-size: 24px;
-            line-height: 36px;
-            color: $grays;
-        }
-        .card-img-right{
-            width: 140px;
-            height: 261px;
-            position: absolute;
-            right: 0;
-            transform: translateY(-40px);
-        }
+        max-width: 140px;
+        height: 261px;
+        position: absolute;
+        right: 0;
+        transform: translateY(-2.5rem);
+      }
     }
-}
+  }
