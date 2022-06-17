@@ -13,7 +13,7 @@ const ContentRightAbout = () => {
   const { events } = useDraggable(containerRef);
   return (
     <div className="keen-slider" ref={containerRef} {...events}>
-      <div className="keen-slider__slide number-slide1 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-one">
           <UseLottieAnimation
             animationData={meetingAnimation}
@@ -33,7 +33,7 @@ const ContentRightAbout = () => {
           of it.
         </p>
       </div>
-      <div className="keen-slider__slide number-slide2 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-two">
           <UseLottieAnimation
             animationData={analysisAnimation}
@@ -49,7 +49,7 @@ const ContentRightAbout = () => {
           <strong>work plan.</strong>
         </p>
       </div>
-      <div className="keen-slider__slide number-slide3 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-tree">
           <UseLottieAnimation
             animationData={strategyAnimation}
@@ -67,7 +67,7 @@ const ContentRightAbout = () => {
           We build the backbone of your project.
         </p>
       </div>
-      <div className="keen-slider__slide number-slide4 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-four">
           <UseLottieAnimation
             animationData={workAnimation}
@@ -84,7 +84,7 @@ const ContentRightAbout = () => {
           important to us.
         </p>
       </div>
-      <div className="keen-slider__slide number-slide5 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-five">
           <UseLottieAnimation
             animationData={testingAnimation}
@@ -100,7 +100,7 @@ const ContentRightAbout = () => {
           <strong>high quality standards in user experience.</strong>
         </p>
       </div>
-      <div className="keen-slider__slide number-slide6 slide-content">
+      <div className="slide-about-right slide-content">
         <div className="lottie-content-six">
           <UseLottieAnimation
             animationData={worldAnimation}

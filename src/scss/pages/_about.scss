@@ -6,26 +6,28 @@
 .content-left-about {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 3.125rem;
+  padding: 0rem 6rem 0rem 6rem;
+  margin-top: 2rem;
+  gap: 1rem;
   .title-left-about {
     font-family: $font-alfa;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 96px;
-    line-height: 90px;
+    font-size: 6rem;
+    line-height: 5.625rem;
     color: $black;
   }
   .description-left-about {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     color: $grays;
-    width: 80%;
-    padding: 10px;
     .span-left-about {
       font-weight: $bold;
+      gap: 0rem;
     }
   }
 }
@@ -50,27 +52,27 @@
     font-family: $font-alfa;
     font-style: $semi-bold;
     font-style: normal;
-    font-size: 64px;
-    line-height: 69px;
-    padding-top: 10px;
+    font-size: 4rem;
+    line-height: 4.313rem;
+    padding-top: 0.625rem;
   }
   .slide-title {
     font-family: $font-alfa;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 48px;
-    line-height: 55px;
+    font-size: 4rem;
+    line-height: 3.438rem;
     color: $black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     text-align: justify;
   }
   .slide-description {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.875rem;
     color: $grays;
     strong {
       font-weight: $bold;
