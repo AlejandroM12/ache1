@@ -3,7 +3,6 @@ import { useModal } from "../hooks/useModal";
 import ContainerLeftSection from "./ContainerLeftSection";
 import ContainerRightSection from "./ContainerRightSection";
 import UseLottieAnimation from "../components/useLottieAnimation";
-import App from "../assets/Services/apps-mobile.svg";
 import Button from "./Button";
 import animationUX from "../assets/lotties/ux.json";
 import ModalApp from "./ModalsComponents/ModalApp";

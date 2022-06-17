@@ -1,24 +1,24 @@
-/* abstract /
+/* abstract */
 @import "./scss/abstracts/variables";
 @import "./scss/abstracts/mixins";
 
-/ base /
+/* base */
 @import "./scss/base/base";
 @import "./scss/base/resets";
 
-/ layout /
+/* layout */
 @import "./scss/layout/header";
 @import "./scss/layout/container";
 @import "./scss/layout/containerSection";
 @import "./scss/layout/containerModal";
 
-/ pages /
+/* pages */
 @import "./scss/pages/home";
 @import "./scss/pages/services";
 @import "./scss/pages/about";
 @import "./scss/pages/contact";
 
-/ components */
+/* components */
 @import "./scss/components/navbarMenu";
 @import "./scss/components/containerRight";
 @import "./scss/components/cardHomeLeft";
