@@ -8,8 +8,7 @@
   flex-direction: column;
   margin-left: 3.125rem;
   padding: 0rem 6rem 0rem 6rem;
-  margin-top: 2rem;
-  gap: 1rem;
+  margin-top: 2.5rem;
   .title-left-about {
     font-family: $font-alfa;
     font-style: normal;
@@ -17,6 +16,10 @@
     font-size: 6rem;
     line-height: 5.625rem;
     color: $black;
+    margin-bottom: 2.5rem;
+  }
+  .about {
+    margin-bottom: 2.5rem;
   }
   .description-left-about {
     font-family: $font-poppins;
@@ -27,7 +30,6 @@
     color: $grays;
     .span-left-about {
       font-weight: $bold;
-      gap: 0rem;
     }
   }
 }
@@ -38,10 +40,14 @@
 .slide-content {
   display: flex;
   flex-direction: column;
+  flex: none;
+  height: 650px;
+  padding: 0rem 1rem 0rem 1rem;
+  margin-top: -5rem;
   .lottie-content {
     width: 500px;
     height: 150px;
-    transform: translate(100px);
+    transform: translate(6.25rem);
     .lottie-slide {
       width: 100%;
       height: auto;
@@ -65,7 +71,6 @@
     color: $black;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    text-align: justify;
   }
   .slide-description {
     font-family: $font-poppins;
@@ -73,6 +78,8 @@
     font-weight: $semi-bold;
     font-size: 1rem;
     line-height: 1.875rem;
+    padding: 0rem 13rem 0rem 0rem;
+    margin-right: 6rem;
     color: $grays;
     strong {
       font-weight: $bold;

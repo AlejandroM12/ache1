@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
 
 const ContentRightAbout = () => {
-  const containerRef = useRef(null);              
+  const containerRef = useRef(null);
   const { events } = useDraggable(containerRef);
   return (
     <div className="keen-slider" ref={containerRef} {...events}>
@@ -25,7 +25,7 @@ const ContentRightAbout = () => {
         <h3 className="slide-title">The first meeting</h3>
         <p className="slide-description">
           You bring to us an idea, and the first that we do is a meeting.
-          <strong>In this meeting we discover your project</strong> and them we
+          <strong> In this meeting we discover your project</strong> and them we
           analize it with the team to create estimations.
         </p>
         <p className="slide-description">
@@ -46,7 +46,7 @@ const ContentRightAbout = () => {
         <p className="slide-description">
           Then with the team we analyze your project. Together we define the
           time to use in each step and create the
-          <strong>work plan.</strong>
+          <strong> work plan.</strong>
         </p>
       </div>
       <div className="slide-about-right slide-content">
@@ -60,9 +60,9 @@ const ContentRightAbout = () => {
         <h4 className="slide-count">03.</h4>
         <h3 className="slide-title">Strategy</h3>
         <p className="slide-description">
-          TWe then determine the
+          We then determine the{" "}
           <strong>
-            best way to strategically meet the goals of your company.
+            best way to strategically meet the goals of your company.{" "}
           </strong>
           We build the backbone of your project.
         </p>
