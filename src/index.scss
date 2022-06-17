@@ -1,33 +1,33 @@
-/* abstract */
-@import './scss/abstracts/variables';
-@import './scss/abstracts/mixins';
+/* abstract /
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/mixins";
 
-/* base */
-@import './scss/base/base';
-@import './scss/base/resets';
+/ base /
+@import "./scss/base/base";
+@import "./scss/base/resets";
 
-/* layout */
-@import './scss/layout/header';
-@import './scss/layout/container';
-@import './scss/layout/containerSection';
-@import './scss/layout/containerModal';
+/ layout /
+@import "./scss/layout/header";
+@import "./scss/layout/container";
+@import "./scss/layout/containerSection";
+@import "./scss/layout/containerModal";
 
-/* pages */
-@import './scss/pages/home';
-@import './scss/pages/services';
-@import './scss/pages/about';
-@import './scss/pages/contact';
+/ pages /
+@import "./scss/pages/home";
+@import "./scss/pages/services";
+@import "./scss/pages/about";
+@import "./scss/pages/contact";
 
-/* components */
-@import './scss/components/navbarMenu';
-@import './scss/components/containerRight';
-@import './scss/components/cardHomeLeft';
-@import './scss/components/cardHomeRight';
-@import './scss/components/RightContent';
-@import './scss/components/Form';
-@import './scss/components/iconContact';
-@import './scss/components/logo';
-@import './scss/components/cardService';
-@import './scss/components/modalApp';
-@import './scss/components/modalUx';
-@import './scss/components/contentRightAbout';
+/ components */
+@import "./scss/components/navbarMenu";
+@import "./scss/components/containerRight";
+@import "./scss/components/cardHomeLeft";
+@import "./scss/components/cardHomeRight";
+@import "./scss/components/RightContentService";
+@import "./scss/components/Form";
+@import "./scss/components/iconContact";
+@import "./scss/components/logo";
+@import "./scss/components/cardService";
+@import "./scss/components/modalApp";
+@import "./scss/components/modalUx";
+@import "./scss/components/contentRightAbout";
