@@ -1,33 +1,34 @@
-.contact-content-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.contact-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -3rem;
+  margin-top: 8rem;
+  padding: 1rem;
+  .contact-lottie-right {
     width: 100%;
-    margin-left: -3rem;
-    margin-top: 1rem;
-    .contact-lottie-right{
-        width: 100%;
-        height: 7.5;
-        position: absolute;
-        transform: translate(13rem, -6rem);
+    height: 7.5;
+    position: absolute;
+    transform: translate(13rem, -6rem);
+  }
+  .contact-title-right {
+    font-family: $font-alfa;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 3rem;
+    line-height: 3.438rem;
+    color: $black;
+    margin-bottom: 1rem;
+  }
+  .contact-description-right {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: $grays;
+    span {
+      font-weight: $bold;
     }
-    .contact-title-right{
-        font-family: $font-alfa;
-        font-style: normal;
-        font-weight: $semi-bold;
-        font-size: 3rem;
-        line-height: 3.438rem;
-        color: $black;
-    }
-    .contact-description-right{
-        font-family: $font-poppins;
-        font-style: normal;
-        font-weight: $semi-bold;
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-        color: $grays;
-        span{
-            font-weight: $bold;
-        }
-    }
+  }
 }

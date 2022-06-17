@@ -56,7 +56,7 @@ const Form = () => {
       </div>
       <div className="form-group-textarea">
         <label className="form-label-textarea">Brief description of your project ...</label>
-        <textarea name="" id="" cols="30" rows="10" ></textarea>
+        <textarea name="" id="" cols="30" rows="7" ></textarea>
       </div>
       <button className="form-submit">SEND!</button>
     </div>

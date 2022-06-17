@@ -26,7 +26,7 @@ const Contact = () => {
       </ContainerLeftSection>
       <ContainerRightSection>
         <div className="contact-content-right">
-            <h3 className="contact-title-right">Les´t work <br /> together</h3>
+            <h3 className="contact-title-right">Let´s work <br /> together</h3>
             <div className="contact-lottie-right">
                 <Lottie animationData={animationCoffe}/>
             </div>
