@@ -79,7 +79,7 @@ const Home = ({ pivot, setPivot }) => {
                 <h1
                   className="content-right-title-two"
                   data-aos="fade-right"
-                  data-aos-delay="750"
+                  data-aos-delay="1500"
                   data-aos-easing="ease-in-out"
                 >
                   an idea?
