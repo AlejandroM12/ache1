@@ -14,8 +14,10 @@ import marketingAnimation from "../assets/lotties/marketing.json";
 
 const CardServices = () => {
   const [linkActive, setLinkActive] = useState(1);
+  const [ isHovering, setIsHovering ] = useState(false)
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  
   return (
     <>
       <ContainerLeftSection>
@@ -23,10 +25,17 @@ const CardServices = () => {
           <h3 className="card-service-title">Creativity & organization</h3>
           <li
             className={
-              linkActive === 2
+              linkActive === 2 && isHovering === false 
                 ? "card-services-list linkActive"
-                : "card-services-list"
+                : "card-services-list" 
+               
             }
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
             onClick={() => {
               setLinkActive(2);
             }}
@@ -35,84 +44,126 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 3
+              linkActive === 3 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(3);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Web Apps
           </li>
           <li
             className={
-              linkActive === 1
+              linkActive === 1 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(1);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Apps Mobile
           </li>
           <li
             className={
-              linkActive === 4
+              linkActive === 4 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(4);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Best Websites
           </li>
           <li
             className={
-              linkActive === 5
+              linkActive === 5 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(5);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Branding
           </li>
           <li
             className={
-              linkActive === 6
+              linkActive === 6 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(6);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Social Media
           </li>
           <li
             className={
-              linkActive === 7
+              linkActive === 7 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(7);
             }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
           >
             Marketing strategy
           </li>
           <li
             className={
-              linkActive === 8
+              linkActive === 8 && isHovering === false 
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
             onClick={() => {
               setLinkActive(8);
+            }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
             }}
           >
             Editorial
