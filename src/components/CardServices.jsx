@@ -14,10 +14,10 @@ import marketingAnimation from "../assets/lotties/marketing.json";
 
 const CardServices = () => {
   const [linkActive, setLinkActive] = useState(1);
-  const [ isHovering, setIsHovering ] = useState(false)
+  const [isHovering, setIsHovering] = useState(false);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
-  
+
   return (
     <>
       <ContainerLeftSection>
@@ -25,10 +25,9 @@ const CardServices = () => {
           <h3 className="card-service-title">Creativity & organization</h3>
           <li
             className={
-              linkActive === 2 && isHovering === false 
+              linkActive === 2 && isHovering === false
                 ? "card-services-list linkActive"
-                : "card-services-list" 
-               
+                : "card-services-list"
             }
             onMouseEnter={() => {
               setIsHovering(true);
@@ -44,7 +43,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 3 && isHovering === false 
+              linkActive === 3 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -62,7 +61,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 1 && isHovering === false 
+              linkActive === 1 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -80,7 +79,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 4 && isHovering === false 
+              linkActive === 4 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -98,7 +97,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 5 && isHovering === false 
+              linkActive === 5 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -116,7 +115,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 6 && isHovering === false 
+              linkActive === 6 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -134,7 +133,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 7 && isHovering === false 
+              linkActive === 7 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
@@ -152,7 +151,7 @@ const CardServices = () => {
           </li>
           <li
             className={
-              linkActive === 8 && isHovering === false 
+              linkActive === 8 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
