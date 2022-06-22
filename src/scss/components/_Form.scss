@@ -108,7 +108,6 @@
         padding: 0 4em 0 1em;
         max-width: 545px;
         cursor: pointer;
-        overflow: hidden;
         border: $border-input;
         font-family: $font-poppins;
         font-style: normal;
@@ -123,8 +122,6 @@
           background-color: $white;
           border: $border-input;
           outline: $border-input;
-          text-overflow: ellipsis;
-          overflow: hidden;
           &:focus {
             outline: none;
           }

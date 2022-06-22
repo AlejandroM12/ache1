@@ -1,11 +1,10 @@
 html,
 body {
   font-family: $font-poppins;
-  height: 100%;
+
 }
 body {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 .btn {
@@ -22,4 +21,9 @@ body {
   line-height: 22px;
   cursor: pointer;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  body{
+    overflow:unset;
+  }
 }
