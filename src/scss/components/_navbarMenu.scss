@@ -64,11 +64,9 @@
 }
 @media screen and (max-width: 768px) {
   .navigation {
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    position: absolute;
     z-index: 800;
     top: 0;
     left: 0;
@@ -97,8 +95,8 @@
     .navigation-menu {
       margin: 0 auto;
       width: 100%;
-      background: $background-container-blue;
       opacity: 0.9;
+      height: 100%;
       ul {
         width: 100%;
         margin: 0 auto;
@@ -108,6 +106,7 @@
         justify-content: center;
         flex-direction: column;
         z-index: 998;
+        background: $background-container-blue;
         li {
           text-align: center;
           margin: 0;

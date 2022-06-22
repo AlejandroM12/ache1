@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../layout/Container";
 import ContainerRight from "../../components/ContainerRight";
@@ -15,7 +15,7 @@ import CardHomeRight from "../../components/CardHomeRight";
 import logoHome from "../../assets/Home/ache1-logo.svg";
 import Navbar from "../../components/Navbar";
 import ContainerMobileHome from "../../layout/ContainerMobileHome";
-import viewportContext, { useViewport } from "../../context/viewportContext";
+import { useViewport } from "../../context/viewportContext";
 
 const Home = ({ pivot, setPivot }) => {
   const [change, setChange] = useState(false);

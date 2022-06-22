@@ -9,7 +9,6 @@ import ModalUx from "./ModalsComponents/ModalUx";
 import UseLottieAnimation from "../components/useLottieAnimation";
 import animationUX from "../assets/lotties/ux.json";
 import webAppsAnimation from "../assets/lotties/web-apps.json";
-import { useViewport } from "../context/viewportContext";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
