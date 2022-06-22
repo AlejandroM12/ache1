@@ -1,17 +1,16 @@
 .icon-contact {
+  position: fixed;
+  max-width: 40px;
+  height: 45px;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 100;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .icon-contact {
     position: fixed;
-    max-width: 40px;
-    height: 45px;
-    right: 5rem;
+    right: 2rem;
     bottom: 5rem;
-    z-index: 100
+    z-index: 100;
   }
-  @media only screen and (min-width: 0px) and (max-width: 420px) {
-    .icon-contact {
-      right: 2rem;
-      bottom: 5rem;
-      &::before {
-        content: url(../../assets/Icons/icon-contact-mobile.svg);
-      }
-    }
-  }
+}

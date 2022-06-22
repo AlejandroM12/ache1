@@ -215,7 +215,7 @@ const Home = ({ pivot, setPivot }) => {
         </>
       )}
       <Link to="/" className="icon-contact">
-        <Icon size={45} color="white" />
+        <Icon size={45} color="#6C63FF" fill="#6C63FF" />
       </Link>
     </Container>
   );
