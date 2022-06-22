@@ -1,4 +1,11 @@
 .navigation {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  background: transparent;
   .hamburguer-icon {
     border: 0;
     height: 40px;
@@ -30,13 +37,6 @@
     transform: translateY(-50%);
     display: none;
   }
-  height: 60px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0.5rem 0rem;
-  background: transparent;
   .navigation-menu {
     margin-left: auto;
     ul {
@@ -56,16 +56,37 @@
           color: $white;
         }
       }
+      .social-media-container {
+        display: none;
+      }
     }
   }
 }
 @media screen and (max-width: 768px) {
   .navigation {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 800;
+    top: 0;
+    left: 0;
     .hamburguer-icon {
       display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 2rem 2rem 0rem 0rem;
+      z-index: 5;
     }
     .hamburguer-icon-close {
       display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 2rem 2rem 0rem 0rem;
+      z-index: 5;
     }
     .navigation-menu.expanded {
       display: block;
@@ -74,38 +95,67 @@
       }
     }
     .navigation-menu {
+      margin: 0 auto;
+      width: 100%;
+      background: $background-container-blue;
+      opacity: 0.9;
       ul {
-        z-index: 999;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        flex-direction: column;
         width: 100%;
-        height: calc(100vh - 77px);
-        background-color: $background-container-grays;
-        border-top: 1px solid black;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 998;
         li {
           text-align: center;
           margin: 0;
-          &:hover {
-            background-color: $background-container-grays;
+          .active {
+            width: 100%;
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: $bold;
+            font-size: 2.25rem;
+            line-height: 3.75rem;
+            color: $white;
           }
           .link-a {
             width: 100%;
-            padding: 1.5rem 0;
-            color: $black;
+            padding: 1;
+            font-family: $font-poppins;
+            font-style: normal;
+            font-weight: $semi-bold;
+            font-size: 2.25rem;
+            line-height: 3.75rem;
+            text-align: center;
+            color: $white;
+          }
+        }
+        .social-media-container {
+          display: flex;
+          justify-content: space-around;
+          transform: translate(0rem, 5rem);
+          .social-media {
+            max-width: 32px;
+            height: 32px;
+            margin: 0.5rem;
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
           }
         }
       }
     }
   }
 }
-.active{
-          width: 100%;
-          font-family: $font-poppins;
-          font-style: normal;
-          font-weight: $bold;
-          font-size: 1.25rem;
-          line-height: 1.375rem;
-          color: $white;
+.active {
+  width: 100%;
+  font-family: $font-poppins;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: $white;
 }
