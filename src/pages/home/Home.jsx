@@ -13,6 +13,7 @@ import Icon from "../../components/IconContact";
 import CardHomeLeft from "../../components/CardHomeLeft";
 import CardHomeRight from "../../components/CardHomeRight";
 import logoHome from "../../assets/Home/ache1-logo.svg";
+import logoMobile from "../../assets/Icons/logo-mobile.svg";
 import Navbar from "../../components/Navbar";
 import ContainerMobileHome from "../../layout/ContainerMobileHome";
 import { useViewport } from "../../context/viewportContext";
@@ -49,7 +50,7 @@ const Home = ({ pivot, setPivot }) => {
     <Container>
       <Header>
         <LogoHome logo={logoHome} />
-        <Navbar pivot={pivot} setPivot={setPivot} />
+        <Navbar />
       </Header>
 
       <ContainerLeft>
@@ -137,8 +138,8 @@ const Home = ({ pivot, setPivot }) => {
   ) : (
     <Container>
       <Header>
-        <LogoHome logo={logoHome} />
-        <Navbar pivot={pivot} setPivot={setPivot} />
+        <LogoHome logo={logoMobile} />
+        <Navbar />
       </Header>
       {change === false ? (
         <>
