@@ -1,0 +1,65 @@
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .form{
+        width: 100%;
+        min-height: 100vh;
+       
+        padding: 0rem 3rem 1rem 3rem;
+        max-width: 330px;
+        transform: none;
+        margin:7rem 0rem 3rem 0rem;
+        .form-container{
+            margin: 0 auto;
+            .contact-content-right{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 0 auto;
+                padding: 0rem 1.5rem 0rem 0rem;
+                .contact-lottie-right{
+                    position: relative;
+                    transform: translate(-4rem);
+                }
+                .contact-title-right{
+                    font-size: 2.25rem;
+                    line-height: 2.438rem;
+                }
+                .contact-description-right{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+            .form-title{
+                font-size: 2rem;
+                line-height: 4.313rem;
+            }
+            .form-group-container{
+                .form-group{
+                    .form-input{
+                        font-size: 1rem;
+                    }
+                    .form-label{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .form-submit{
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+            }
+            .form-group-textarea{
+                .form-label-textarea{
+                    line-height: 2rem;
+                }
+            }
+        }
+        
+    }
+    .social-media-container-mobile-contact{
+        position: absolute;
+        gap: 1rem;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+
+    }
+}
