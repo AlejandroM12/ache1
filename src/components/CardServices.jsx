@@ -93,7 +93,7 @@ const CardServices = () => {
               setIsHovering(false);
             }}
           >
-            Best Websites
+            Branding
           </li>
           <li
             className={
@@ -111,7 +111,7 @@ const CardServices = () => {
               setIsHovering(false);
             }}
           >
-            Branding
+            Social Media
           </li>
           <li
             className={
@@ -129,43 +129,7 @@ const CardServices = () => {
               setIsHovering(false);
             }}
           >
-            Social Media
-          </li>
-          <li
-            className={
-              linkActive === 7 && isHovering === false
-                ? "card-services-list linkActive"
-                : "card-services-list"
-            }
-            onClick={() => {
-              setLinkActive(7);
-            }}
-            onMouseEnter={() => {
-              setIsHovering(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovering(false);
-            }}
-          >
             Marketing strategy
-          </li>
-          <li
-            className={
-              linkActive === 8 && isHovering === false
-                ? "card-services-list linkActive"
-                : "card-services-list"
-            }
-            onClick={() => {
-              setLinkActive(8);
-            }}
-            onMouseEnter={() => {
-              setIsHovering(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovering(false);
-            }}
-          >
-            Editorial
           </li>
         </div>
       </ContainerLeftSection>
@@ -244,24 +208,6 @@ const CardServices = () => {
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Best Websites</h3>
-              <p className="card-description-right">
-                The culture of mobile first. Having a responsive website is not
-                only important, it is essential. Today users access 80% of the
-                web on their mobile phone. Do not stay behind, renew yourself!
-              </p>
-
-              <Button buttonLabel="We can do it!" />
-            </div>
-          </div>
-        )}
-        {linkActive === 5 && (
-          <div className="content-service">
-            <div
-              className="content-card-right"
-              data-aos="fade-right"
-              data-aos-easing="ease-in-out"
-            >
               <h3 className="card-title-right">Branding</h3>
               <p className="card-description-right">
                 Design your brand identity from scratch. Create a unique
@@ -278,7 +224,7 @@ const CardServices = () => {
             </div>
           </div>
         )}
-        {linkActive === 6 && (
+        {linkActive === 5 && (
           <div className="content-service">
             <div
               className="content-card-right"
@@ -302,7 +248,7 @@ const CardServices = () => {
             </div>
           </div>
         )}
-        {linkActive === 7 && (
+        {linkActive === 6 && (
           <div className="content-service">
             <div className="content-card-right" data-aos="fade-right">
               <div className="content-service-lottie-marketing">
@@ -318,23 +264,6 @@ const CardServices = () => {
                 digital marketing, creative web design, quality content, SEO,
                 and media campaigns.
               </p>
-              <Button buttonLabel="Grow up now" />
-            </div>
-          </div>
-        )}
-        {linkActive === 8 && (
-          <div className="content-service">
-            <div
-              className="content-card-right"
-              data-aos="fade-right"
-              data-aos-easing="ease-in-out"
-            >
-              <h3 className="card-title-right">Editorial</h3>
-              <p className="card-description-right">
-                Make your project a reality and turn it into a successful book.
-                Hand in hand with the best editorial designers on the market.
-              </p>
-
               <Button buttonLabel="Grow up now" />
             </div>
           </div>

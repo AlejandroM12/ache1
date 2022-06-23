@@ -136,19 +136,6 @@ const ContainerMobileHome = () => {
           )}
           {btnState === 4 && (
             <div className="content-card-mobile" data-aos="fade-up">
-              <h1 className="card-title-mobile">Best webs</h1>
-              <p className="card-description-mobile">
-                The culture of mobile first. Having a responsive website is not
-                only important, it is essential. Today users access 80% of the
-                web on their mobile phone. Do not stay behind, renew yourself!
-              </p>
-              <Link to="/">
-                <Button buttonLabel="We can do it!" />
-              </Link>
-            </div>
-          )}
-          {btnState === 5 && (
-            <div className="content-card-mobile" data-aos="fade-up">
               <h1 className="card-title-mobile">Branding</h1>
               <p className="card-description-mobile">
                 Design your brand identity from scratch. Create a unique
@@ -159,7 +146,7 @@ const ContainerMobileHome = () => {
               </Link>
             </div>
           )}
-          {btnState === 6 && (
+          {btnState === 5 && (
             <div className="content-card-mobile" data-aos="fade-up">
               <h1 className="card-title-mobile">Social media</h1>
               <p className="card-description-mobile">
@@ -172,7 +159,7 @@ const ContainerMobileHome = () => {
               </Link>
             </div>
           )}
-          {btnState === 7 && (
+          {btnState === 6 && (
             <div className="content-card-mobile" data-aos="fade-up">
               <h1 className="card-title-mobile">Marketing</h1>
               <p className="card-description-mobile">
@@ -182,18 +169,6 @@ const ContainerMobileHome = () => {
               </p>
               <Link to="/">
                 <Button buttonLabel="Grow up now" />
-              </Link>
-            </div>
-          )}
-          {btnState === 8 && (
-            <div className="content-card-mobile" data-aos="fade-up">
-              <h1 className="card-title-mobile">Editorial</h1>
-              <p className="card-description-mobile">
-                Make your project a reality and turn it into a successful book.
-                Hand in hand with the best editorial designers on the market.
-              </p>
-              <Link to="/">
-                <Button buttonLabel="Let´s talk" />
               </Link>
             </div>
           )}

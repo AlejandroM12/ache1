@@ -42,16 +42,6 @@ const CardHomeRight = () => {
             }}
           />
         </div>
-        <div className="dots-icon-right">
-          <img
-            src={dotsWhite}
-            alt=""
-            className={btnDot === 4 ? "active-right" : ""}
-            onClick={() => {
-              setBtnDot(4);
-            }}
-          />
-        </div>
       </div>
       {btnDot === 1 && (
         <div className="content-card-right" data-aos="fade-up">
@@ -116,19 +106,6 @@ const CardHomeRight = () => {
           <img src="" alt="" />
           <Link to="/">
             <Button buttonLabel="Grow up now" />
-          </Link>
-        </div>
-      )}
-      {btnDot === 4 && (
-        <div className="content-card-right" data-aos="fade-up">
-          <h1 className="card-title-right">Editorial</h1>
-          <p className="card-description-right">
-            Make your project a reality and turn it into a successful book. Hand
-            in hand with the best editorial designers on the market.
-          </p>
-          <img src="" alt="" />
-          <Link to="/">
-            <Button buttonLabel="Let´s talk" />
           </Link>
         </div>
       )}

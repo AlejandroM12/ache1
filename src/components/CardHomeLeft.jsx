@@ -48,16 +48,6 @@ const CardHomeLeft = () => {
             }}
           />
         </div>
-        <div className="dots-icon-left">
-          <img
-            src={dots}
-            alt=""
-            className={btnState === 4 ? "active-left" : ""}
-            onClick={() => {
-              setBtnState(4);
-            }}
-          />
-        </div>
       </div>
       {btnState === 1 && (
         <div className="content-card-left" data-aos="fade-up">
@@ -108,19 +98,6 @@ const CardHomeLeft = () => {
             launch your MVP.
           </p>
           <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
-        </div>
-      )}
-      {btnState === 4 && (
-        <div className="content-card-left content-best-webs" data-aos="fade-up">
-          <h1 className="card-title-left">Best webs</h1>
-          <p className="card-description-left">
-            The culture of mobile first. Having a responsive website is not only
-            important, it is essential. Today users access 80% of the web on
-            their mobile phone. Do not stay behind, renew yourself!
-          </p>
-          <Link to="/">
-            <Button buttonLabel="We can do it!" />
-          </Link>
         </div>
       )}
       {isOpenModalApp && (
