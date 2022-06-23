@@ -80,26 +80,6 @@ const ContainerMobileHome = () => {
               }}
             />
           </div>
-          <div className="dots-icon-mobile">
-            <img
-              src={dotsWhite}
-              alt=""
-              className={btnState === 7 ? "active-dots-mobile" : ""}
-              onClick={() => {
-                setBtnState(7);
-              }}
-            />
-          </div>
-          <div className="dots-icon-mobile">
-            <img
-              src={dotsWhite}
-              alt=""
-              className={btnState === 8 ? "active-dots-mobile" : ""}
-              onClick={() => {
-                setBtnState(8);
-              }}
-            />
-          </div>
         </div>
         <div className="container-mobile-up">
           {btnState === 1 && (
@@ -192,7 +172,7 @@ const ContainerMobileHome = () => {
               />
             </div>
           )}
-          {btnState === 5 && (
+          {btnState === 4 && (
             <div className="content-lottie-branding-mobile">
               <UseLottieAnimation
                 animationData={brandingFullAnimation}
@@ -201,7 +181,7 @@ const ContainerMobileHome = () => {
               />
             </div>
           )}
-          {btnState === 6 && (
+          {btnState === 5 && (
             <div className="content-lottie-socialMedia-mobile">
               <UseLottieAnimation
                 animationData={socialMediaFullAnimation}
@@ -210,7 +190,7 @@ const ContainerMobileHome = () => {
               />
             </div>
           )}
-          {btnState === 7 && (
+          {btnState === 6 && (
             <div className="content-lottie-marketing-mobile">
               <UseLottieAnimation
                 animationData={marketingFullAnimation}
