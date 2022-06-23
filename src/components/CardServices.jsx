@@ -246,11 +246,12 @@ const CardServices = () => {
             >
               <h3 className="card-title-right">Best Websites</h3>
               <p className="card-description-right">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea non
-                sit, laudantium modi corporis nemo!
+                The culture of mobile first. Having a responsive website is not
+                only important, it is essential. Today users access 80% of the
+                web on their mobile phone. Do not stay behind, renew yourself!
               </p>
 
-              <Button buttonLabel="Biggest systems" />
+              <Button buttonLabel="We can do it!" />
             </div>
           </div>
         )}
