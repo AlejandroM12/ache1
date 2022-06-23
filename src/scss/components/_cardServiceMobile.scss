@@ -7,7 +7,7 @@
   margin-top: 7rem;
   max-width: 350px;
   z-index: 10;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   width: 100%;
   .card-service-title-mobile {
     font-family: $font-alfa;
@@ -33,19 +33,26 @@
     font-weight: $bold;
     color: $blue;
     font-size: 1.5rem;
-    line-height: 3.75rem;
     position: relative;
     .arrow-icon-mobile {
       width: 100%;
-      max-width: 24px;
+    max-width: 19px;
+    transform: translate(-1rem);
+    position: absolute;
+    height: 15px;
     }
   }
   .container-card-services {
-    transform: scale(1.3);
-    transition: 0.8s;
+    transform: scale(0.8);
+    animation-name: scaleImg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
     box-shadow: 0px 0px 10px 5px rgba(158, 158, 158, 0.17);
     background: $white;
-    padding: 0.3rem 2rem;
+    padding: 2rem 1.5rem;
     .container-list-services-mobile-active {
       display: flex;
       flex-direction: column;
@@ -57,7 +64,16 @@
         font-size: 1rem;
         line-height: 1.5rem;
         color: $grays;
+        margin-bottom: 1rem;
       }
     }
+  }
+}
+@keyframes scaleImg {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.3);
   }
 }
