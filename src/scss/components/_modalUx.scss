@@ -80,6 +80,10 @@
       margin-left: 2rem;
       height: 428px;
       margin-top: -3rem;
+      -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
     }
   }
 }
