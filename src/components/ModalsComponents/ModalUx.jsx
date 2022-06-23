@@ -1,11 +1,12 @@
+import { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
 import ContainerModal from "../../layout/ContainerModal";
 import ContainerLeftModal from "../ContainerLeftModal";
 import ContainerRightModal from "../ContainerRightModal";
 import uxProcess from "../../assets/Modal/ux-process.svg";
 import uxAimation from "../../assets/lotties/modal-ux.json";
 import UseLottieAnimation from "../../components/useLottieAnimation";
-import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import arrowRight from "../../assets/Icons/arrow-modal.svg";
 
 const ModalUx = ({ isOpen, closeModal }) => {
   const containerRef = useRef(null);
@@ -47,6 +48,7 @@ const ModalUx = ({ isOpen, closeModal }) => {
           >
             <img src={uxProcess} alt="" className="ux-modal-img" />
           </div>
+          <img src={arrowRight} className="arrow-modal" alt="icon arrow" />
           <button className="close-modal" onClick={closeModal}>
             X
           </button>
