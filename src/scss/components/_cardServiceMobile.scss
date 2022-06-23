@@ -24,6 +24,7 @@
     font-size: 1.25rem;
     line-height: 3.75rem;
     color: $items-links;
+    cursor: pointer;
   }
   .card-services-list-mobile-active {
     display: flex;
@@ -43,6 +44,7 @@
     }
   }
   .container-card-services {
+   
     transform: scale(0.8);
     animation-name: scaleImg;
     animation-duration: 1s;
