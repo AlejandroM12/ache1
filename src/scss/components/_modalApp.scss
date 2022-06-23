@@ -1,4 +1,4 @@
-.modal-app-title-left{
+.modal-app-title-left {
     font-family: $font-alfa;
     font-style: normal;
     font-weight: $semi-bold;
@@ -6,8 +6,8 @@
     line-height: 4.313rem;
     color: $black;
     text-align: center;
-}
-.modal-app-description-left{
+  }
+  .modal-app-description-left {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
@@ -16,11 +16,11 @@
     color: $grays;
     text-align: start;
     padding: 1rem 3rem;
-    span{
-        font-weight: $bold;
+    span {
+      font-weight: $bold;
     }
-}
-.modal-title-app-right{
+  }
+  .modal-title-app-right {
     font-family: $font-alfa;
     font-style: normal;
     font-weight: $semi-bold;
@@ -30,15 +30,68 @@
     width: 100%;
     max-width: 411px;
     margin-top: -3rem;
-}
-.modal-app-img{
+  }
+  .container-modal-app-img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 7rem;
     padding-top: 5rem;
-    img{
-        width: 100%;
-        max-width: 190px;
+    img {
+      width: 100%;
+      max-width: 190px;
     }
-}
+  }
+  .lottie-modal-app-mobile {
+    width: 100%;
+    max-width: 339px;
+    padding: 2.5rem 0 0 3.35rem;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 420px) {
+    .modal-title-app-right {
+      display: none;
+    }
+    .lottie-modal-app-mobile {
+      padding: 0rem;
+      margin-top: 5rem;
+    }
+    .container-description-modal-app-mobile {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1rem 2rem;
+    }
+    .modal-app-title-left {
+      font-size: 3rem;
+      line-height: 4.313rem;
+      margin-bottom: 0rem;
+      text-align: start;
+    }
+    .modal-app-description-left {
+      font-size: 1rem;
+      line-height: 1.875rem;
+      padding: 0rem;
+    }
+    .container-modal-app-img {
+      gap: 0rem;
+      padding: 0rem;
+      display: flex;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+      .app-modal-img {
+        position: relative;
+        overflow: scroll;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 428px;
+        margin-top: -3rem;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+      }
+    }
+  }

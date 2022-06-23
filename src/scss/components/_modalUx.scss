@@ -43,6 +43,9 @@
   max-width: 863px;
   margin-left: 1.5rem;
 }
+.arrow-modal{
+  display: none;
+}
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .lottie-modal-ux {
     padding: 0rem;
@@ -87,6 +90,7 @@
     }
   }
   .arrow-modal {
+    display: block;
   width: 100%;
   max-width: 50px;
   transform: translate(12rem, -6rem);
