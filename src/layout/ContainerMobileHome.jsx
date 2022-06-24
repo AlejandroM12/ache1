@@ -24,7 +24,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 1 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(1);
@@ -34,7 +34,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 2 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(2);
@@ -44,7 +44,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 3 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(3);
@@ -54,7 +54,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 4 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(4);
@@ -64,7 +64,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 5 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(5);
@@ -74,7 +74,7 @@ const ContainerMobileHome = () => {
           <div className="dots-icon-mobile">
             <img
               src={dotsWhite}
-              alt=""
+              alt="button icon"
               className={btnState === 6 ? "active-dots-mobile" : ""}
               onClick={() => {
                 setBtnState(6);

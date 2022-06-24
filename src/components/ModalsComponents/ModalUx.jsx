@@ -46,7 +46,7 @@ const ModalUx = ({ isOpen, closeModal }) => {
             ref={containerRef}
             {...events}
           >
-            <img src={uxProcess} alt="" className="ux-modal-img" />
+            <img src={uxProcess} alt="ux design" className="ux-modal-img" />
           </div>
           <img src={arrowRight} className="arrow-modal" alt="icon arrow" />
           <button className="close-modal" onClick={closeModal}>

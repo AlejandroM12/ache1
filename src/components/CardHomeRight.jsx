@@ -37,7 +37,7 @@ const CardHomeRight = () => {
         <div className="dots-icon-right">
           <img
             src={dotsWhite}
-            alt=""
+            alt="button icon"
             className={btnDot === 1 ? "active-right" : ""}
             onClick={() => {
               setBtnDot(1);
@@ -47,7 +47,7 @@ const CardHomeRight = () => {
         <div className="dots-icon-right">
           <img
             src={dotsWhite}
-            alt=""
+            alt="button icon"
             className={btnDot === 2 ? "active-right" : ""}
             onClick={() => {
               setBtnDot(2);
@@ -57,7 +57,7 @@ const CardHomeRight = () => {
         <div className="dots-icon-right">
           <img
             src={dotsWhite}
-            alt=""
+            alt="button icon"
             className={btnDot === 3 ? "active-right" : ""}
             onClick={() => {
               setBtnDot(3);
@@ -79,7 +79,6 @@ const CardHomeRight = () => {
             Design your brand identity from scratch. Create a unique language
             that identifies you in the market.
           </p>
-          <img src="" alt="" />
           <Link to="/">
             <Button buttonLabel="I want start" />
           </Link>
@@ -102,7 +101,6 @@ const CardHomeRight = () => {
             social networks. Guidelines for communication, promotion and user
             monitoring.
           </p>
-          <img src="" alt="" />
           <Link to="/">
             <Button buttonLabel="Your brand UP!" />
           </Link>
@@ -125,7 +123,6 @@ const CardHomeRight = () => {
             marketing, creative web design, quality content, SEO, and media
             campaigns.
           </p>
-          <img src="" alt="" />
           <Link to="/">
             <Button buttonLabel="Grow up now" />
           </Link>

@@ -32,7 +32,6 @@ const Home = ({ pivot, setPivot }) => {
 
   const handleScroll = (e) => {
     const wDelta = e.wheelDelta < 0 ? "down" : "up";
-    console.log(e.wheelDelta);
     setScrolled(wDelta === "down");
     if (wDelta === "down") {
       setTimeout(() => {
@@ -135,7 +134,7 @@ const Home = ({ pivot, setPivot }) => {
   ) : (
     <Container>
       <Header>
-        <LogoHome logo={logoMobile} />
+        <LogoHome logo={logoMobile} onClick={() => setChange(false)} to="/" />
         <Navbar />
       </Header>
       {change === false ? (

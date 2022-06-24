@@ -42,7 +42,7 @@ const CardHomeLeft = () => {
           <div className="dots-icon-left">
             <img
               src={dots}
-              alt=""
+              alt="button icon"
               className={btnState === 1 ? "active-left" : ""}
               onClick={() => {
                 setBtnState(1);
@@ -52,7 +52,7 @@ const CardHomeLeft = () => {
           <div className="dots-icon-left">
             <img
               src={dots}
-              alt=""
+              alt="button icon"
               className={btnState === 2 ? "active-left" : ""}
               onClick={() => {
                 setBtnState(2);
@@ -62,7 +62,7 @@ const CardHomeLeft = () => {
           <div className="dots-icon-left">
             <img
               src={dots}
-              alt=""
+              alt="button icon"
               className={btnState === 3 ? "active-left" : ""}
               onClick={() => {
                 setBtnState(3);
