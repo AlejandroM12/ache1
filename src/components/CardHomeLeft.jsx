@@ -9,6 +9,7 @@ import ModalUx from "./ModalsComponents/ModalUx";
 import UseLottieAnimation from "../components/useLottieAnimation";
 import animationUX from "../assets/lotties/ux.json";
 import webAppsAnimation from "../assets/lotties/web-apps.json";
+import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
@@ -73,8 +74,6 @@ const CardHomeLeft = () => {
               animationData={webAppsAnimation}
               autoplay={true}
               loop={true}
-              width={200}
-              height={200}
             />
           </div>
           <h1 className="card-title-left">Web apps</h1>
@@ -98,6 +97,13 @@ const CardHomeLeft = () => {
             launch your MVP.
           </p>
           <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+          <div className="content-lottie-apps-mobile">
+            <UseLottieAnimation
+              animationData={appsMobileAnimation}
+              autoplay={true}
+              loop={true}
+            />
+          </div>
         </div>
       )}
       {isOpenModalApp && (

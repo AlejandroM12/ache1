@@ -11,6 +11,7 @@ import webAppsAnimation from "../assets/lotties/web-apps.json";
 import animationBrandingBlack from "../assets/lotties/branding-black.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
+import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
 
 const CardServices = () => {
   const [linkActive, setLinkActive] = useState(1);
@@ -147,6 +148,13 @@ const CardServices = () => {
                 launch your MVP.
               </p>
               <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+              <div className="content-service-lottie-apps-mobile">
+                <UseLottieAnimation
+                  animationData={appsMobileAnimation}
+                  autoplay={true}
+                  loop={true}
+                />
+              </div>
             </div>
           </div>
         )}
