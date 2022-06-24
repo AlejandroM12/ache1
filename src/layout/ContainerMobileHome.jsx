@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useModal } from "../hooks/useModal";
 import Button from "../components/Button";
 import dotsWhite from "../assets/Icons/dots-white.svg";
 import UseLottieAnimation from "../components/useLottieAnimation";
@@ -8,7 +9,7 @@ import webAppsFullAnimation from "../assets/lotties/web-apps-full.json";
 import brandingFullAnimation from "../assets/lotties/branding-full.json";
 import socialMediaFullAnimation from "../assets/lotties/social-media-full.json";
 import marketingFullAnimation from "../assets/lotties/marketing-full.json";
-import { useModal } from "../hooks/useModal";
+import appMobileFullAnimation from "../assets/lotties/apps-mobile.json";
 import ModalApp from "../components/ModalsComponents/ModalApp";
 import ModalUx from "../components/ModalsComponents/ModalUx";
 
@@ -167,6 +168,15 @@ const ContainerMobileHome = () => {
             <div className="content-lottie-webApps-mobile">
               <UseLottieAnimation
                 animationData={webAppsFullAnimation}
+                autoplay={true}
+                loop={true}
+              />
+            </div>
+          )}
+          {btnState === 3 && (
+            <div className="content-lottie-app-mobile">
+              <UseLottieAnimation
+                animationData={appMobileFullAnimation}
                 autoplay={true}
                 loop={true}
               />
