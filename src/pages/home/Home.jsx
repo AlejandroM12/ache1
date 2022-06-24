@@ -49,14 +49,11 @@ const Home = ({ pivot, setPivot }) => {
   return width > breakpoint ? (
     <Container>
       <Header>
-        <LogoHome logo={logoHome} />
+        <LogoHome logo={logoHome} onClick={() => setChange(false)} to="/" />
         <Navbar />
       </Header>
 
       <ContainerLeft>
-        <div className="logo-home">
-          <img src={logoTitle} alt="ache1 logo" />
-        </div>
         {change === false ? (
           <div className="content-left" data-aos="fade-up">
             <UseLottieAnimation
