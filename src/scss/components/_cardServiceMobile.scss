@@ -44,10 +44,10 @@
     }
   }
   .container-card-services {
-   
-    transform: scale(0.8);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     animation-name: scaleImg;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -73,7 +73,7 @@
 }
 @keyframes scaleImg {
   0% {
-    transform: scale(0.7);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1.3);
