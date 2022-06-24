@@ -7,10 +7,32 @@ import UseLottieAnimation from "../components/useLottieAnimation";
 import animationBranding from "../assets/lotties/branding.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+
 const CardHomeRight = () => {
   const [btnDot, setBtnDot] = useState(1);
+  const upHandler = () =>{
+    if(btnDot >= 1){
+      setBtnDot(btnDot + 1)
+      if(btnDot === 3){
+        setBtnDot(1)
+      }
+    }
+  }
+  const downHandler = () =>{
+    if(btnDot >= 1 ){
+      setBtnDot(btnDot - 1)
+      if(btnDot === 1){
+        setBtnDot(3)
+      }
+    }
+  }
   return (
     <ContainerRight>
+        <ReactScrollWheelHandler
+      upHandler={()=>downHandler()}
+      downHandler={()=> upHandler()}
+      >
       <div className="dots-right">
         <div className="dots-icon-right">
           <img
@@ -109,6 +131,7 @@ const CardHomeRight = () => {
           </Link>
         </div>
       )}
+      </ReactScrollWheelHandler>
     </ContainerRight>
   );
 };
