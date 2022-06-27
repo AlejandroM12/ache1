@@ -34,10 +34,7 @@ const CardHomeLeft = () => {
   };
   return (
     <ContainerLeft>
-      <ReactScrollWheelHandler
-        upHandler={() => downHandler()}
-        downHandler={() => upHandler()}
-      >
+      
         <div className="dots-left">
           <div className="dots-icon-left">
             <img
@@ -70,6 +67,10 @@ const CardHomeLeft = () => {
             />
           </div>
         </div>
+        <ReactScrollWheelHandler
+        upHandler={() => downHandler()}
+        downHandler={() => upHandler()}
+      >
         {btnState === 1 && (
           <div className="content-card-left" data-aos="fade-up">
             <div className="content-lottie-ux">
@@ -128,14 +129,16 @@ const CardHomeLeft = () => {
               />
             </div>
           </div>
+          
         )}
+        </ReactScrollWheelHandler>
         {isOpenModalApp && (
           <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
         )}
         {isOpenModalUX && (
           <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
         )}
-      </ReactScrollWheelHandler>
+      
     </ContainerLeft>
   );
 };

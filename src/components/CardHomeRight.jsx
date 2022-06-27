@@ -29,10 +29,7 @@ const CardHomeRight = () => {
   }
   return (
     <ContainerRight>
-        <ReactScrollWheelHandler
-      upHandler={()=>downHandler()}
-      downHandler={()=> upHandler()}
-      >
+        
       <div className="dots-right">
         <div className="dots-icon-right">
           <img
@@ -65,6 +62,10 @@ const CardHomeRight = () => {
           />
         </div>
       </div>
+      <ReactScrollWheelHandler
+      upHandler={()=>downHandler()}
+      downHandler={()=> upHandler()}
+      >
       {btnDot === 1 && (
         <div className="content-card-right" data-aos="fade-up">
           <div className="content-lottie-branding">
