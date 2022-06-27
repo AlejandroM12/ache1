@@ -53,6 +53,9 @@ const Home = ({ pivot, setPivot }) => {
       </Header>
 
       <ContainerLeft>
+        <div className="logo-home">
+          <img src={logoTitle} alt="ache1 title" />
+        </div>
         {change === false ? (
           <div className="content-left" data-aos="fade-up">
             <UseLottieAnimation
