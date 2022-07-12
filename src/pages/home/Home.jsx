@@ -36,6 +36,7 @@ const Home = ({ pivot, setPivot }) => {
     if (wDelta === "down") {
       setTimeout(() => {
         setChange(true);
+        setScrolled(false);
       }, 500);
     }
   };
@@ -73,7 +74,7 @@ const Home = ({ pivot, setPivot }) => {
       </ContainerLeft>
 
       <ContainerRight>
-        {change === false ? (
+        {!change ? (
           <>
             <div className="content-right">
               <h1
@@ -142,7 +143,7 @@ const Home = ({ pivot, setPivot }) => {
         <LogoHome logo={logoMobile} onClick={() => setChange(false)} to="/" />
         <Navbar />
       </Header>
-      {change === false ? (
+      {!change ? (
         <>
           <ContainerLeft>
             
