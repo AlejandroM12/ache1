@@ -1,16 +1,15 @@
 .form {
   background-color: $white;
   box-shadow: 0px 0px 10px 5px rgba(158, 158, 158, 0.17);
-  margin: -1rem 0rem 20rem 0rem;
   width: 100%;
   max-width: 545px;
   padding: 0.5rem 3rem;
   z-index: 10;
-  transform: translate(50px);
   margin-left: 7rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   .form-container {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: grid;
     gap: 0.5rem;
     .form-title {
@@ -29,6 +28,7 @@
         color: $items-links;
         .form-input {
           width: 100%;
+          cursor: pointer;
           background: none;
           color: $items-links;
           font-size: 1rem;
@@ -115,7 +115,7 @@
         font-size: 1rem;
         line-height: 2.8rem;
         background: url(../../assets/Icons/arrow-select.svg) no-repeat right
-          0.8em center / 1.4em;
+          0.8em center / 0.7rem;
         color: $items-links;
         .form-label-option {
           padding: 0 1.875rem 0 0.625rem;
@@ -151,10 +151,10 @@
         color: $items-links;
         font-size: 1rem;
         font-weight: $semi-bold;
-        padding: 0.6em 0.5em;
         border-bottom: $border-input;
         font-family: $font-poppins;
         resize: none;
+        height: 75px;
         &:focus,
         &:not(:placeholder-shown) {
           color: $grays;
@@ -166,12 +166,35 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .form{
+    padding: 0rem 1rem;
+    margin: 0rem;
+    transform: translate(6rem, 3.1rem);
+    .form-container{
+      margin-top: 0.5rem;
+      gap: 0rem;
+    }
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
   .form {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    padding: 0rem 1rem;
     .form-container {
+      margin-top: 0rem;
       .form-group-container {
         display: grid;
-        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+      .form-submit {
+        padding: 0rem;
+      }
+    }
+    .form-group-textarea {
+      textarea {
+        height: 100px;
       }
     }
   }

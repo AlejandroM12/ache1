@@ -3,11 +3,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 11rem;
-  padding: 3rem 6rem 3rem;
+  margin-top: 5rem;
+  padding: 3rem 8rem 0rem 3rem;
   gap: 0.938rem;
   width: 100%;
-  margin-left: -2rem;
   .card-title-right {
     @include cardTitleRight;
   }
@@ -18,7 +17,7 @@
     width: 100%;
     max-width: 600px;
     position: absolute;
-    transform: translate(-2rem);
+    transform: translate(-1rem, -1rem);
   }
   .content-lottie-socialMedia {
     position: absolute;
@@ -26,7 +25,8 @@
   }
   .content-lottie-marketing {
     position: absolute;
-    transform: translate(9rem, -6.5rem);
+    max-width: 350px;
+    transform: translate(11rem, -8rem);
   }
 }
 .dots-right {
@@ -34,7 +34,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 6rem;
   right: 2rem;
   .dots-icon-right {
     width: 100%;
@@ -46,4 +46,7 @@
 }
 .active-right {
   background: $white;
+}
+@media only screen and (min-width: 421px) and (max-width: 768px){
+
 }

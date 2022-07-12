@@ -6,6 +6,7 @@
   position: relative;
   padding-top: 0.5rem;
   background: transparent;
+  z-index: 998;
   .hamburguer-icon {
     border: 0;
     height: 40px;
@@ -70,6 +71,7 @@
     z-index: 800;
     top: 0;
     left: 0;
+    padding-top: 0rem;
     .hamburguer-icon {
       display: block;
       position: absolute;

@@ -32,3 +32,31 @@
     }
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact-content-right{
+    margin-top: 18rem;
+    margin-left: 4rem;
+    .contact-lottie-right {
+      max-width: 250px;
+      transform: translate(14rem, -5rem);
+    }
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .contact-content-right {
+    margin-left: 0rem;
+    padding: 2rem;
+    margin-top: 13rem;
+    .contact-lottie-right {
+      transform: translate(1rem, -9rem);
+      max-width: 200px;
+    }
+    .contact-title-right {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .contact-description-right {
+      font-size: 1rem;
+    }
+  }
+}

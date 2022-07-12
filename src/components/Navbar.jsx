@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import hamburguerIcon from "../assets/Icons/icon-menu.svg";
 import closeHamburguerIcon from "../assets/Icons/x.svg";
 import linkedinIcon from "../assets/Icons/linkedin.svg";
@@ -68,14 +68,14 @@ const Navbar = () => {
             </li>
             <div className="social-media-container">
               <li>
-                <Link to="/" className="social-media">
+                <a href="https://www.linkedin.com/in/ache-uno-design-16988a205/" className="social-media" target="_blank" rel="noreferrer">
                   <img src={linkedinIcon} alt="linkedin icon" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/" className="social-media">
+                <a href="https://www.instagram.com/ache1.design/" className="social-media" target="_blank" rel="noreferrer">
                   <img src={instagramIcon} alt="instagram icon" />
-                </Link>
+                </a>
               </li>
             </div>
           </ul>

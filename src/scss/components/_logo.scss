@@ -3,7 +3,7 @@
   position: absolute;
   padding: 1.5rem 3rem;
   margin-left: 0.938rem;
-  z-index: 900;
+  z-index: 999;
   cursor: pointer;
   img {
     width: 115.78px;
@@ -23,6 +23,6 @@
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .logo {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 }

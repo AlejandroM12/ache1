@@ -26,6 +26,7 @@
     line-height: 3.75rem;
     color: $items-links;
     cursor: pointer;
+
   }
   .card-services-list-mobile-active {
     display: flex;
@@ -36,6 +37,7 @@
     color: $blue;
     font-size: 1.5rem;
     position: relative;
+    margin-bottom: 1rem;
     .arrow-icon-mobile {
       width: 100%;
     max-width: 19px;
@@ -55,7 +57,7 @@
     animation-delay: 0s;
     box-shadow: 0px 0px 10px 5px rgba(158, 158, 158, 0.17);
     background: $white;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     .container-list-services-mobile-active {
       display: flex;
       flex-direction: column;

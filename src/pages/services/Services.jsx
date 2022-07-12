@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { useViewport } from "../../context/viewportContext";
 import ContainerSection from "../../layout/ContainerSection";
 import ContainerHeaderSection from "../../components/ContainerHeaderSection";
@@ -20,9 +20,7 @@ const Services = () => {
           <Navbar />
         </ContainerHeaderSection>
         <CardServices />
-        <Link to="/" className="icon-contact">
           <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-        </Link>
       </ContainerSection>
     </>
   ) : (
@@ -33,9 +31,7 @@ const Services = () => {
           <Navbar />
         </ContainerHeaderSection>
         <CardServicesMobile />
-        <Link to="/" className="icon-contact">
           <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-        </Link>
       </ContainerSection>
     </>
   );

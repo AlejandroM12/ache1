@@ -22,8 +22,8 @@ const CardServices = () => {
   return (
     <>
       <ContainerLeftSection>
-        <div className="card-service-container">
-          <h3 className="card-service-title">Creativity & organization</h3>
+        <div className="card-services-container">
+          <h3 className="card-services-title">Creativity & organization</h3>
           <li
             className={
               linkActive === 2 && isHovering === false
@@ -136,19 +136,19 @@ const CardServices = () => {
       </ContainerLeftSection>
       <ContainerRightSection>
         {linkActive === 1 && (
-          <div className="content-service">
+          <div className="content-services">
             <div
-              className="content-card-right"
+              className="content-services-card-right"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Apps mobile</h3>
-              <p className="card-description-right">
+              <h3 className="card-services-title-right">Apps mobile</h3>
+              <p className="card-services-description-right">
                 It makes your app unique. From usability analysis to testing to
                 launch your MVP.
               </p>
               <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
-              <div className="content-service-lottie-apps-mobile">
+              <div className="content-services-lottie-apps-mobile">
                 <UseLottieAnimation
                   animationData={appsMobileAnimation}
                   autoplay={true}
@@ -159,20 +159,20 @@ const CardServices = () => {
           </div>
         )}
         {linkActive === 2 && (
-          <div className="content-service">
+          <div className="content-services">
             <div
-              className="content-card-right"
+              className="content-services-card-right"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Ux/Ui</h3>
-              <p className="card-description-right">
+              <h3 className="card-services-title-right">Ux/Ui</h3>
+              <p className="card-services-description-right">
                 We carry out a survey of the market and the competition. We plan
                 and design the correct flow for your website to be successful.
               </p>
 
               <Button buttonLabel="How we work?" onClick={openModalUx} />
-              <div className="content-service-lottie-ux">
+              <div className="content-services-lottie-ux">
                 <UseLottieAnimation
                   animationData={animationUX}
                   autoplay={true}
@@ -184,20 +184,20 @@ const CardServices = () => {
         )}
 
         {linkActive === 3 && (
-          <div className="content-service">
+          <div className="content-services">
             <div
-              className="content-card-right"
+              className="content-services-card-right"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Web apps</h3>
-              <p className="card-description-right">
+              <h3 className="card-services-title-right">Web apps</h3>
+              <p className="card-services-description-right">
                 You need to organize your business, nothing better than having
                 your own online system that your entire team can access.
               </p>
 
               <Button buttonLabel="Biggest systems" />
-              <div className="content-service-lottie-web-apps">
+              <div className="content-services-lottie-web-apps">
                 <UseLottieAnimation
                   animationData={webAppsAnimation}
                   autoplay={true}
@@ -210,64 +210,66 @@ const CardServices = () => {
           </div>
         )}
         {linkActive === 4 && (
-          <div className="content-service">
+          <div className="content-services">
             <div
-              className="content-card-right"
+              className="content-services-card-right"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Branding</h3>
-              <p className="card-description-right">
-                Design your brand identity from scratch. Create a unique
-                language that identifies you in the market.
-              </p>
-              <Button buttonLabel="I want start" />
-              <div className="content-service-lottie-branding">
+              <div className="content-services-lottie-branding">
                 <UseLottieAnimation
                   animationData={animationBrandingBlack}
                   autoplay={true}
                   loop={true}
                 />
               </div>
+              <h3 className="card-services-title-right">Branding</h3>
+              <p className="card-services-description-right">
+                Design your brand identity from scratch. Create a unique
+                language that identifies you in the market.
+              </p>
+              <Button buttonLabel="I want start" />
+              
             </div>
           </div>
         )}
         {linkActive === 5 && (
-          <div className="content-service">
+          <div className="content-services">
             <div
-              className="content-card-right"
+              className="content-services-card-right social-media"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
             >
-              <h3 className="card-title-right">Social Media</h3>
-              <p className="card-description-right">
-                We perform a competitive analysis to create your brand strategy
-                on social networks. Guidelines for communication, promotion and
-                user monitoring.
-              </p>
-              <Button buttonLabel="Your brand UP!" />
-              <div className="content-service-lottie-social-media">
+              <div className="content-services-lottie-social-media">
                 <UseLottieAnimation
                   animationData={socialMediaAnimation}
                   autoplay={true}
                   loop={true}
                 />
               </div>
+              <h3 className="card-services-title-right">Social Media</h3>
+              <p className="card-services-description-right">
+                We perform a competitive analysis to create your brand strategy
+                on social networks. Guidelines for communication, promotion and
+                user monitoring.
+              </p>
+              <Button buttonLabel="Your brand UP!" />
+              
             </div>
           </div>
         )}
         {linkActive === 6 && (
-          <div className="content-service">
-            <div className="content-card-right" data-aos="fade-right">
-              <div className="content-service-lottie-marketing">
+          <div className="content-services">
+            <div className="content-services-card-right marketing-strategy" data-aos="fade-right">
+              <div className="content-services-lottie-marketing">
                 <UseLottieAnimation
                   animationData={marketingAnimation}
                   autoplay={true}
                   loop={true}
                 />
               </div>
-              <h3 className="card-title-right">Marketing strategy</h3>
-              <p className="card-description-right">
+              <h3 className="card-services-title-right">Marketing strategy</h3>
+              <p className="card-services-description-right">
                 Use our services and build a solid digital presence across
                 digital marketing, creative web design, quality content, SEO,
                 and media campaigns.

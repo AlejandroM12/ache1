@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useViewport } from "../../context/viewportContext";
 import Container from "../../layout/Container";
 import ContainerRight from "../../components/ContainerRight";
 import Header from "../../layout/Header";
@@ -16,7 +16,7 @@ import logoHome from "../../assets/Home/ache1-logo.svg";
 import logoMobile from "../../assets/Icons/logo-mobile.svg";
 import Navbar from "../../components/Navbar";
 import ContainerMobileHome from "../../layout/ContainerMobileHome";
-import { useViewport } from "../../context/viewportContext";
+
 
 const Home = ({ pivot, setPivot }) => {
   const [change, setChange] = useState(false);
@@ -57,6 +57,7 @@ const Home = ({ pivot, setPivot }) => {
           <img src={logoTitle} alt="ache1 title" />
         </div>
         {change === false ? (
+          <>
           <div className="content-left" data-aos="fade-up">
             <UseLottieAnimation
               animationData={animationData}
@@ -64,6 +65,8 @@ const Home = ({ pivot, setPivot }) => {
               loop={true}
             />
           </div>
+          
+          </>
         ) : (
           <CardHomeLeft />
         )}
@@ -110,8 +113,7 @@ const Home = ({ pivot, setPivot }) => {
               >
                 Let´s create
               </h2>
-            </div>
-            <div
+              <div
               style={{
                 transitionDuration: "500ms",
                 transform: `translateY(${scrolled ? 100 : 0}px)`,
@@ -123,6 +125,8 @@ const Home = ({ pivot, setPivot }) => {
                 <img src={arrow} alt="icon arrow" className="arrow" />
               </button>
             </div>
+            </div>
+            
           </>
         ) : (
           <>
@@ -130,9 +134,7 @@ const Home = ({ pivot, setPivot }) => {
           </>
         )}
       </ContainerRight>
-      <Link to="/" className="icon-contact">
         <Icon size={45} color="white" />
-      </Link>
     </Container>
   ) : (
     <Container>
@@ -143,9 +145,7 @@ const Home = ({ pivot, setPivot }) => {
       {change === false ? (
         <>
           <ContainerLeft>
-            <div className="logo-home">
-              <img src={logoTitle} alt="ache1 logo" />
-            </div>
+            
             <div className="content-left" data-aos="fade-up">
               <UseLottieAnimation
                 animationData={animationData}
@@ -213,9 +213,7 @@ const Home = ({ pivot, setPivot }) => {
           <ContainerMobileHome />
         </>
       )}
-      <Link to="/" className="icon-contact">
         <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-      </Link>
     </Container>
   );
 };

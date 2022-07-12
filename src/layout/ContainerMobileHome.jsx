@@ -12,11 +12,28 @@ import marketingFullAnimation from "../assets/lotties/marketing-full.json";
 import appMobileFullAnimation from "../assets/lotties/apps-mobile.json";
 import ModalApp from "../components/ModalsComponents/ModalApp";
 import ModalUx from "../components/ModalsComponents/ModalUx";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 const ContainerMobileHome = () => {
   const [btnState, setBtnState] = useState(1);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  const upHandler = () => {
+    if (btnState >= 1) {
+      setBtnState(btnState + 1);
+      if (btnState === 6) {
+        setBtnState(1);
+      }
+    }
+  };
+  const downHandler = () => {
+    if (btnState >= 1) {
+      setBtnState(btnState - 1);
+      if (btnState === 1) {
+        setBtnState(6);
+      }
+    }
+  };
   return (
     <>
       <div className="container-mobile">
@@ -82,7 +99,12 @@ const ContainerMobileHome = () => {
             />
           </div>
         </div>
+        
         <div className="container-mobile-up">
+        <ReactScrollWheelHandler
+        upHandler={() => downHandler()}
+        downHandler={() => upHandler()}
+      >
           {btnState === 1 && (
             <div className="content-card-mobile" data-aos="fade-up">
               <h1 className="card-title-mobile">Ux</h1>
@@ -153,6 +175,7 @@ const ContainerMobileHome = () => {
               </Link>
             </div>
           )}
+          </ReactScrollWheelHandler>
         </div>
         <div className="container-mobile-down">
           {btnState === 1 && (
@@ -210,6 +233,7 @@ const ContainerMobileHome = () => {
             </div>
           )}
         </div>
+        
       </div>
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />

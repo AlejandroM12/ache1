@@ -126,11 +126,23 @@ const FormMobile = () => {
             <option value="interestedIn" className="form-label-option">
               Bussines Branding
             </option>
-            <option value="prueba1" className="form-label-option">
-              Prueba 1
+            <option value="apps" className="form-label-option">
+              Apps Mobile
             </option>
-            <option value="prueba2" className="form-label-option">
-              Prueba 2
+            <option value="business" className="form-label-option">
+              Business Systems
+            </option>
+            <option value="social" className="form-label-option">
+              Social Media
+            </option>
+            <option value="website" className="form-label-option">
+              Web site development
+            </option>
+            <option value="marketing" className="form-label-option">
+              Marketing
+            </option>
+            <option value="uxui" className="form-label-option">
+              Ux/Ui Desing
             </option>
           </select>
         </div>
@@ -147,11 +159,17 @@ const FormMobile = () => {
             <option value="aboutUs" className="form-label-option">
               From Google
             </option>
-            <option value="prueba1" className="form-label-option">
-              Prueba 1
+            <option value="linkedin" className="form-label-option">
+              From Linkedin
             </option>
-            <option value="prueba2" className="form-label-option">
-              Prueba 2
+            <option value="instagram" className="form-label-option">
+              From Instagram
+            </option>
+            <option value="email" className="form-label-option">
+              From E-mail Champain
+            </option>
+            <option value="client" className="form-label-option">
+              From another client
             </option>
           </select>
         </div>

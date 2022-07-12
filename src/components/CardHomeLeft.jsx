@@ -34,45 +34,44 @@ const CardHomeLeft = () => {
   };
   return (
     <ContainerLeft>
-      
-        <div className="dots-left">
-          <div className="dots-icon-left">
-            <img
-              src={dots}
-              alt="button icon"
-              className={btnState === 1 ? "active-left" : ""}
-              onClick={() => {
-                setBtnState(1);
-              }}
-            />
-          </div>
-          <div className="dots-icon-left">
-            <img
-              src={dots}
-              alt="button icon"
-              className={btnState === 2 ? "active-left" : ""}
-              onClick={() => {
-                setBtnState(2);
-              }}
-            />
-          </div>
-          <div className="dots-icon-left">
-            <img
-              src={dots}
-              alt="button icon"
-              className={btnState === 3 ? "active-left" : ""}
-              onClick={() => {
-                setBtnState(3);
-              }}
-            />
-          </div>
+      <div className="dots-left">
+        <div className="dots-icon-left">
+          <img
+            src={dots}
+            alt="button icon"
+            className={btnState === 1 ? "active-left" : ""}
+            onClick={() => {
+              setBtnState(1);
+            }}
+          />
         </div>
-        <ReactScrollWheelHandler
+        <div className="dots-icon-left">
+          <img
+            src={dots}
+            alt="button icon"
+            className={btnState === 2 ? "active-left" : ""}
+            onClick={() => {
+              setBtnState(2);
+            }}
+          />
+        </div>
+        <div className="dots-icon-left">
+          <img
+            src={dots}
+            alt="button icon"
+            className={btnState === 3 ? "active-left" : ""}
+            onClick={() => {
+              setBtnState(3);
+            }}
+          />
+        </div>
+      </div>
+      <ReactScrollWheelHandler
         upHandler={() => downHandler()}
         downHandler={() => upHandler()}
       >
         {btnState === 1 && (
-          <div className="content-card-left" data-aos="fade-up">
+          <div className="content-card-left content-ux" data-aos="fade-up">
             <div className="content-lottie-ux">
               <UseLottieAnimation
                 animationData={animationUX}
@@ -129,16 +128,14 @@ const CardHomeLeft = () => {
               />
             </div>
           </div>
-          
         )}
-        </ReactScrollWheelHandler>
-        {isOpenModalApp && (
-          <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
-        )}
-        {isOpenModalUX && (
-          <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
-        )}
-      
+      </ReactScrollWheelHandler>
+      {isOpenModalApp && (
+        <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
+      )}
+      {isOpenModalUX && (
+        <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
     </ContainerLeft>
   );
 };

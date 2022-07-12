@@ -6,11 +6,21 @@
   bottom: 5rem;
   z-index: 999;
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .icon-contact{
+    right: 4rem;
+    bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .icon-contact {
+    right: 2rem;
+    bottom: 2rem;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .icon-contact {
-    position: fixed;
     right: 2rem;
-    bottom: 5rem;
-    z-index: 999;
+    bottom: 2rem;
   }
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useViewport } from "../../context/viewportContext";
 import Lottie from "lottie-react";
 import ContainerSection from "../../layout/ContainerSection";
@@ -24,9 +23,7 @@ const Contact = () => {
         <LogoHome logo={logoWhite} />
         <Navbar />
       </ContainerHeaderSection>
-      <Link to="/" className="icon-contact">
         <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-      </Link>
       <ContainerLeftSection>
         <Form />
       </ContainerLeftSection>
@@ -53,20 +50,18 @@ const Contact = () => {
         <LogoHome logo={logoWhite} />
         <Navbar />
       </ContainerHeaderSection>
-      <Link to="/" className="icon-contact">
         <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-      </Link>
       <FormMobile />
       <div className="social-media-container-mobile-contact">
         <li>
-          <Link to="/" className="social-media-mobile-contact">
+          <a href="https://www.linkedin.com/in/ache-uno-design-16988a205/" className="social-media-mobile-contact" target="_blank" rel="noreferrer">
             <img src={linkedinIcon} alt="linkedin icon" />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/" className="social-media-mobile-contact">
+          <a href="https://www.instagram.com/ache1.design/" className="social-media-mobile-contact" target="_blank" rel="noreferrer"> 
             <img src={instagramIcon} alt="instagram icon" />
-          </Link>
+          </a>
         </li>
       </div>
     </ContainerSection>

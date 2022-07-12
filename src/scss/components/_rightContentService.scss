@@ -1,24 +1,25 @@
-.content-service {
+.content-services {
   @include flexCenter;
-  margin-top: 3rem;
-  .content-card-right {
-    width: 100%;
-    height: 100%;
-    .card-title-right {
+  margin-top: 7rem;
+  .content-services-card-right {
+    padding: 0rem 7.5rem;
+    .card-services-title-right {
       font-family: $font-alfa;
       font-style: normal;
       font-weight: $semi-bold;
       font-size: 4rem;
       line-height: 4.313rem;
       color: $black;
+      margin-bottom: 1.5rem;
     }
-    .card-description-right {
+    .card-services-description-right {
       font-family: $font-poppins;
       font-style: normal;
       font-weight: $semi-bold;
       font-size: 1.5rem;
       line-height: 2.25rem;
       color: $grays;
+      margin-bottom: 1.5rem;
     }
     .card-img-right {
       width: 100%;
@@ -28,41 +29,88 @@
       right: 0;
       transform: translateY(-2.5rem);
     }
-    .content-service-lottie-ux {
+    .content-services-lottie-ux {
       width: 100%;
       max-width: 250px;
       position: absolute;
-      transform: translate(12rem, -10rem);
+      transform: translate(12rem, -9rem);
     }
-    .content-service-lottie-web-apps {
+    .content-services-lottie-web-apps {
       width: 100%;
       max-width: 250px;
       position: absolute;
-      transform: translate(16rem, 10rem);
+      transform: translate(14rem, -6rem);
     }
-    .content-service-lottie-branding {
+    .content-services-lottie-branding {
       width: 100%;
       max-width: 500px;
       position: absolute;
-      transform: translate(7rem, -2rem);
+      transform: translate(3rem,-2rem);
     }
-    .content-service-lottie-social-media {
+    .content-services-lottie-social-media {
       width: 100%;
       max-width: 500px;
       position: absolute;
-      transform: translate(25rem, -5.5rem);
+      transform: translate(22rem, -12rem);
     }
-    .content-service-lottie-marketing {
+    .content-services-lottie-marketing {
       position: absolute;
       width: 100%;
       max-width: 500px;
-      transform: translate(7rem, -7rem);
+      transform: translate(7rem, -10rem);
     }
-    .content-service-lottie-apps-mobile {
+    .content-services-lottie-apps-mobile {
       position: absolute;
-      transform: rotateY(198deg);
-      right: 0rem;
+      transform: rotateY(198deg) translate(-7rem, -5rem);
       margin-top: -15rem;
+      right: 0rem;
+    }
+    &.social-media{
+      margin-top: 4rem;
+    }
+    &.marketing-strategy{
+      margin-top: 3rem;
+    }
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .content-services {
+    padding: 6rem 0rem 0rem 5rem;
+    margin-top: 11rem;
+    
+    .content-services-card-right {
+      .card-services-title-right {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      .card-services-description-right {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      .content-services-lottie-ux {
+        transform: translate(-3rem, -6rem);
+      }
+      .content-services-lottie-web-apps {
+        transform: translate(0rem, -2rem);
+      }
+      .content-services-lottie-apps-mobile {
+        transform: rotateY(198deg) translate(-7rem, -4rem);
+      }
+      .content-services-lottie-branding{
+        max-width: 300px;
+        transform: translate(2rem, -13rem);
+      }
+      .content-services-lottie-social-media{
+        transform: translate(10rem, -25rem);
+        max-width: 300px;
+      }
+      .content-services-lottie-marketing{
+        max-width: 300px;
+        transform: translate(2rem,-6rem);
+      }
+      
     }
   }
 }

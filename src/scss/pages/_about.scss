@@ -41,7 +41,6 @@
   display: flex;
   flex-direction: column;
   flex: none;
-  height: 650px;
   padding: 0rem 1rem 0rem 1rem;
   margin-top: -5rem;
   .lottie-content {
@@ -56,7 +55,7 @@
   .slide-count {
     color: $blue;
     font-family: $font-alfa;
-    font-style: $semi-bold;
+    font-weight: $semi-bold;
     font-style: normal;
     font-size: 4rem;
     line-height: 4.313rem;
@@ -85,6 +84,76 @@
       font-weight: $bold;
     }
   }
+  &.first{
+    height: 650px;
+  }
+  &.secod{
+    height: 650px;
+  }
+  &.third{
+height: 510px;
+  }
+  &.fourth{
+    height: 580px;
+  }
+  &.fifth{
+    height: 600px;
+  }
+  &.sixth{
+    height: 650px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .content-left-about{
+    padding: 0rem;
+    margin-top: 0rem;
+    .description-left-about{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .title-left-about{
+      margin-bottom: 1rem;
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+     .about {
+      margin-bottom: 1rem;
+  }
+  }
+  .slide-content{
+    .slide-description{
+      padding: 0rem;
+      margin: 0rem;
+    }
+    .slide-title{
+      font-size: 3rem;
+      line-height: 2rem;
+    }
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+  .content-left-about {
+    padding: 0rem 3rem 0rem 3rem;
+    margin: 5rem auto;
+    .title-left-about {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  .slide-content{
+    .slide-count {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+    .slide-title{
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+    .slide-description{
+      padding: 0rem;
+      margin: 0 auto;
+    }
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .background-header-about {
@@ -95,7 +164,8 @@
     flex-direction: column;
     margin-top: 2.5rem;
     margin-top: -20rem;
-    padding: 0rem 3rem 0rem 0rem;
+    padding: 0rem 2rem 0rem 0rem;
+   margin-left: 3rem;
     .title-left-about {
       font-size: 3rem;
       line-height: 3.125rem;
