@@ -7,22 +7,26 @@ import UseLottieAnimation from "../components/useLottieAnimation";
 import animationBranding from "../assets/lotties/branding.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
+import animationUX from "../assets/lotties/ux.json";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import ModalBranding from "./ModalsComponents/ModalBranding";
 import ModalSocialMedia from "./ModalsComponents/ModalSocialMedia";
 import ModalMarketing from "./ModalsComponents/ModalMarketing";
+import ModalUx from "./ModalsComponents/ModalUx";
 
 const CardHomeRight = () => {
 
   const [btnDot, setBtnDot] = useState(1);
+  const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
   const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
   const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
   const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] = useModal(false);
   
+  
   const upHandler = () =>{
     if(btnDot >= 1){
       setBtnDot(btnDot + 1)
-      if(btnDot === 3){
+      if(btnDot === 4){
         setBtnDot(1)
       }
     }
@@ -31,7 +35,7 @@ const CardHomeRight = () => {
     if(btnDot >= 1 ){
       setBtnDot(btnDot - 1)
       if(btnDot === 1){
-        setBtnDot(3)
+        setBtnDot(4)
       }
     }
   }
@@ -69,12 +73,39 @@ const CardHomeRight = () => {
             }}
           />
         </div>
+        <div className="dots-icon-right">
+          <img
+            src={dotsWhite}
+            alt="button icon"
+            className={btnDot === 4 ? "active-right" : ""}
+            onClick={() => {
+              setBtnDot(4);
+            }}
+          />
+        </div>
       </div>
       <ReactScrollWheelHandler
       upHandler={()=>downHandler()}
       downHandler={()=> upHandler()}
       >
-      {btnDot === 1 && (
+        {btnDot === 1 && (
+          <div className="content-card-right" data-aos="fade-up">
+            <div className="content-lottie-ux">
+              <UseLottieAnimation
+                animationData={animationUX}
+                autoplay={true}
+                loop={true}
+              />
+            </div>
+            <h1 className="card-title-right">Ux</h1>
+            <p className="card-description-right ux-description">
+              We carry out a survey of the market and the competition. We plan
+              and design the correct flow for your website to be successful.
+            </p>
+            <Button buttonLabel="How we work?" onClick={openModalUx} />
+          </div>
+        )}
+      {btnDot === 2 && (
         <div className="content-card-right" data-aos="fade-up">
           <div className="content-lottie-branding">
             <UseLottieAnimation
@@ -91,7 +122,7 @@ const CardHomeRight = () => {
             <Button buttonLabel="I want start" onClick={openModalBranding}/>
         </div>
       )}
-      {btnDot === 2 && (
+      {btnDot === 3 && (
         <div className="content-card-right" data-aos="fade-up">
           <div className="content-lottie-socialMedia">
             <UseLottieAnimation
@@ -111,7 +142,7 @@ const CardHomeRight = () => {
             <Button buttonLabel="Your brand UP!" onClick={openModalSocialMedia}/>
         </div>
       )}
-      {btnDot === 3 && (
+      {btnDot === 4 && (
         <div className="content-card-right" data-aos="fade-up">
           <div className="content-lottie-marketing">
             <UseLottieAnimation
@@ -132,6 +163,9 @@ const CardHomeRight = () => {
         </div>
       )}
       </ReactScrollWheelHandler>
+      {isOpenModalUX && (
+        <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
       {isOpenModalBranding && (
         <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
       )}

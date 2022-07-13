@@ -5,18 +5,17 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Button from "./Button";
 import dots from "../assets/Icons/dots.svg";
 import ModalApp from "./ModalsComponents/ModalApp";
-import ModalUx from "./ModalsComponents/ModalUx";
 import ModalWebApps from "./ModalsComponents/ModalWebApps";
 import UseLottieAnimation from "../components/useLottieAnimation";
-import animationUX from "../assets/lotties/ux.json";
 import webAppsAnimation from "../assets/lotties/web-apps.json";
 import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
+import bestWebsitesAnimation from "../assets/lotties/best-websites.json";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
-  const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
-  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] = useModal(false);
+  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] =
+    useModal(false);
 
   const upHandler = () => {
     if (btnState >= 1) {
@@ -67,29 +66,22 @@ const CardHomeLeft = () => {
             }}
           />
         </div>
+        <div className="dots-icon-left">
+          <img
+            src={dots}
+            alt="button icon"
+            className={btnState === 4 ? "active-left" : ""}
+            onClick={() => {
+              setBtnState(4);
+            }}
+          />
+        </div>
       </div>
       <ReactScrollWheelHandler
         upHandler={() => downHandler()}
         downHandler={() => upHandler()}
       >
         {btnState === 1 && (
-          <div className="content-card-left content-ux" data-aos="fade-up">
-            <div className="content-lottie-ux">
-              <UseLottieAnimation
-                animationData={animationUX}
-                autoplay={true}
-                loop={true}
-              />
-            </div>
-            <h1 className="card-title-left">Ux</h1>
-            <p className="card-description-left">
-              We carry out a survey of the market and the competition. We plan
-              and design the correct flow for your website to be successful.
-            </p>
-            <Button buttonLabel="How we work?" onClick={openModalUx} />
-          </div>
-        )}
-        {btnState === 2 && (
           <div
             className="content-card-left content-web-apps"
             data-aos="fade-up"
@@ -109,7 +101,8 @@ const CardHomeLeft = () => {
             <Button buttonLabel="Biggest systems" onClick={openModalWebApp} />
           </div>
         )}
-        {btnState === 3 && (
+
+        {btnState === 2 && (
           <div
             className="content-card-left content-apps-mobile"
             data-aos="fade-up"
@@ -129,12 +122,30 @@ const CardHomeLeft = () => {
             </div>
           </div>
         )}
+        {btnState === 3 && (
+          <div
+            className="content-card-left content-best-websites-mobile"
+            data-aos="fade-up"
+          >
+            <div className="content-lottie-web-sites-mobile">
+              <UseLottieAnimation
+                animationData={bestWebsitesAnimation}
+                autoplay={true}
+                loop={true}
+              />
+            </div>
+            <h1 className="card-title-left">Best Websites</h1>
+            <p className="card-description-left ">
+              Is your website still not responsive? Today 80% of accesses to
+              your website are through mobile devices. For your website to be
+              accessible to any user, it must be adaptable to all devices.
+            </p>
+            <Button buttonLabel="I want start" />
+          </div>
+        )}
       </ReactScrollWheelHandler>
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
-      )}
-      {isOpenModalUX && (
-        <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
       )}
       {isOpenModalWebApp && (
         <ModalWebApps

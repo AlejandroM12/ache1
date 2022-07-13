@@ -12,6 +12,15 @@
   }
   .card-description-right {
     @include cardDescriptionRight;
+    &.ux-description{
+      padding-right: 3rem;
+    }
+  }
+  .content-lottie-ux {
+    width: 100%;
+    max-width: 240px;
+    position: absolute;
+    transform: translate(15rem, -12rem);
   }
   .content-lottie-branding {
     width: 100%;
