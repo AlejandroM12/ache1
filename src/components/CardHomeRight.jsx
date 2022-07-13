@@ -10,11 +10,13 @@ import marketingAnimation from "../assets/lotties/marketing.json";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import { useModal } from "../hooks/useModal";
 import ModalBranding from "./ModalsComponents/ModalBranding";
+import ModalSocialMedia from "./ModalsComponents/ModalSocialMedia";
 
 const CardHomeRight = () => {
 
   const [btnDot, setBtnDot] = useState(1);
   const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
+  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
   const upHandler = () =>{
     if(btnDot >= 1){
       setBtnDot(btnDot + 1)
@@ -104,9 +106,7 @@ const CardHomeRight = () => {
             social networks. Guidelines for communication, promotion and user
             monitoring.
           </p>
-          <Link to="/">
-            <Button buttonLabel="Your brand UP!" />
-          </Link>
+            <Button buttonLabel="Your brand UP!" onClick={openModalSocialMedia}/>
         </div>
       )}
       {btnDot === 3 && (
@@ -134,6 +134,9 @@ const CardHomeRight = () => {
       </ReactScrollWheelHandler>
       {isOpenModalBranding && (
         <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
+      )}
+      {isOpenModalSocialMedia && (
+        <ModalSocialMedia isOpen={isOpenModalSocialMedia} closeModal={closeModalSocialMedia} />
       )}
     </ContainerRight>
   );
