@@ -1,22 +1,24 @@
+import { useState } from "react";
+import { useModal } from "../hooks/useModal";
 import ContainerRight from "./ContainerRight";
 import dotsWhite from "../assets/Icons/dots-white.svg";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "./Button";
 import UseLottieAnimation from "../components/useLottieAnimation";
 import animationBranding from "../assets/lotties/branding.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import { useModal } from "../hooks/useModal";
 import ModalBranding from "./ModalsComponents/ModalBranding";
 import ModalSocialMedia from "./ModalsComponents/ModalSocialMedia";
+import ModalMarketing from "./ModalsComponents/ModalMarketing";
 
 const CardHomeRight = () => {
 
   const [btnDot, setBtnDot] = useState(1);
   const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
   const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
+  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] = useModal(false);
+  
   const upHandler = () =>{
     if(btnDot >= 1){
       setBtnDot(btnDot + 1)
@@ -126,9 +128,7 @@ const CardHomeRight = () => {
             marketing, creative web design, quality content, SEO, and media
             campaigns.
           </p>
-          <Link to="/">
-            <Button buttonLabel="Grow up now" />
-          </Link>
+            <Button buttonLabel="Grow up now" onClick={openModalMarketing}/>
         </div>
       )}
       </ReactScrollWheelHandler>
@@ -137,6 +137,9 @@ const CardHomeRight = () => {
       )}
       {isOpenModalSocialMedia && (
         <ModalSocialMedia isOpen={isOpenModalSocialMedia} closeModal={closeModalSocialMedia} />
+      )}
+      {isOpenModalMarketing && (
+        <ModalMarketing isOpen={isOpenModalMarketing} closeModal={closeModalMarketing} />
       )}
     </ContainerRight>
   );
