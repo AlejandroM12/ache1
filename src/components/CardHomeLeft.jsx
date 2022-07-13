@@ -1,21 +1,24 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useModal } from "../hooks/useModal";
 import ContainerLeft from "./ContainerLeft";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Button from "./Button";
 import dots from "../assets/Icons/dots.svg";
 import ModalApp from "./ModalsComponents/ModalApp";
 import ModalUx from "./ModalsComponents/ModalUx";
+import ModalWebApps from "./ModalsComponents/ModalWebApps";
 import UseLottieAnimation from "../components/useLottieAnimation";
 import animationUX from "../assets/lotties/ux.json";
 import webAppsAnimation from "../assets/lotties/web-apps.json";
 import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
-import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] =
+    useModal(false);
+
   const upHandler = () => {
     if (btnState >= 1) {
       setBtnState(btnState + 1);
@@ -104,9 +107,7 @@ const CardHomeLeft = () => {
               You need to organize your business, nothing better than having
               your own online system that your entire team can access.
             </p>
-            <Link to="/">
-              <Button buttonLabel="Biggest systems" />
-            </Link>
+            <Button buttonLabel="Biggest systems" onClick={openModalWebApp} />
           </div>
         )}
         {btnState === 3 && (
@@ -135,6 +136,12 @@ const CardHomeLeft = () => {
       )}
       {isOpenModalUX && (
         <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
+      {isOpenModalWebApp && (
+        <ModalWebApps
+          isOpen={isOpenModalWebApp}
+          closeModal={closeModalWebApp}
+        />
       )}
     </ContainerLeft>
   );

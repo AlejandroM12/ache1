@@ -1,4 +1,10 @@
 .container-description-modal-app-mobile{
+  .lottie-modal-app-mobile {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
   .modal-app-title-left {
     font-family: $font-alfa;
     font-style: normal;
@@ -95,12 +101,7 @@
     max-width: 150px;
   }
 }
-.lottie-modal-app-mobile {
-  width: 100%;
-  max-width: 200px;
-  margin-top: 3rem;
-  margin-left: 3rem;
-}
+
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .modal-title-app-right {
     display: none;
