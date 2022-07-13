@@ -8,9 +8,13 @@ import animationBranding from "../assets/lotties/branding.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import { useModal } from "../hooks/useModal";
+import ModalBranding from "./ModalsComponents/ModalBranding";
 
 const CardHomeRight = () => {
+
   const [btnDot, setBtnDot] = useState(1);
+  const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
   const upHandler = () =>{
     if(btnDot >= 1){
       setBtnDot(btnDot + 1)
@@ -80,9 +84,7 @@ const CardHomeRight = () => {
             Design your brand identity from scratch. Create a unique language
             that identifies you in the market.
           </p>
-          <Link to="/">
-            <Button buttonLabel="I want start" />
-          </Link>
+            <Button buttonLabel="I want start" onClick={openModalBranding}/>
         </div>
       )}
       {btnDot === 2 && (
@@ -130,6 +132,9 @@ const CardHomeRight = () => {
         </div>
       )}
       </ReactScrollWheelHandler>
+      {isOpenModalBranding && (
+        <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
+      )}
     </ContainerRight>
   );
 };

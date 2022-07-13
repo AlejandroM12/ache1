@@ -16,8 +16,7 @@ const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
-  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] =
-    useModal(false);
+  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] = useModal(false);
 
   const upHandler = () => {
     if (btnState >= 1) {
