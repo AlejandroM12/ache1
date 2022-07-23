@@ -12,6 +12,8 @@ import animationBrandingBlack from "../assets/lotties/branding-black.json";
 import socialMediaAnimation from "../assets/lotties/social-media.json";
 import marketingAnimation from "../assets/lotties/marketing.json";
 import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
+import bestWebsitesAnimation from "../assets/lotties/best-websites.json";
+import MailTo from "./MailTo";
 
 const CardServices = () => {
   const [linkActive, setLinkActive] = useState(1);
@@ -95,7 +97,7 @@ const CardServices = () => {
               setIsHovering(false);
             }}
           >
-            Branding
+            Best Websites
           </li>
           <li
             className={
@@ -113,7 +115,7 @@ const CardServices = () => {
               setIsHovering(false);
             }}
           >
-            Social Media
+            Branding
           </li>
           <li
             className={
@@ -123,6 +125,24 @@ const CardServices = () => {
             }
             onClick={() => {
               setLinkActive(6);
+            }}
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
+          >
+            Social Media
+          </li>
+          <li
+            className={
+              linkActive === 7 && isHovering === false
+                ? "card-services-list linkActive"
+                : "card-services-list"
+            }
+            onClick={() => {
+              setLinkActive(7);
             }}
             onMouseEnter={() => {
               setIsHovering(true);
@@ -213,6 +233,30 @@ const CardServices = () => {
         {linkActive === 4 && (
           <div className="content-services">
             <div
+              className="content-services-card-right best-websites"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+            >
+              <div className="content-services-lottie-best-websites">
+              <UseLottieAnimation
+                animationData={bestWebsitesAnimation}
+                autoplay={true}
+                loop={true}
+              />
+              </div>
+              <h3 className="card-services-title-right">Best Websites</h3>
+              <p className="card-services-description-right">
+              Is your website still not responsive? Today 80% of accesses to your website are through mobile devices. To make your website accessible to any user, it must be adaptable to all devices.
+              </p>
+              <MailTo email="hi@ache1.com" subject="New Website">
+                  <Button buttonLabel="I want to start" />
+                </MailTo>
+            </div>
+          </div>
+        )}
+        {linkActive === 5 && (
+          <div className="content-services">
+            <div
               className="content-services-card-right"
               data-aos="fade-right"
               data-aos-easing="ease-in-out"
@@ -234,7 +278,7 @@ const CardServices = () => {
             </div>
           </div>
         )}
-        {linkActive === 5 && (
+        {linkActive === 6 && (
           <div className="content-services">
             <div
               className="content-services-card-right social-media"
@@ -259,7 +303,7 @@ const CardServices = () => {
             </div>
           </div>
         )}
-        {linkActive === 6 && (
+        {linkActive === 7 && (
           <div className="content-services">
             <div className="content-services-card-right marketing-strategy" data-aos="fade-right">
               <div className="content-services-lottie-marketing">

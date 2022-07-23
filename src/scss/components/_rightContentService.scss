@@ -1,6 +1,7 @@
 .content-services {
   @include flexCenter;
   margin-top: 7rem;
+ 
   .content-services-card-right {
     padding: 0rem 7.5rem;
     .card-services-title-right {
@@ -41,6 +42,12 @@
       position: absolute;
       transform: translate(14rem, -6rem);
     }
+    .content-services-lottie-best-websites {
+      width: 100%;
+      max-width: 200px;
+      position: absolute;
+      transform: translate(15rem, 12rem);
+    }
     .content-services-lottie-branding {
       width: 100%;
       max-width: 500px;
@@ -71,6 +78,9 @@
     &.marketing-strategy{
       margin-top: 3rem;
     }
+  }
+  .best-websites{
+    padding: 0rem 3rem;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
@@ -113,4 +123,5 @@
       
     }
   }
+  
 }
