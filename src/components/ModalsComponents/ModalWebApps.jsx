@@ -9,12 +9,13 @@ import reactLogo from "../../assets/Modal/react.svg";
 import netLogo from "../../assets/Modal/net.svg";
 import angularLogo from "../../assets/Modal/angular.svg";
 import springLogo from "../../assets/Modal/spring.svg";
+import MailTo from "../MailTo";
 
 const ModalWebApps = ({ isOpen, closeModal }) => {
   return (
     <>
       <ContainerModal>
-      <div className={`modal${isOpen && "is-open"}`}></div>
+        <div className={`modal${isOpen && "is-open"}`}></div>
         <ContainerLeftModal>
           <div className="container-description-modal-web-apps">
             <div className="lottie-modal-web-apps">
@@ -37,7 +38,9 @@ const ModalWebApps = ({ isOpen, closeModal }) => {
                 and increase their performance.
               </span>
             </p>
-            <Button buttonLabel="Shall we start?" />
+            <MailTo email="hi@ache1.com" subject="Web App Project">
+              <Button buttonLabel="Shall we start?" />
+            </MailTo>
           </div>
         </ContainerLeftModal>
         <ContainerRightModal>

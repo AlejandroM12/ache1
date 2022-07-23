@@ -10,9 +10,7 @@ import CardJobs from "../../components/CardJobs";
 import ContainerRightSection from "../../components/ContainerRightSection";
 import RightContentJobs from "../../components/RightContentJobs";
 const Jobs = () => {
-  const { width } = useViewport();
-  const breakpoint = 421;
-  return width > breakpoint ? (
+  return  (
     <>
       <ContainerSection>
         <ContainerHeaderSection>
@@ -29,8 +27,6 @@ const Jobs = () => {
         </ContainerRightSection>
       </ContainerSection>
     </>
-  ) : (
-    <></>
-  );
+  )
 };
 export default Jobs;

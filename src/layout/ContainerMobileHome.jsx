@@ -21,7 +21,7 @@ const ContainerMobileHome = () => {
   const upHandler = () => {
     if (btnState >= 1) {
       setBtnState(btnState + 1);
-      if (btnState === 6) {
+      if (btnState === 7) {
         setBtnState(1);
       }
     }
@@ -30,7 +30,7 @@ const ContainerMobileHome = () => {
     if (btnState >= 1) {
       setBtnState(btnState - 1);
       if (btnState === 1) {
-        setBtnState(6);
+        setBtnState(7);
       }
     }
   };
@@ -141,7 +141,7 @@ const ContainerMobileHome = () => {
                 <p className="card-description-mobile">
                 Is your website still not responsive? Today 80% of accesses to your website are through mobile devices. For your website to be accessible to any user, it must be adaptable to all devices.
                 </p>
-                <Button buttonLabel="I want start" />
+                <Button buttonLabel="I want to start" />
               </div>
             )}
             {btnState === 4 && (
@@ -152,7 +152,7 @@ const ContainerMobileHome = () => {
                   plan and design the correct flow for your website to be
                   successful.
                 </p>
-                <Button buttonLabel="How we work?" onClick={openModalUx} />
+                <Button buttonLabel="How do we work?" onClick={openModalUx} />
               </div>
             )}
             {btnState === 5 && (
@@ -162,7 +162,7 @@ const ContainerMobileHome = () => {
                   Design your brand identity from scratch. Create a unique
                   language that identifies you in the market.
                 </p>
-                  <Button buttonLabel="I want start" />
+                  <Button buttonLabel="I want to start" />
               </div>
             )}
             {btnState === 6 && (
@@ -173,7 +173,7 @@ const ContainerMobileHome = () => {
                   strategy on social networks. Guidelines for communication,
                   promotion and user monitoring.
                 </p>
-                  <Button buttonLabel="Your brand UP!" />
+                  <Button buttonLabel="Put your brand up!" />
               </div>
             )}
             {btnState === 7 && (

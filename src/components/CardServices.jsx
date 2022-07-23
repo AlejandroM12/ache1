@@ -24,32 +24,15 @@ const CardServices = () => {
       <ContainerLeftSection>
         <div className="card-services-container">
           <h3 className="card-services-title">Creativity & organization</h3>
+          
           <li
             className={
               linkActive === 2 && isHovering === false
                 ? "card-services-list linkActive"
                 : "card-services-list"
             }
-            onMouseEnter={() => {
-              setIsHovering(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovering(false);
-            }}
             onClick={() => {
               setLinkActive(2);
-            }}
-          >
-            Ux/Ui
-          </li>
-          <li
-            className={
-              linkActive === 3 && isHovering === false
-                ? "card-services-list linkActive"
-                : "card-services-list"
-            }
-            onClick={() => {
-              setLinkActive(3);
             }}
             onMouseEnter={() => {
               setIsHovering(true);
@@ -59,6 +42,24 @@ const CardServices = () => {
             }}
           >
             Web Apps
+          </li>
+          <li
+            className={
+              linkActive === 3 && isHovering === false
+                ? "card-services-list linkActive"
+                : "card-services-list"
+            }
+            onMouseEnter={() => {
+              setIsHovering(true);
+            }}
+            onMouseLeave={() => {
+              setIsHovering(false);
+            }}
+            onClick={() => {
+              setLinkActive(3);
+            }}
+          >
+            Ux/Ui
           </li>
           <li
             className={
@@ -158,7 +159,7 @@ const CardServices = () => {
             </div>
           </div>
         )}
-        {linkActive === 2 && (
+        {linkActive === 3 && (
           <div className="content-services">
             <div
               className="content-services-card-right"
@@ -171,7 +172,7 @@ const CardServices = () => {
                 and design the correct flow for your website to be successful.
               </p>
 
-              <Button buttonLabel="How we work?" onClick={openModalUx} />
+              <Button buttonLabel="How do we work?" onClick={openModalUx} />
               <div className="content-services-lottie-ux">
                 <UseLottieAnimation
                   animationData={animationUX}
@@ -183,7 +184,7 @@ const CardServices = () => {
           </div>
         )}
 
-        {linkActive === 3 && (
+        {linkActive === 2 && (
           <div className="content-services">
             <div
               className="content-services-card-right"
@@ -228,7 +229,7 @@ const CardServices = () => {
                 Design your brand identity from scratch. Create a unique
                 language that identifies you in the market.
               </p>
-              <Button buttonLabel="I want start" />
+              <Button buttonLabel="I want to start" />
               
             </div>
           </div>
@@ -253,7 +254,7 @@ const CardServices = () => {
                 on social networks. Guidelines for communication, promotion and
                 user monitoring.
               </p>
-              <Button buttonLabel="Your brand UP!" />
+              <Button buttonLabel="Put your brand up!" />
               
             </div>
           </div>

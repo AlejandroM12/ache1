@@ -95,7 +95,7 @@ const RightContentJobs = () => {
         <ol>
           <li>
             1.
-            <p>
+            <p >
               {" "}
               No hace falta estar logueado para entrar a la aplicación, pero
               deberá loguearse para poder agregar un nuevo baño en el mapa.
@@ -106,13 +106,14 @@ const RightContentJobs = () => {
             <p>
               {" "}
               Es necesario generar una API KEY de google maps para poder
-              utilizar los mapas. Use la siguiente
-              AlzaSyBIUb7j9kBP7Erg_s2dfYcoUx59OEhF6oA
+              utilizar los mapas.
+              Use la siguiente{" "}
+              <span className="content-jobs-challenge-criteria-items">AlzaSyBIUb7j9kBP7Erg_s2dfYcoUx59OEhF6oA</span>
             </p>
           </li>
-          <li>
+          <li >
             3.
-            <p> Los baños tendrán</p>
+            <p > Los baños tendrán</p>
           </li>
           <li>
             <p className="item-criteria">-Latitud y Longitud</p>

@@ -5,6 +5,7 @@ import animationMarketing from "../../assets/lotties/marketing-full.json";
 import ContainerRightModal from "../ContainerRightModal";
 import arrowWhiteIcon from "../../assets/Icons/arrow-modal-marketing-icon.svg";
 import Button from "../Button";
+import MailTo from "../MailTo";
 
 const ModalMarketing = ({ isOpen, closeModal }) => {
   return (
@@ -30,18 +31,26 @@ const ModalMarketing = ({ isOpen, closeModal }) => {
               We have the best team of analysts and designers who will create a
               tailored strategy for your company.
             </p>
-            <Button buttonLabel="Grow up now" />
+            <MailTo email="hi@ache1.com" subject="Marketing Grow Up">
+              <Button buttonLabel="Grow up now" />
+            </MailTo>
           </div>
         </ContainerLeftModal>
         <ContainerRightModal>
           <div className="container-marketing-modal-right">
             <div className="content-marketing-modal-right">
-              <p className="content-marketing-modal-right-title">What do we do?</p>
+              <p className="content-marketing-modal-right-title">
+                What do we do?
+              </p>
               <ul className="container-list-marketing">
-                <li className="list-marketing"><img src={arrowWhiteIcon} alt="arrow icon" />Survey: Interaction, brand awareness, traffic.</li>
                 <li className="list-marketing">
                   <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Set up platforms from scratch: Facebook Business, Google Analytics.
+                  Survey: Interaction, brand awareness, traffic.
+                </li>
+                <li className="list-marketing">
+                  <img src={arrowWhiteIcon} alt="arrow icon" />
+                  Set up platforms from scratch: Facebook Business, Google
+                  Analytics.
                 </li>
                 <li className="list-marketing">
                   <img src={arrowWhiteIcon} alt="arrow icon" />
@@ -58,7 +67,9 @@ const ModalMarketing = ({ isOpen, closeModal }) => {
               </ul>
             </div>
             <div className="content-marketing-modal-right">
-              <p className="content-marketing-modal-right-title">What are our goals?</p>
+              <p className="content-marketing-modal-right-title">
+                What are our goals?
+              </p>
               <ul className="container-list-marketing">
                 <li className="list-marketing">
                   <img src={arrowWhiteIcon} alt="arrow icon" />

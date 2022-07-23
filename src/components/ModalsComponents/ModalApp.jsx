@@ -11,6 +11,7 @@ import androidLogo from "../../assets/Modal/android.svg";
 import awsLogo from "../../assets/Modal/aws.svg";
 import firebaseLogo from "../../assets/Modal/firebase.svg";
 import Button from "../Button";
+import MailTo from "../MailTo";
 
 const ModalApp = ({ isOpen, closeModal }) => {
   return (
@@ -38,7 +39,9 @@ const ModalApp = ({ isOpen, closeModal }) => {
               create your custom app from design, strategy to its correct
               development.
             </p>
-            <Button buttonLabel="I want start" />
+            <MailTo email="hi@ache1.com" subject="New App Project">
+            <Button buttonLabel="I want to start" />
+            </MailTo>
           </div>
         </ContainerLeftModal>
         <ContainerRightModal>

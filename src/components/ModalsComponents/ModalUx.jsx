@@ -7,6 +7,8 @@ import uxProcess from "../../assets/Modal/ux-process.svg";
 import uxAimation from "../../assets/lotties/modal-ux.json";
 import UseLottieAnimation from "../../components/useLottieAnimation";
 import arrowRight from "../../assets/Icons/arrow-modal.svg";
+import Button from "../Button";
+import MailTo from "../MailTo";
 
 const ModalUx = ({ isOpen, closeModal }) => {
   const containerRef = useRef(null);
@@ -37,6 +39,9 @@ const ModalUx = ({ isOpen, closeModal }) => {
               If you want your <span>application to be successful</span>, you
               have to spend the necessary time on ux design.
             </p>
+            <MailTo email="hi@ache1.com" subject="Ux Project">
+              <Button buttonLabel="I want to start" />
+            </MailTo>
           </div>
         </ContainerLeftModal>
         <ContainerRightModal>

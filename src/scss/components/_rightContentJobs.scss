@@ -80,3 +80,18 @@
     }
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-jobs-challenge-right {
+    overflow: unset;
+    height: 100%;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0rem 2rem 2rem 2rem;
+    .content-jobs-challenge-criteria{
+      .content-jobs-challenge-criteria-items{
+          font-size: 1rem;
+          line-height: 1rem;
+      }
+    }
+  }
+}

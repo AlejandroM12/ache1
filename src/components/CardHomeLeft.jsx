@@ -95,8 +95,8 @@ const CardHomeLeft = () => {
             </div>
             <h1 className="card-title-left">Web apps</h1>
             <p className="card-description-left">
-              You need to organize your business, nothing better than having
-              your own online system that your entire team can access.
+              You need to organize your business; nothing better than having
+              your own online system, in which your entire team has access.
             </p>
             <Button buttonLabel="Biggest systems" onClick={openModalWebApp} />
           </div>
@@ -137,10 +137,10 @@ const CardHomeLeft = () => {
             <h1 className="card-title-left">Best Websites</h1>
             <p className="card-description-left ">
               Is your website still not responsive? Today 80% of accesses to
-              your website are through mobile devices. For your website to be
+              your website are through mobile devices. To make your website
               accessible to any user, it must be adaptable to all devices.
             </p>
-            <Button buttonLabel="I want start" />
+            <Button buttonLabel="I want to start" />
           </div>
         )}
       </ReactScrollWheelHandler>

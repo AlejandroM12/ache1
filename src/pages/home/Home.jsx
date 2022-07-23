@@ -82,7 +82,7 @@ const Home = ({ pivot, setPivot }) => {
                 data-aos-delay="750"
                 data-aos-easing="ease-in-out"
               >
-                You have
+                Have you
               </h1>
               <h1
                 className="content-right-title-two"
@@ -90,7 +90,7 @@ const Home = ({ pivot, setPivot }) => {
                 data-aos-delay="1500"
                 data-aos-easing="ease-in-out"
               >
-                an idea?
+               got an idea?
               </h1>
               <p
                 data-aos="fade-right"
@@ -162,7 +162,7 @@ const Home = ({ pivot, setPivot }) => {
                 data-aos-delay="750"
                 data-aos-easing="ease-in-out"
               >
-                You have
+                Have you
               </h1>
               <h1
                 className="content-right-title-two"
@@ -170,7 +170,7 @@ const Home = ({ pivot, setPivot }) => {
                 data-aos-delay="1500"
                 data-aos-easing="ease-in-out"
               >
-                an idea?
+               got an idea?
               </h1>
               <p
                 data-aos="fade-right"

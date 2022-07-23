@@ -37,9 +37,7 @@ const Contact = () => {
           </div>
           <p className="contact-description-right">
             Tell us more about your project.
-          </p>
-          <p className="contact-description-right">
-            <span>Let's drink a coffee.</span>
+            <span>Let's have some coffee.</span>
           </p>
         </div>
       </ContainerRightSection>

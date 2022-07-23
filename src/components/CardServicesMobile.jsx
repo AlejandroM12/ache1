@@ -22,35 +22,6 @@ const CardServicesMobile = () => {
                 className="arrow-icon-mobile"
                 alt="arrow icon"
               />
-              Ux/Ui
-            </li>
-            <div className="container-list-services-mobile-active">
-              <p className="card-description-services-mobile-active">
-                We carry out a survey of the market and the competition. We plan
-                and design the correct flow for your website to be successful.
-              </p>
-              <Button buttonLabel="How we work?" onClick={openModalUx} />
-            </div>
-          </div>
-        ) : (
-          <li
-            className="card-services-list-mobile"
-            onClick={() => {
-              setLinkActive(2);
-              setActiveList(true);
-            }}
-          >
-            Ux/Ui
-          </li>
-        )}
-        {activeList && linkActive === 3 ? (
-          <div className="container-card-services">
-            <li className="card-services-list-mobile-active">
-              <img
-                src={arrowBlue}
-                className="arrow-icon-mobile"
-                alt="arrow icon"
-              />
               Web Apps
             </li>
             <div className="container-list-services-mobile-active">
@@ -65,13 +36,43 @@ const CardServicesMobile = () => {
           <li
             className="card-services-list-mobile"
             onClick={() => {
-              setLinkActive(3);
+              setLinkActive(2);
               setActiveList(true);
             }}
           >
             Web Apps
           </li>
         )}
+        {activeList && linkActive === 3 ? (
+          <div className="container-card-services">
+            <li className="card-services-list-mobile-active">
+              <img
+                src={arrowBlue}
+                className="arrow-icon-mobile"
+                alt="arrow icon"
+              />
+              Ux/Ui
+            </li>
+            <div className="container-list-services-mobile-active">
+              <p className="card-description-services-mobile-active">
+                We carry out a survey of the market and the competition. We plan
+                and design the correct flow for your website to be successful.
+              </p>
+              <Button buttonLabel="How do we work?" onClick={openModalUx} />
+            </div>
+          </div>
+        ) : (
+          <li
+            className="card-services-list-mobile"
+            onClick={() => {
+              setLinkActive(3);
+              setActiveList(true);
+            }}
+          >
+            Ux/Ui
+          </li>
+        )}
+        
         {activeList && linkActive === 1 ? (
           <div className="container-card-services">
             <li className="card-services-list-mobile-active">
@@ -101,6 +102,34 @@ const CardServicesMobile = () => {
             Apps mobile
           </li>
         )}
+        {activeList && linkActive === 4 ? (
+          <div className="container-card-services">
+            <li className="card-services-list-mobile-active">
+              <img
+                src={arrowBlue}
+                className="arrow-icon-mobile"
+                alt="arrow icon"
+              />
+              Best Websites
+            </li>
+            <div className="container-list-services-mobile-active">
+              <p className="card-description-services-mobile-active">
+              Is your website still not responsive? Today 80% of accesses to your website are through mobile devices. To make your website accessible to any user, it must be adaptable to all devices.
+              </p>
+              <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+            </div>
+          </div>
+        ) : (
+          <li
+            className="card-services-list-mobile"
+            onClick={() => {
+              setLinkActive(4);
+              setActiveList(true);
+            }}
+          >
+            Best Websites
+          </li>
+        )}
         {activeList && linkActive === 5 ? (
           <div className="container-card-services">
             <li className="card-services-list-mobile-active">
@@ -116,7 +145,7 @@ const CardServicesMobile = () => {
                 Design your brand identity from scratch. Create a unique
                 language that identifies you in the market.
               </p>
-              <Button buttonLabel="I want start" />
+              <Button buttonLabel="I want to start" />
             </div>
           </div>
         ) : (
@@ -146,7 +175,7 @@ const CardServicesMobile = () => {
                 on social networks. Guidelines for communication, promotion and
                 user monitoring.
               </p>
-              <Button buttonLabel="Your brand UP!" />
+              <Button buttonLabel="Put your brand up!" />
             </div>
           </div>
         ) : (

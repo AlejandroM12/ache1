@@ -22,15 +22,18 @@ const ContentRightAbout = () => {
           />
         </div>
         <h4 className="slide-count">01.</h4>
-        <h3 className="slide-title">The first meeting</h3>
+        <h3 className="slide-title">First meeting</h3>
         <p className="slide-description">
-          You bring to us an idea, and the first that we do is a meeting.
-          <strong> In this meeting we discover your project</strong> and them we
-          analize it with the team to create estimations.
+          You bring us an idea, and the first thing that we do is to arrange a
+          meeting.
         </p>
         <p className="slide-description">
-          Then we make a brief of your project which we see together the scope
-          of it.
+          During this step, <span>we discover your project and analyze it</span>{" "}
+          with our team to create estimations.
+        </p>
+        <p className="slide-description">
+          Then we make a <span>brief</span> of your project so we see together
+          the scope of it.
         </p>
       </div>
       <div className="slide-about-right slide-content second">
@@ -44,9 +47,11 @@ const ContentRightAbout = () => {
         <h4 className="slide-count">02.</h4>
         <h3 className="slide-title">Analysis and estimation</h3>
         <p className="slide-description">
-          Then with the team we analyze your project. Together we define the
-          time to use in each step and create the
-          <strong> work plan.</strong>
+          Secondly, our team analyzes your project.
+        </p>
+        <p className="slide-description">
+          We define the time to spend during each step and create a{" "}
+          <span>working plan.</span>
         </p>
       </div>
       <div className="slide-about-right slide-content third">
@@ -60,10 +65,10 @@ const ContentRightAbout = () => {
         <h4 className="slide-count">03.</h4>
         <h3 className="slide-title">Strategy</h3>
         <p className="slide-description">
-          We then determine the{" "}
-          <strong>
-            best way to strategically meet the goals of your company.{" "}
-          </strong>
+          Finally, we determine the{" "}
+          <span>
+            best way to strategically reach the goals of your company.
+          </span>{" "}
           We build the backbone of your project.
         </p>
       </div>
@@ -78,10 +83,10 @@ const ContentRightAbout = () => {
         <h4 className="slide-count">04.</h4>
         <h3 className="slide-title">Let´s work</h3>
         <p className="slide-description">
-          We create software with
-          <strong>transparent code and transparent process.</strong> This meens
-          that we test each step and you will part of that. Your feedback is so
-          important to us.
+          We create software with{" "}
+          <span>transparent code and a transparent process.</span> This means
+          that we test each step while you are being part of the process, your
+          feedback is really important for us.
         </p>
       </div>
       <div className="slide-about-right slide-content fifth">
@@ -96,8 +101,8 @@ const ContentRightAbout = () => {
         <h3 className="slide-title">Testing</h3>
         <p className="slide-description">
           Testing the final product it’s fundamental to deliver an high-quality
-          outcome. Our focus is to deliver
-          <strong>high quality standards in user experience.</strong>
+          outcome. Our focus is to deliver{" "}
+          <span>high quality standards for the user experience.</span>
         </p>
       </div>
       <div className="slide-about-right slide-content sixth">
@@ -109,14 +114,11 @@ const ContentRightAbout = () => {
           />
         </div>
         <h4 className="slide-count">06.</h4>
-        <h3 className="slide-title">Ready to world</h3>
+        <h3 className="slide-title">Ready for the world</h3>
         <p className="slide-description">
-          When everything is ready, all set to go live,
-          <strong>
-            our design team ensures that the final experience meets the defined
-            standards
-          </strong>
-          , original vision and main goal.
+          When everything is ready, all setted to go out, our design team
+          ensures that the final <span>experience reaches the defined standards,</span> from
+          the original vision and main goal.
         </p>
       </div>
     </div>

@@ -102,7 +102,7 @@ const CardHomeRight = () => {
               We carry out a survey of the market and the competition. We plan
               and design the correct flow for your website to be successful.
             </p>
-            <Button buttonLabel="How we work?" onClick={openModalUx} />
+            <Button buttonLabel="How do we work?" onClick={openModalUx} />
           </div>
         )}
       {btnDot === 2 && (
@@ -119,7 +119,7 @@ const CardHomeRight = () => {
             Design your brand identity from scratch. Create a unique language
             that identifies you in the market.
           </p>
-            <Button buttonLabel="I want start" onClick={openModalBranding}/>
+            <Button buttonLabel="I want to start" onClick={openModalBranding}/>
         </div>
       )}
       {btnDot === 3 && (
@@ -139,7 +139,7 @@ const CardHomeRight = () => {
             social networks. Guidelines for communication, promotion and user
             monitoring.
           </p>
-            <Button buttonLabel="Your brand UP!" onClick={openModalSocialMedia}/>
+            <Button buttonLabel="Put your brand up!" onClick={openModalSocialMedia}/>
         </div>
       )}
       {btnDot === 4 && (
