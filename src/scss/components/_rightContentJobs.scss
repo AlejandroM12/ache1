@@ -1,0 +1,82 @@
+.container-jobs-challenge-right {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  width: 100%;
+  margin-top: 18rem;
+  padding: 0rem 3rem;
+  padding-bottom: 20rem;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &__slide {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  ol {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      font-family: $font-poppins;
+      font-style: normal;
+      font-weight: $semi-bold;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      color: $grays;
+      gap: 0.4rem;
+      .item-criteria{
+        margin-left: 1.5rem;
+      }
+    }
+  }
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: $grays;
+  }
+  a {
+    font-weight: $bold;
+  }
+  span {
+    font-weight: $bold;
+  }
+  .content-jobs-challenge-description {
+    .content-jobs-challenge-description-third,
+    .content-jobs-challenge-description-fourth,
+    .content-jobs-challenge-description-fifth {
+      margin-top: 1rem;
+    }
+  }
+  .content-jobs-challenge-deliver {
+    .content-jobs-challenge-deliver-first,
+    .content-jobs-challenge-deliver-second,
+    .content-jobs-challenge-deliver-third {
+      margin-top: 1rem;
+    }
+  }
+  .content-jobs-challenge-criteria {
+    margin-top: 1rem;
+  }
+  .content-jobs-challenge-technology{
+    .content-jobs-challenge-technology-first, .content-jobs-challenge-technology-second{
+        margin-top: 1rem;
+    }
+  }
+  .content-jobs-challenge-gl{
+    margin-top: 1rem;
+    p{
+        span{
+            font-weight: $semi-bold;
+            color: $black-bold;
+            font-size: 2rem;
+            line-height: 3.75rem;
+        }
+    }
+  }
+}

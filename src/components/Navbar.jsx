@@ -61,6 +61,16 @@ const Navbar = () => {
                 className={({ isActive }) => {
                   return isActive ? "active" : "link-a";
                 }}
+                to="/jobs"
+              >
+                Jobs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) => {
+                  return isActive ? "active" : "link-a";
+                }}
                 to="/contact"
               >
                 Contact
