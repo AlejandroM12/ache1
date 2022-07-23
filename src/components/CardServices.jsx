@@ -14,12 +14,21 @@ import marketingAnimation from "../assets/lotties/marketing.json";
 import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
 import bestWebsitesAnimation from "../assets/lotties/best-websites.json";
 import MailTo from "./MailTo";
+import ModalWebApps from "./ModalsComponents/ModalWebApps";
+import ModalBranding from "./ModalsComponents/ModalBranding";
+import ModalSocialMedia from "./ModalsComponents/ModalSocialMedia";
+import ModalMarketing from "./ModalsComponents/ModalMarketing";
 
 const CardServices = () => {
   const [linkActive, setLinkActive] = useState(1);
   const [isHovering, setIsHovering] = useState(false);
+  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] =
+    useModal(false);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
+  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
+  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] = useModal(false);
 
   return (
     <>
@@ -217,7 +226,7 @@ const CardServices = () => {
                 your own online system that your entire team can access.
               </p>
 
-              <Button buttonLabel="Biggest systems" />
+              <Button buttonLabel="Biggest systems" onClick={openModalWebApp}/>
               <div className="content-services-lottie-web-apps">
                 <UseLottieAnimation
                   animationData={webAppsAnimation}
@@ -273,7 +282,7 @@ const CardServices = () => {
                 Design your brand identity from scratch. Create a unique
                 language that identifies you in the market.
               </p>
-              <Button buttonLabel="I want to start" />
+              <Button buttonLabel="I want to start" onClick={openModalBranding}/>
               
             </div>
           </div>
@@ -298,7 +307,7 @@ const CardServices = () => {
                 on social networks. Guidelines for communication, promotion and
                 user monitoring.
               </p>
-              <Button buttonLabel="Put your brand up!" />
+              <Button buttonLabel="Put your brand up!" onClick={openModalSocialMedia}/>
               
             </div>
           </div>
@@ -319,16 +328,28 @@ const CardServices = () => {
                 digital marketing, creative web design, quality content, SEO,
                 and media campaigns.
               </p>
-              <Button buttonLabel="Grow up now" />
+              <Button buttonLabel="Grow up now" onClick={openModalMarketing}/>
             </div>
           </div>
         )}
       </ContainerRightSection>
+      {isOpenModalWebApp && (
+        <ModalWebApps isOpen={isOpenModalWebApp} closeModal={closeModalWebApp} />
+      )}
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
       )}
       {isOpenModalUX && (
         <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
+      {isOpenModalBranding && (
+        <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
+      )}
+      {isOpenModalSocialMedia && (
+        <ModalSocialMedia isOpen={isOpenModalSocialMedia} closeModal={closeModalSocialMedia} />
+      )}
+      {isOpenModalMarketing && (
+        <ModalMarketing isOpen={isOpenModalMarketing} closeModal={closeModalMarketing} />
       )}
     </>
   );
