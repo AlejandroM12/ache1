@@ -17,15 +17,20 @@ import ModalWebApps from "../components/ModalsComponents/ModalWebApps";
 import ModalBranding from "../components/ModalsComponents/ModalBranding";
 import ModalSocialMedia from "../components/ModalsComponents/ModalSocialMedia";
 import ModalMarketing from "../components/ModalsComponents/ModalMarketing";
+import MailTo from "../components/MailTo";
 
 const ContainerMobileHome = () => {
   const [btnState, setBtnState] = useState(1);
-  const [isOpenModalWebsApp, openModalWebsApp, closeModalWebsApp] = useModal(false);
+  const [isOpenModalWebsApp, openModalWebsApp, closeModalWebsApp] =
+    useModal(false);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
-  const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
-  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
-  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] = useModal(false);
+  const [isOpenModalBranding, openModalBranding, closeModalBranding] =
+    useModal(false);
+  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] =
+    useModal(false);
+  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] =
+    useModal(false);
 
   const upHandler = () => {
     if (btnState >= 1) {
@@ -131,7 +136,10 @@ const ContainerMobileHome = () => {
                   You need to organize your business, nothing better than having
                   your own online system that your entire team can access.
                 </p>
-                  <Button buttonLabel="Biggest systems" onClick={openModalWebsApp}/>
+                <Button
+                  buttonLabel="Biggest systems"
+                  onClick={openModalWebsApp}
+                />
               </div>
             )}
             {btnState === 2 && (
@@ -148,9 +156,14 @@ const ContainerMobileHome = () => {
               <div className="content-card-mobile" data-aos="fade-up">
                 <h1 className="card-title-mobile">Best Websites</h1>
                 <p className="card-description-mobile">
-                Is your website still not responsive? Today 80% of accesses to your website are through mobile devices. For your website to be accessible to any user, it must be adaptable to all devices.
+                  Is your website still not responsive? Today 80% of accesses to
+                  your website are through mobile devices. For your website to
+                  be accessible to any user, it must be adaptable to all
+                  devices.
                 </p>
-                <Button buttonLabel="I want to start" />
+                <MailTo email="hi@ache1.com" subject="New Website">
+                  <Button buttonLabel="I want to start" />
+                </MailTo>
               </div>
             )}
             {btnState === 4 && (
@@ -171,7 +184,10 @@ const ContainerMobileHome = () => {
                   Design your brand identity from scratch. Create a unique
                   language that identifies you in the market.
                 </p>
-                  <Button buttonLabel="I want to start" onClick={openModalBranding}/>
+                <Button
+                  buttonLabel="I want to start"
+                  onClick={openModalBranding}
+                />
               </div>
             )}
             {btnState === 6 && (
@@ -182,7 +198,10 @@ const ContainerMobileHome = () => {
                   strategy on social networks. Guidelines for communication,
                   promotion and user monitoring.
                 </p>
-                  <Button buttonLabel="Put your brand up!" onClick={openModalSocialMedia}/>
+                <Button
+                  buttonLabel="Put your brand up!"
+                  onClick={openModalSocialMedia}
+                />
               </div>
             )}
             {btnState === 7 && (
@@ -193,7 +212,10 @@ const ContainerMobileHome = () => {
                   digital marketing, creative web design, quality content, SEO,
                   and media campaigns.
                 </p>
-                <Button buttonLabel="Grow up now" onClick={openModalMarketing}/>
+                <Button
+                  buttonLabel="Grow up now"
+                  onClick={openModalMarketing}
+                />
               </div>
             )}
           </ReactScrollWheelHandler>
@@ -265,7 +287,10 @@ const ContainerMobileHome = () => {
         </div>
       </div>
       {isOpenModalWebsApp && (
-        <ModalWebApps isOpen={isOpenModalWebsApp} closeModal={closeModalWebsApp} />
+        <ModalWebApps
+          isOpen={isOpenModalWebsApp}
+          closeModal={closeModalWebsApp}
+        />
       )}
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
@@ -274,13 +299,22 @@ const ContainerMobileHome = () => {
         <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
       )}
       {isOpenModalBranding && (
-        <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
+        <ModalBranding
+          isOpen={isOpenModalBranding}
+          closeModal={closeModalBranding}
+        />
       )}
       {isOpenModalSocialMedia && (
-        <ModalSocialMedia isOpen={isOpenModalSocialMedia} closeModal={closeModalSocialMedia} />
+        <ModalSocialMedia
+          isOpen={isOpenModalSocialMedia}
+          closeModal={closeModalSocialMedia}
+        />
       )}
       {isOpenModalMarketing && (
-        <ModalMarketing isOpen={isOpenModalMarketing} closeModal={closeModalMarketing} />
+        <ModalMarketing
+          isOpen={isOpenModalMarketing}
+          closeModal={closeModalMarketing}
+        />
       )}
     </>
   );

@@ -10,6 +10,7 @@ import UseLottieAnimation from "../components/useLottieAnimation";
 import webAppsAnimation from "../assets/lotties/web-apps.json";
 import appsMobileAnimation from "../assets/lotties/apps-mobile-home.json";
 import bestWebsitesAnimation from "../assets/lotties/best-websites.json";
+import MailTo from "./MailTo";
 
 const CardHomeLeft = () => {
   const [btnState, setBtnState] = useState(1);
@@ -140,7 +141,9 @@ const CardHomeLeft = () => {
               your website are through mobile devices. To make your website
               accessible to any user, it must be adaptable to all devices.
             </p>
-            <Button buttonLabel="I want to start" />
+            <MailTo email="hi@ache1.com" subject="New Website">
+              <Button buttonLabel="I want to start" />
+            </MailTo>
           </div>
         )}
       </ReactScrollWheelHandler>
