@@ -72,3 +72,29 @@
         }
     }
 }
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-description-marketing-mobile {
+    .lottie-marketing-mobile {
+      margin-top: 4rem;
+    }
+    .btn{
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .container-marketing-modal-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .content-marketing-modal-right{
+      padding: 2rem 0rem 1rem 0.5rem;
+    .container-list-marketing{
+      .list-marketing{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0rem 0rem 0.5rem 1rem;
+      }
+    }
+  }
+  }
+}

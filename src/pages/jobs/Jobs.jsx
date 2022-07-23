@@ -1,4 +1,3 @@
-import { useViewport } from "../../context/viewportContext";
 import ContainerSection from "../../layout/ContainerSection";
 import ContainerHeaderSection from "../../components/ContainerHeaderSection";
 import LogoHome from "../../components/LogoHome";
@@ -10,7 +9,7 @@ import CardJobs from "../../components/CardJobs";
 import ContainerRightSection from "../../components/ContainerRightSection";
 import RightContentJobs from "../../components/RightContentJobs";
 const Jobs = () => {
-  return  (
+  return (
     <>
       <ContainerSection>
         <ContainerHeaderSection>
@@ -18,15 +17,14 @@ const Jobs = () => {
           <Navbar />
         </ContainerHeaderSection>
         <Icon size={45} color="#6C63FF" fill="#6C63FF" />
-
         <ContainerLeftSection>
           <CardJobs />
         </ContainerLeftSection>
         <ContainerRightSection>
-            <RightContentJobs />
+          <RightContentJobs />
         </ContainerRightSection>
       </ContainerSection>
     </>
-  )
+  );
 };
 export default Jobs;

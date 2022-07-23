@@ -42,6 +42,7 @@
   width: 100%;
   max-width: 411px;
   margin-top: 1rem;
+  display: flex;
 }
 .container-modal-web-app-img-first {
   display: flex;
@@ -94,42 +95,78 @@
   }
 }
 .container-modal-web-app-img-two {
-    display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 10rem;
   margin-top: 4rem;
-    p {
-        font-family: $font-poppins;
-        font-style: normal;
-        font-weight: $semi-bold;
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-        text-align: center;
-        color: $white;
-      }
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $white;
+  }
   .modal-web-app-angular-logo {
     display: flex;
     flex-direction: column;
-    .web-app-modal-angular-img{
-        width: 100%;
-        max-width: 130px;
+    .web-app-modal-angular-img {
+      width: 100%;
+      max-width: 130px;
     }
     p {
-        margin-top: 1.5rem;
-      }
+      margin-top: 1.5rem;
+    }
   }
-  .modal-web-app-spring-logo{
+  .modal-web-app-spring-logo {
     display: flex;
     flex-direction: column;
-    
-    .web-app-modal-spring-img{
-        width: 100%;
-        max-width: 130px;
+
+    .web-app-modal-spring-img {
+      width: 100%;
+      max-width: 130px;
     }
     p {
-        margin-top: 1.5rem;
-      }
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-description-modal-web-apps {
+    .lottie-modal-web-apps {
+      margin-top: 4rem;
+    }
+    .modal-web-app-title-left {
+      margin-left: 3rem;
+      margin-top: -1rem;
+    }
+    .modal-web-app-description-left {
+      padding: 0.5rem 3rem;
+    }
+    .btn {
+      margin: 1rem 0rem 2rem 3rem;
+    }
+  }
+  .content-modal-rightside {
+    .modal-web-app-title-right {
+      display: none;
+    }
+  }
+  .container-modal-web-app-img-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-modal-web-app-img-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }

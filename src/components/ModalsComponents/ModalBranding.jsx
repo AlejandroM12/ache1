@@ -34,14 +34,12 @@ const ModalBranding = ({ isOpen, closeModal }) => {
               specific fonts and color palette for that logo.
             </p>
             <MailTo email="hi@ache1.com" subject="New Branding">
-              <Button buttonLabel="I want to start"/>
+              <Button buttonLabel="I want to start" />
             </MailTo>
           </div>
         </ContainerLeftModal>
         <ContainerRightModal>
-          <h3 className="modal-title-branding-right">
-            Brand Process
-          </h3>
+          <h3 className="modal-title-branding-right">Brand Process</h3>
           <div className="container-modal-branding-description-right">
             <div className="container-modal-branding-description-first">
               <div className="content-description-branding">

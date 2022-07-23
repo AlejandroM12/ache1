@@ -13,11 +13,20 @@ import bestWebsitesAnimation from "../assets/lotties/best-websites.json";
 import ModalApp from "../components/ModalsComponents/ModalApp";
 import ModalUx from "../components/ModalsComponents/ModalUx";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import ModalWebApps from "../components/ModalsComponents/ModalWebApps";
+import ModalBranding from "../components/ModalsComponents/ModalBranding";
+import ModalSocialMedia from "../components/ModalsComponents/ModalSocialMedia";
+import ModalMarketing from "../components/ModalsComponents/ModalMarketing";
 
 const ContainerMobileHome = () => {
   const [btnState, setBtnState] = useState(1);
+  const [isOpenModalWebsApp, openModalWebsApp, closeModalWebsApp] = useModal(false);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  const [isOpenModalBranding, openModalBranding, closeModalBranding] = useModal(false);
+  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] = useModal(false);
+  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] = useModal(false);
+
   const upHandler = () => {
     if (btnState >= 1) {
       setBtnState(btnState + 1);
@@ -122,7 +131,7 @@ const ContainerMobileHome = () => {
                   You need to organize your business, nothing better than having
                   your own online system that your entire team can access.
                 </p>
-                  <Button buttonLabel="Biggest systems" />
+                  <Button buttonLabel="Biggest systems" onClick={openModalWebsApp}/>
               </div>
             )}
             {btnState === 2 && (
@@ -162,7 +171,7 @@ const ContainerMobileHome = () => {
                   Design your brand identity from scratch. Create a unique
                   language that identifies you in the market.
                 </p>
-                  <Button buttonLabel="I want to start" />
+                  <Button buttonLabel="I want to start" onClick={openModalBranding}/>
               </div>
             )}
             {btnState === 6 && (
@@ -173,7 +182,7 @@ const ContainerMobileHome = () => {
                   strategy on social networks. Guidelines for communication,
                   promotion and user monitoring.
                 </p>
-                  <Button buttonLabel="Put your brand up!" />
+                  <Button buttonLabel="Put your brand up!" onClick={openModalSocialMedia}/>
               </div>
             )}
             {btnState === 7 && (
@@ -184,7 +193,7 @@ const ContainerMobileHome = () => {
                   digital marketing, creative web design, quality content, SEO,
                   and media campaigns.
                 </p>
-                <Button buttonLabel="Grow up now" />
+                <Button buttonLabel="Grow up now" onClick={openModalMarketing}/>
               </div>
             )}
           </ReactScrollWheelHandler>
@@ -255,11 +264,23 @@ const ContainerMobileHome = () => {
           )}
         </div>
       </div>
+      {isOpenModalWebsApp && (
+        <ModalWebApps isOpen={isOpenModalWebsApp} closeModal={closeModalWebsApp} />
+      )}
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
       )}
       {isOpenModalUX && (
         <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
+      {isOpenModalBranding && (
+        <ModalBranding isOpen={isOpenModalBranding} closeModal={closeModalBranding} />
+      )}
+      {isOpenModalSocialMedia && (
+        <ModalSocialMedia isOpen={isOpenModalSocialMedia} closeModal={closeModalSocialMedia} />
+      )}
+      {isOpenModalMarketing && (
+        <ModalMarketing isOpen={isOpenModalMarketing} closeModal={closeModalMarketing} />
       )}
     </>
   );

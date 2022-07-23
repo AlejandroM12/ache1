@@ -1,5 +1,5 @@
 .container-description-branding-left {
-  .mail-to{
+  .mail-to {
     margin-left: 2rem;
     margin-top: 1rem;
   }
@@ -53,7 +53,6 @@
   grid-template-columns: 1fr 1fr;
   .container-modal-branding-description-first {
     padding-left: 2rem;
-
     .content-description-branding {
       margin: 0rem 1.5rem 0.5rem 1.5rem;
       .modal-branding-description-title {
@@ -103,6 +102,49 @@
         font-size: 1rem;
         line-height: 1.875rem;
         color: $white;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  .container-description-branding-left {
+    .lottie-branding-modal {
+      margin-top: 5rem;
+    }
+    .mail-to {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .modal-title-branding-right {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-left: 2rem;
+  }
+  .container-modal-branding-description-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    .container-modal-branding-description-first {
+      padding-left: 0.5rem;
+      padding-top: 1rem;
+      .content-description-branding {
+        .modal-branding-description-title {
+          .modal-branding-count {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+          }
+        }
+      }
+    }
+    .container-modal-branding-description-two {
+      padding: 0rem 0rem 2rem 2rem;
+      .content-description-branding {
+        .modal-branding-description-title {
+          .modal-branding-count {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+          }
+        }
       }
     }
   }
