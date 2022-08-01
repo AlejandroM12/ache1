@@ -23,7 +23,7 @@ const Contact = () => {
         <LogoHome logo={logoWhite} />
         <Navbar />
       </ContainerHeaderSection>
-        <Icon size={45} color="#6C63FF" fill="#6C63FF" />
+      <Icon size={45} color="#6C63FF" fill="#6C63FF" />
       <ContainerLeftSection>
         <Form />
       </ContainerLeftSection>
@@ -37,6 +37,8 @@ const Contact = () => {
           </div>
           <p className="contact-description-right">
             Tell us more about your project.
+          </p>
+          <p className="contact-description-right">
             <span>Let's have some coffee.</span>
           </p>
         </div>
@@ -48,16 +50,26 @@ const Contact = () => {
         <LogoHome logo={logoWhite} />
         <Navbar />
       </ContainerHeaderSection>
-        <Icon size={45} color="#6C63FF" fill="#6C63FF" />
+      <Icon size={45} color="#6C63FF" fill="#6C63FF" />
       <FormMobile />
       <div className="social-media-container-mobile-contact">
         <li>
-          <a href="https://www.linkedin.com/in/ache-uno-design-16988a205/" className="social-media-mobile-contact" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/ache-uno-design-16988a205/"
+            className="social-media-mobile-contact"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkedinIcon} alt="linkedin icon" />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/ache1.design/" className="social-media-mobile-contact" target="_blank" rel="noreferrer"> 
+          <a
+            href="https://www.instagram.com/ache1.design/"
+            className="social-media-mobile-contact"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instagramIcon} alt="instagram icon" />
           </a>
         </li>
