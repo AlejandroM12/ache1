@@ -79,6 +79,7 @@
     text-align: start;
     gap: 0.3rem;
     padding: 0rem 0rem 0rem 2rem;
+    margin: 3rem 0rem 3rem 0rem;
     h1 {
       font-size: 3rem;
       line-height: 3.125rem;
@@ -99,10 +100,12 @@
       max-width: 500px;
     }
   }
-
-  .arrow-redir {
-    width: 38px;
-    transform: translate(-2.1rem, -1.8rem);
+  .content-left {
+    margin-top: 2rem;
+  }
+  .content-down-arrow{
+    margin-top: -1rem;
+    margin-left: -3.5rem;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {

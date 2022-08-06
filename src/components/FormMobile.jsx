@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import emailjs from "@emailjs/browser";
 import animationCoffe from "../assets/lotties/coffee-contact.json";
-
+import check from "../assets/Icons/check.png";
 const FormMobile = () => {
   const [status, setStatus] = useState("");
   const [values, setValues] = useState({
@@ -13,11 +13,10 @@ const FormMobile = () => {
     aboutUs: "",
     message: "",
   });
-  console.log(values);
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .send("service_u1tfsgl", "template_9es16h5", values, "cuWvUKETrKkWLF3Db")
+      .send("service_upup1po", "template_c51k1gg", values, "Ey3ADQshkjKKdsC_L")
       .then(
         (response) => {
           console.log("SUCCESS!", response);
@@ -46,14 +45,14 @@ const FormMobile = () => {
       }, 3000);
     }
   }, [status]);
-  //   const renderAlert = () => (
-  //     <div className="submit-alert">
-  //       <p>Your message submitted successfully</p>
-  //     </div>
-  //   );
+  const renderAlert = () => (
+    <div className="submit-alert">
+      <p className="submit-message">Your message submitted successfully</p>
+      <img className="icon" src={check} alt="check icon" />
+    </div>
+  );
   return (
     <form className="form" onSubmit={handleSubmit}>
-      {status}
       <div className="form-container">
         <div className="contact-content-right">
           <div className="contact-lottie-right">
@@ -183,9 +182,13 @@ const FormMobile = () => {
             rows="7"
           ></textarea>
         </div>
-        <button className="form-submit" type="submit">
-          SEND!
-        </button>
+        {status === "SUCCESS" ? (
+          renderAlert()
+        ) : (
+          <button className="form-submit" type="submit">
+            <span className="text-send"> SEND!</span>
+          </button>
+        )}
       </div>
     </form>
   );

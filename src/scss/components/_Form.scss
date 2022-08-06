@@ -12,6 +12,7 @@
     margin-top: 1rem;
     display: grid;
     gap: 0.5rem;
+    
     .form-title {
       font-family: $font-poppins;
       font-style: normal;
@@ -88,6 +89,7 @@
       align-items: flex-start;
       padding-bottom: 0.625rem;
     }
+    
     .form-group-select {
       display: flex;
       flex-direction: column;
@@ -166,12 +168,31 @@
     }
   }
 }
+.submit-alert{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  .submit-message{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: $black-bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: $grays;
+  }
+  .icon {
+    margin-left: 0.5rem;
+    width: 40px;
+  }
+}
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .form{
+  .form {
     padding: 0rem 1rem;
     margin: 0rem;
     transform: translate(6rem, 3.1rem);
-    .form-container{
+    .form-container {
       margin-top: 0.5rem;
       gap: 0rem;
     }

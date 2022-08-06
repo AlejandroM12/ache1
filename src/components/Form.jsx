@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
-
+import check from "../assets/Icons/check.png";
 const Form = () => {
   const [status, setStatus] = useState("");
   const [values, setValues] = useState({
@@ -12,11 +12,10 @@ const Form = () => {
     aboutUs: "",
     message: "",
   });
-  console.log(values);
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .send("service_u1tfsgl", "template_9es16h5", values, "cuWvUKETrKkWLF3Db")
+      .send("service_upup1po", "template_c51k1gg", values, "Ey3ADQshkjKKdsC_L")
       .then(
         (response) => {
           console.log("SUCCESS!", response);
@@ -42,17 +41,17 @@ const Form = () => {
     if (status === "SUCCESS") {
       setTimeout(() => {
         setStatus("");
-      }, 3000);
+      }, 2000);
     }
   }, [status]);
   const renderAlert = () => (
     <div className="submit-alert">
-      <p>Your message submitted successfully</p>
+      <p className="submit-message">Your message submitted successfully</p>
+      <img className="icon" src={check} alt="check icon" />
     </div>
   );
   return (
     <form className="form" onSubmit={handleSubmit}>
-      {status && renderAlert()}
       <div className="form-container">
         <h2 className="form-title">Say Hello!</h2>
         <div className="form-group-container">
@@ -64,6 +63,7 @@ const Form = () => {
               value={values.name}
               className="form-input"
               placeholder=" "
+              required
             />
             <label className="form-label" htmlFor="name">
               Name
@@ -78,6 +78,7 @@ const Form = () => {
               value={values.company}
               className="form-input"
               placeholder=" "
+              required
             />
             <label className="form-label" htmlFor="company">
               Company
@@ -87,11 +88,12 @@ const Form = () => {
           <div className="form-group">
             <input
               onChange={handleChange}
-              type="text"
+              type="email"
               name="email"
               value={values.email}
               className="form-input"
               placeholder=" "
+              required
             />
             <label className="form-label" htmlFor="email">
               Email
@@ -167,9 +169,13 @@ const Form = () => {
             value={values.message}
           ></textarea>
         </div>
-        <button className="form-submit" type="submit">
-          SEND!
-        </button>
+        {status === "SUCCESS" ? (
+          renderAlert()
+        ) : (
+          <button className="form-submit" type="submit">
+            <span className="text-send"> SEND!</span>
+          </button>
+        )}
       </div>
     </form>
   );
