@@ -149,7 +149,7 @@ const ContainerMobileHome = () => {
                   It makes your app unique. From usability analysis to testing
                   to launch your MVP.
                 </p>
-                <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+                <Button buttonLabel="Our technologies" onClick={openModalApp} />
               </div>
             )}
             {btnState === 3 && (

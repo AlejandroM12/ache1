@@ -7,6 +7,7 @@
   margin-top: 7rem;
   max-width: 350px;
   z-index: 10;
+  margin-bottom: 3rem;
   padding: 1rem 2rem;
   width: 100%;
   .card-service-title-mobile {
@@ -26,8 +27,8 @@
     line-height: 3.75rem;
     color: $items-links;
     cursor: pointer;
-
   }
+
   .card-services-list-mobile-active {
     display: flex;
     align-items: center;
@@ -40,10 +41,10 @@
     margin-bottom: 1rem;
     .arrow-icon-mobile {
       width: 100%;
-    max-width: 19px;
-    transform: translate(-1rem);
-    position: absolute;
-    height: 15px;
+      max-width: 19px;
+      transform: translate(-1rem);
+      position: absolute;
+      height: 15px;
     }
   }
   .container-card-services {
@@ -71,6 +72,10 @@
         color: $grays;
         margin-bottom: 1rem;
       }
+    }
+    .marketing-active {
+      line-height: 2rem;
+      font-size: 1rem;
     }
   }
 }

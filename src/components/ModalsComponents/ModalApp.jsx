@@ -40,7 +40,7 @@ const ModalApp = ({ isOpen, closeModal }) => {
               development.
             </p>
             <MailTo email="hi@ache1.com" subject="New App Project">
-            <Button buttonLabel="I want to start" />
+              <Button buttonLabel="I want to start" />
             </MailTo>
           </div>
         </ContainerLeftModal>
@@ -67,10 +67,26 @@ const ModalApp = ({ isOpen, closeModal }) => {
             </div>
           </div>
           <div className="container-modal-app-img-two">
-            <img src={iosLogo} className="app-modal-img" alt="ios" />
-            <img src={androidLogo} className="app-modal-img" alt="android" />
-            <img src={awsLogo} className="app-modal-img" alt="aws" />
-            <img src={firebaseLogo} className="app-modal-img" alt="firebase" />
+            <div className="content-modal-app-ios">
+              <img src={iosLogo} className="app-modal-img" alt="ios" />
+              <p>iOS</p>
+            </div>
+            <div className="content-modal-app-android">
+              <img src={androidLogo} className="app-modal-img" alt="android" />
+              <p>Android</p>
+            </div>
+            <div className="content-modal-app-aws">
+              <img src={awsLogo} className="app-modal-img" alt="aws" />
+              <p>Amazon</p>
+            </div>
+            <div className="content-modal-app-firebase">
+              <img
+                src={firebaseLogo}
+                className="app-modal-img"
+                alt="firebase"
+              />
+              <p>Firebase</p>
+            </div>
           </div>
           <button className="close-modal" onClick={closeModal}>
             X

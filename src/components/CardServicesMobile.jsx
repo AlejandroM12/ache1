@@ -4,12 +4,25 @@ import Button from "./Button";
 import ModalApp from "./ModalsComponents/ModalApp";
 import ModalUx from "./ModalsComponents/ModalUx";
 import arrowBlue from "../assets/Icons/arrow-about.svg";
+import ModalWebApps from "./ModalsComponents/ModalWebApps";
+import ModalBranding from "./ModalsComponents/ModalBranding";
+import ModalSocialMedia from "./ModalsComponents/ModalSocialMedia";
+import ModalMarketing from "./ModalsComponents/ModalMarketing";
+import MailTo from "./MailTo";
 
 const CardServicesMobile = () => {
   const [linkActive, setLinkActive] = useState(1);
   const [activeList, setActiveList] = useState(true);
+  const [isOpenModalWebApp, openModalWebApp, closeModalWebApp] =
+    useModal(false);
   const [isOpenModalApp, openModalApp, closeModalApp] = useModal(false);
   const [isOpenModalUX, openModalUx, closeModalUx] = useModal(false);
+  const [isOpenModalBranding, openModalBranding, closeModalBranding] =
+    useModal(false);
+  const [isOpenModalSocialMedia, openModalSocialMedia, closeModalSocialMedia] =
+    useModal(false);
+  const [isOpenModalMarketing, openModalMarketing, closeModalMarketing] =
+    useModal(false);
   return (
     <>
       <div className="card-service-container-moblie">
@@ -29,7 +42,7 @@ const CardServicesMobile = () => {
                 You need to organize your business, nothing better than having
                 your own online system that your entire team can access.
               </p>
-              <Button buttonLabel="Biggest systems" />
+              <Button buttonLabel="Biggest systems" onClick={openModalWebApp} />
             </div>
           </div>
         ) : (
@@ -72,7 +85,7 @@ const CardServicesMobile = () => {
             Ux/Ui
           </li>
         )}
-        
+
         {activeList && linkActive === 1 ? (
           <div className="container-card-services">
             <li className="card-services-list-mobile-active">
@@ -88,7 +101,7 @@ const CardServicesMobile = () => {
                 It makes your app unique. From usability analysis to testing to
                 launch your MVP.
               </p>
-              <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+              <Button buttonLabel="Our technologies" onClick={openModalApp} />
             </div>
           </div>
         ) : (
@@ -114,9 +127,13 @@ const CardServicesMobile = () => {
             </li>
             <div className="container-list-services-mobile-active">
               <p className="card-description-services-mobile-active">
-              Is your website still not responsive? Today 80% of accesses to your website are through mobile devices. To make your website accessible to any user, it must be adaptable to all devices.
+                Is your website still not responsive? Today 80% of accesses to
+                your website are through mobile devices. To make your website
+                accessible to any user, it must be adaptable to all devices.
               </p>
-              <Button buttonLabel="Our tecnologies" onClick={openModalApp} />
+              <MailTo email="hi@ache1.com" subject="New Website">
+                <Button buttonLabel="I want to start" />
+              </MailTo>
             </div>
           </div>
         ) : (
@@ -145,7 +162,10 @@ const CardServicesMobile = () => {
                 Design your brand identity from scratch. Create a unique
                 language that identifies you in the market.
               </p>
-              <Button buttonLabel="I want to start" />
+              <Button
+                buttonLabel="I want to start"
+                onClick={openModalBranding}
+              />
             </div>
           </div>
         ) : (
@@ -175,7 +195,10 @@ const CardServicesMobile = () => {
                 on social networks. Guidelines for communication, promotion and
                 user monitoring.
               </p>
-              <Button buttonLabel="Put your brand up!" />
+              <Button
+                buttonLabel="Put your brand up!"
+                onClick={openModalSocialMedia}
+              />
             </div>
           </div>
         ) : (
@@ -191,7 +214,7 @@ const CardServicesMobile = () => {
         )}
         {activeList && linkActive === 7 ? (
           <div className="container-card-services">
-            <li className="card-services-list-mobile-active">
+            <li className="card-services-list-mobile-active marketing-active">
               <img
                 src={arrowBlue}
                 className="arrow-icon-mobile"
@@ -205,7 +228,7 @@ const CardServicesMobile = () => {
                 digital marketing, creative web design, quality content, SEO,
                 and media campaigns
               </p>
-              <Button buttonLabel="Grow up now" />
+              <Button buttonLabel="Grow up now" onClick={openModalMarketing} />
             </div>
           </div>
         ) : (
@@ -221,11 +244,35 @@ const CardServicesMobile = () => {
         )}
       </div>
 
+      {isOpenModalWebApp && (
+        <ModalWebApps
+          isOpen={isOpenModalWebApp}
+          closeModal={closeModalWebApp}
+        />
+      )}
       {isOpenModalApp && (
         <ModalApp isOpen={isOpenModalApp} closeModal={closeModalApp} />
       )}
       {isOpenModalUX && (
         <ModalUx isOpen={isOpenModalUX} closeModal={closeModalUx} />
+      )}
+      {isOpenModalBranding && (
+        <ModalBranding
+          isOpen={isOpenModalBranding}
+          closeModal={closeModalBranding}
+        />
+      )}
+      {isOpenModalSocialMedia && (
+        <ModalSocialMedia
+          isOpen={isOpenModalSocialMedia}
+          closeModal={closeModalSocialMedia}
+        />
+      )}
+      {isOpenModalMarketing && (
+        <ModalMarketing
+          isOpen={isOpenModalMarketing}
+          closeModal={closeModalMarketing}
+        />
       )}
     </>
   );

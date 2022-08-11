@@ -44,25 +44,22 @@ const ModalMarketing = ({ isOpen, closeModal }) => {
               </p>
               <ul className="container-list-marketing">
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Survey: Interaction, brand awareness, traffic.
+                  <p>Survey: Interaction, brand awareness, traffic.</p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Set up platforms from scratch: Facebook Business, Google
-                  Analytics.
+                  <p>
+                    Set up platforms from scratch: Facebook Business, Google
+                    Analytics.
+                  </p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Instalar Pixeles y código UA.
+                  <p>Install Pixeles and code UA.</p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Monthly Campaings.
+                  <p>Monthly Campaings.</p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Bi-weekly or weekly dynamic reports
+                  <p>Bi-weekly or weekly dynamic reports</p>
                 </li>
               </ul>
             </div>
@@ -72,20 +69,13 @@ const ModalMarketing = ({ isOpen, closeModal }) => {
               </p>
               <ul className="container-list-marketing">
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Survey: Interaction, brand awareness, traffic.
+                  <p>Increase followers</p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Increase followers
+                  <p>Generate direct inquires to activate sales.</p>
                 </li>
                 <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Generate direct inquires to activate sales.
-                </li>
-                <li className="list-marketing">
-                  <img src={arrowWhiteIcon} alt="arrow icon" />
-                  Make the brands recognized in the market.
+                  <p>Make the brands recognized in the market.</p>
                 </li>
               </ul>
             </div>

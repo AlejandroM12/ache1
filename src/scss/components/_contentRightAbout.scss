@@ -45,52 +45,53 @@
   transform: translate(20rem, 6rem);
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .lottie-content-one{
+  .lottie-content-one {
     transform: translate(9rem, 5rem);
   }
-  .lottie-content-two{
+  .lottie-content-two {
     transform: translate(13rem, 2rem);
   }
-  .lottie-content-tree{
+  .lottie-content-tree {
     transform: translate(15rem, 6rem);
   }
-  .lottie-content-four{
+  .lottie-content-four {
     transform: translate(10rem, 3rem);
   }
-  .lottie-content-five{
+  .lottie-content-five {
     transform: translate(9rem, 7rem);
   }
-  .lottie-content-six{
+  .lottie-content-six {
     transform: translate(17rem, 5rem);
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
-  .lottie-content-one{
+  .lottie-content-one {
     transform: translate(4rem, 5rem);
   }
-  .lottie-content-two{
+  .lottie-content-two {
     transform: translate(6rem, 2rem);
     max-width: 300px;
   }
-  .lottie-content-tree{
+  .lottie-content-tree {
     transform: translate(11rem, 5rem);
   }
-  .lottie-content-four{
+  .lottie-content-four {
     transform: translate(6.5rem, 4rem);
   }
-  .lottie-content-five{
+  .lottie-content-five {
     transform: translate(5rem, 6rem);
   }
-  .lottie-content-six{
+  .lottie-content-six {
     transform: translate(10rem, 1.5rem);
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
-  .keen-slider{
+  .keen-slider {
     overflow: unset;
     height: 100%;
     margin-top: 3rem;
     margin-left: 2rem;
+    margin-bottom: 3rem;
   }
   .lottie-content-one {
     width: 100%;
@@ -107,7 +108,7 @@
     width: 100%;
     max-width: 250px;
     height: 137px;
-    transform: translate(7rem, -2rem);
+    transform: translate(6rem, -2rem);
   }
   .lottie-content-four {
     width: 100%;
@@ -125,6 +126,6 @@
     width: 100%;
     max-width: 300px;
     height: 350px;
-    transform: translate(7rem, 8rem);
+    transform: translate(6.5rem, 8rem);
   }
 }

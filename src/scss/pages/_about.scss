@@ -21,7 +21,7 @@
   .about {
     margin-bottom: 1.5rem;
   }
-  .about-m{
+  .about-m {
     margin-top: 1rem;
   }
   .description-left-about {
@@ -87,48 +87,48 @@
       font-weight: $bold;
     }
   }
-  &.first{
+  &.first {
     height: 650px;
   }
-  &.secod{
+  &.secod {
     height: 650px;
   }
-  &.third{
-height: 510px;
+  &.third {
+    height: 510px;
   }
-  &.fourth{
+  &.fourth {
     height: 580px;
   }
-  &.fifth{
+  &.fifth {
     height: 600px;
   }
-  &.sixth{
+  &.sixth {
     height: 650px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .content-left-about{
+  .content-left-about {
     padding: 0rem;
     margin-top: 0rem;
-    .description-left-about{
+    .description-left-about {
       font-size: 1.5rem;
       line-height: 2rem;
     }
-    .title-left-about{
+    .title-left-about {
       margin-bottom: 1rem;
       font-size: 5rem;
       line-height: 5rem;
     }
-     .about {
+    .about {
       margin-bottom: 1rem;
+    }
   }
-  }
-  .slide-content{
-    .slide-description{
+  .slide-content {
+    .slide-description {
       padding: 0rem;
       margin: 0rem;
     }
-    .slide-title{
+    .slide-title {
       font-size: 3rem;
       line-height: 2rem;
     }
@@ -143,16 +143,16 @@ height: 510px;
       line-height: 4rem;
     }
   }
-  .slide-content{
+  .slide-content {
     .slide-count {
       font-size: 2.5rem;
       line-height: 2.5rem;
     }
-    .slide-title{
+    .slide-title {
       font-size: 2.5rem;
       line-height: 2.5rem;
     }
-    .slide-description{
+    .slide-description {
       padding: 0rem;
       margin: 0 auto;
     }
@@ -168,7 +168,7 @@ height: 510px;
     margin-top: 2.5rem;
     margin-top: -20rem;
     padding: 0rem 2rem 0rem 0rem;
-   margin-left: 3rem;
+    margin-left: 3rem;
     .title-left-about {
       font-size: 3rem;
       line-height: 3.125rem;
@@ -184,12 +184,13 @@ height: 510px;
     .about {
       margin-bottom: 1rem;
     }
-    .about-m{
+    .about-m {
       margin-top: 1rem;
     }
   }
   .slide-content {
     height: 550px;
+    padding: 0rem 2.5rem 0rem 1rem;
     .slide-count {
       font-size: 3rem;
       line-height: 4.313rem;

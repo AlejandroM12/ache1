@@ -16,9 +16,10 @@ import logoHome from "../../assets/Home/ache1-logo.svg";
 import logoMobile from "../../assets/Icons/logo-mobile.svg";
 import Navbar from "../../components/Navbar";
 import ContainerMobileHome from "../../layout/ContainerMobileHome";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
-
-const Home = ({ pivot, setPivot }) => {
+const Home = () => {
+  const [onSwipeHomeMobile, setOnSwipeHomeMobile] = useState(false);
   const [change, setChange] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { width } = useViewport();
@@ -40,7 +41,13 @@ const Home = ({ pivot, setPivot }) => {
       }, 500);
     }
   };
-
+  const swipeHome = () => {
+    setOnSwipeHomeMobile(true);
+  };
+  const changeHome = () => {
+    setChange(false);
+    setOnSwipeHomeMobile(false);
+  };
   useEffect(() => {
     window.addEventListener("mousewheel", handleScroll);
     return () => window.removeEventListener("mousewheel", handleScroll);
@@ -59,14 +66,13 @@ const Home = ({ pivot, setPivot }) => {
         </div>
         {change === false ? (
           <>
-          <div className="content-left" data-aos="fade-up">
-            <UseLottieAnimation
-              animationData={animationData}
-              autoplay={true}
-              loop={true}
-            />
-          </div>
-          
+            <div className="content-left" data-aos="fade-up">
+              <UseLottieAnimation
+                animationData={animationData}
+                autoplay={true}
+                loop={true}
+              />
+            </div>
           </>
         ) : (
           <CardHomeLeft />
@@ -90,7 +96,7 @@ const Home = ({ pivot, setPivot }) => {
                 data-aos-delay="1500"
                 data-aos-easing="ease-in-out"
               >
-               got an idea?
+                got an idea?
               </h1>
               <p
                 data-aos="fade-right"
@@ -115,19 +121,18 @@ const Home = ({ pivot, setPivot }) => {
                 Let´s create
               </h2>
               <div
-              style={{
-                transitionDuration: "500ms",
-                transform: `translateY(${scrolled ? 100 : 0}px)`,
-                opacity: scrolled ? 0.5 : 1,
-              }}
-              className="content-down-arrow"
-            >
-              <button className="arrow-redir" onClick={handleInter}>
-                <img src={arrow} alt="icon arrow" className="arrow" />
-              </button>
+                style={{
+                  transitionDuration: "500ms",
+                  transform: `translateY(${scrolled ? 100 : 0}px)`,
+                  opacity: scrolled ? 0.5 : 1,
+                }}
+                className="content-down-arrow"
+              >
+                <button className="arrow-redir" onClick={handleInter}>
+                  <img src={arrow} alt="icon arrow" className="arrow" />
+                </button>
+              </div>
             </div>
-            </div>
-            
           </>
         ) : (
           <>
@@ -135,66 +140,69 @@ const Home = ({ pivot, setPivot }) => {
           </>
         )}
       </ContainerRight>
-        <Icon size={45} color="white" />
+      <Icon size={45} color="white" />
     </Container>
   ) : (
     <Container>
       <Header>
-        <LogoHome logo={logoMobile} onClick={() => setChange(false)} to="/" />
+        <LogoHome logo={logoMobile} onClick={() => changeHome()} to="/" />
         <Navbar />
       </Header>
-      {!change ? (
+      {!change && !onSwipeHomeMobile ? (
         <>
           <ContainerLeft>
-            
-            <div className="content-left" data-aos="fade-up">
-              <UseLottieAnimation
-                animationData={animationData}
-                autoplay={true}
-                loop={true}
-              />
-            </div>
+            <ReactScrollWheelHandler downHandler={() => swipeHome()}>
+              <div className="content-left" data-aos="fade-up">
+                <UseLottieAnimation
+                  animationData={animationData}
+                  autoplay={true}
+                  loop={true}
+                />
+              </div>
+            </ReactScrollWheelHandler>
           </ContainerLeft>
           <ContainerRight>
-            <div className="content-right">
-              <h1
-                data-aos="fade-right"
-                data-aos-delay="750"
-                data-aos-easing="ease-in-out"
-              >
-                Have you
-              </h1>
-              <h1
-                className="content-right-title-two"
-                data-aos="fade-right"
-                data-aos-delay="1500"
-                data-aos-easing="ease-in-out"
-              >
-               got an idea?
-              </h1>
-              <p
-                data-aos="fade-right"
-                data-aos-delay="2000"
-                data-aos-easing="ease-in-out"
-              >
-                Bring your idea, we make it happen.
-              </p>
-              <p
-                data-aos="fade-right"
-                data-aos-delay="2500"
-                data-aos-easing="ease-in-out"
-              >
-                Bring your brand, we make it growth.
-              </p>
-              <h2
-                className="content-right-title-tree"
-                data-aos="fade-right"
-                data-aos-delay="3000"
-                data-aos-easing="ease-in-out"
-              >
-                Let´s create
-              </h2>
-            </div>
+            <ReactScrollWheelHandler downHandler={() => swipeHome()}>
+              <div className="content-right">
+                <h1
+                  data-aos="fade-right"
+                  data-aos-delay="750"
+                  data-aos-easing="ease-in-out"
+                >
+                  Have you
+                </h1>
+                <h1
+                  className="content-right-title-two"
+                  data-aos="fade-right"
+                  data-aos-delay="1500"
+                  data-aos-easing="ease-in-out"
+                >
+                  got an idea?
+                </h1>
+                <p
+                  data-aos="fade-right"
+                  data-aos-delay="2000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Bring your idea, we make it happen.
+                </p>
+                <p
+                  data-aos="fade-right"
+                  data-aos-delay="2500"
+                  data-aos-easing="ease-in-out"
+                >
+                  Bring your brand, we make it growth.
+                </p>
+                <h2
+                  className="content-right-title-tree"
+                  data-aos="fade-right"
+                  data-aos-delay="3000"
+                  data-aos-easing="ease-in-out"
+                >
+                  Let´s create
+                </h2>
+              </div>
+            </ReactScrollWheelHandler>
             <div
               style={{
                 transitionDuration: "500ms",
@@ -214,7 +222,7 @@ const Home = ({ pivot, setPivot }) => {
           <ContainerMobileHome />
         </>
       )}
-        <Icon size={45} color="#6C63FF" fill="#6C63FF" />
+      <Icon size={45} color="#6C63FF" fill="#6C63FF" />
     </Container>
   );
 };

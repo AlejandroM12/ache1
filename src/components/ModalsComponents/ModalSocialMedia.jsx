@@ -39,21 +39,23 @@ const ModalSocialMedia = ({ isOpen, closeModal }) => {
         </ContainerLeftModal>
         <ContainerRightModal>
           <p className="modal-title-social-media-right">
-            I’m want a call for knew more
+            I want a call to learn more
           </p>
           <div className="container-modal-social-media-description-right">
-            <div className="container-card-social-media-right">
+            <div className="container-card-social-media-right bassic">
               <p className="content-card-title-social-media-right">
                 Basic Pack
               </p>
               <ul className="container-list-social-media">
                 <li className="list-social-media">Content writing</li>
-                <li className="list-social-media">3 post design and weekly stories</li>
+                <li className="list-social-media">
+                  3 post design and weekly stories
+                </li>
                 <li className="list-social-media">No posting on weekends</li>
                 <li className="list-social-media">Schedule of dates</li>
               </ul>
               <MailTo email="hi@ache1.com" subject="Social Media - Basic Pack">
-              <Button buttonLabel="check price"/>
+                <Button buttonLabel="check price" />
               </MailTo>
             </div>
             <div className="container-card-social-media-right">
@@ -61,26 +63,37 @@ const ModalSocialMedia = ({ isOpen, closeModal }) => {
                 Classic Pack
               </p>
               <ul className="container-list-social-media">
-                <li className="list-social-media">Content creation and writing</li>
-                <li className="list-social-media">Design 15 posts and monthly stories</li>
+                <li className="list-social-media">
+                  Content creation and writing
+                </li>
+                <li className="list-social-media">
+                  Design 15 posts and monthly stories
+                </li>
                 <li className="list-social-media">Organic user tracking</li>
                 <li className="list-social-media">Schedule of dates</li>
               </ul>
-              <MailTo email="hi@ache1.com" subject=" Social Media - Classic Pack">
-              <Button buttonLabel="check price"/>
+              <MailTo
+                email="hi@ache1.com"
+                subject=" Social Media - Classic Pack"
+              >
+                <Button buttonLabel="check price" />
               </MailTo>
             </div>
-            <div className="container-card-social-media-right">
+            <div className="container-card-social-media-right full">
               <p className="content-card-title-social-media-right">Full Pack</p>
               <ul className="container-list-social-media">
-                <li className="list-social-media">Content creation and writing</li>
-                <li className="list-social-media">Design 15 posts and monthly stories</li>
+                <li className="list-social-media">
+                  Content creation and writing
+                </li>
+                <li className="list-social-media">
+                  Design 15 posts and monthly stories
+                </li>
                 <li className="list-social-media">Organic user tracking</li>
                 <li className="list-social-media">Responses to queries</li>
                 <li className="list-social-media">Schedule of dates</li>
               </ul>
               <MailTo email="hi@ache1.com" subject="Social Media - Full Pack">
-              <Button buttonLabel="check price"/>
+                <Button buttonLabel="check price" />
               </MailTo>
             </div>
             <div className="container-card-social-media-right">
@@ -88,14 +101,21 @@ const ModalSocialMedia = ({ isOpen, closeModal }) => {
                 Premium Pack
               </p>
               <ul className="container-list-social-media">
-                <li className="list-social-media">Content creation and writing</li>
-                <li className="list-social-media">Design 30 posts and monthly stories</li>
+                <li className="list-social-media">
+                  Content creation and writing
+                </li>
+                <li className="list-social-media">
+                  Design 30 posts and monthly stories
+                </li>
                 <li className="list-social-media">Organic user tracking</li>
                 <li className="list-social-media">Responses to queries</li>
                 <li className="list-social-media">Schedule of dates</li>
               </ul>
-              <MailTo email="hi@ache1.com" subject="Social Media - Premium Pack">
-              <Button buttonLabel="check price"/>
+              <MailTo
+                email="hi@ache1.com"
+                subject="Social Media - Premium Pack"
+              >
+                <Button buttonLabel="check price" />
               </MailTo>
             </div>
           </div>

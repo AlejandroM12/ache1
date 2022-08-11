@@ -1,4 +1,4 @@
-.container-description-modal-app-mobile{
+.container-description-modal-app-mobile {
   .lottie-modal-app-mobile {
     width: 100%;
     max-width: 200px;
@@ -27,7 +27,7 @@
       font-weight: $bold;
     }
   }
-  .btn{
+  .btn {
     margin-left: 3rem;
   }
 }
@@ -45,38 +45,34 @@
 }
 .container-modal-app-img-first {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  flex-direction: row;
   gap: 7rem;
   padding-top: 3rem;
   .modal-node-logo {
-    display: flex;
-    flex-direction: column;
     .app-modal-node-img {
-      width: 100%;
-      max-width: 190px;
+      max-width: 100%;
     }
-    p{
-      margin-top: 2.5rem;
+    p {
+      margin-top: 2rem;
     }
   }
   .modal-react-native-logo {
     .app-modal-react-native-img {
-      width: 100%;
-      max-width: 130px;
+      max-width: 100%;
     }
-    p{
+    p {
+      white-space: nowrap;
       margin-top: 0.5rem;
     }
   }
   .modal-net-logo {
     .app-modal-net-img {
-      width: 100%;
-      max-width: 188px;
+      max-width: 100%;
     }
-    p{
-      margin-top: 2.5rem;
+    p {
+      margin-top: 2rem;
     }
   }
   p {
@@ -94,11 +90,17 @@
   align-items: baseline;
   justify-content: center;
   flex-direction: row;
-  gap: 3rem;
+  gap: 6rem;
   margin-top: 3rem;
-  img {
-    width: 100%;
-    max-width: 150px;
+  p {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: $semi-bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    color: $white;
+    margin-top: 1rem;
   }
 }
 
@@ -115,7 +117,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 1rem 2rem;
-    .btn{
+    .btn {
       margin-left: 0rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -130,20 +132,60 @@
       font-size: 1rem;
       line-height: 1.875rem;
       padding: 0.5rem 0rem;
-      
     }
   }
-.container-modal-app-img-first{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-}
-.container-modal-app-img-two{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem;
-  gap: 4rem;
-}
+  .container-modal-app-img-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    .modal-react-native-logo {
+      .app-modal-react-native-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-node-logo {
+      .app-modal-node-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-net-logo {
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .container-modal-app-img-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 4rem;
+    .content-modal-app-ios {
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .content-modal-app-android {
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .content-modal-app-aws {
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .content-modal-app-firebase {
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
 }

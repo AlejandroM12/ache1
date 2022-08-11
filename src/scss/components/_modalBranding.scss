@@ -120,13 +120,15 @@
     font-size: 2.5rem;
     line-height: 2.5rem;
     margin-left: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
   }
   .container-modal-branding-description-right {
     display: grid;
     grid-template-columns: 1fr;
+    padding-bottom: 2rem;
     .container-modal-branding-description-first {
-      padding-left: 0.5rem;
-      padding-top: 1rem;
+      padding: 1rem 2.5rem 0rem 0.5rem;
       .content-description-branding {
         .modal-branding-description-title {
           .modal-branding-count {
@@ -137,7 +139,7 @@
       }
     }
     .container-modal-branding-description-two {
-      padding: 0rem 0rem 2rem 2rem;
+      padding: 1rem 2.5rem 0rem 2rem;
       .content-description-branding {
         .modal-branding-description-title {
           .modal-branding-count {

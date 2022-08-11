@@ -46,9 +46,9 @@
 }
 .container-modal-web-app-img-first {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  flex-direction: row;
   gap: 7rem;
   padding-top: 3rem;
   p {
@@ -61,44 +61,36 @@
     color: $white;
   }
   .modal-web-app-node-logo {
-    display: flex;
-    flex-direction: column;
     .web-app-modal-node-img {
-      width: 100%;
-      max-width: 190px;
+      max-width: 100%;
     }
     p {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
     }
   }
   .modal-web-app-react-native-logo {
-    display: flex;
-    flex-direction: column;
     .web-app-modal-react-native-img {
-      width: 100%;
-      max-width: 130px;
+      max-width: 100%;
     }
     p {
+      white-space: nowrap;
       margin-top: 0.5rem;
     }
   }
   .modal-web-app-net-logo {
-    display: flex;
-    flex-direction: column;
     .web-app-modal-net-img {
-      width: 100%;
-      max-width: 188px;
+      max-width: 100%;
     }
     p {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
     }
   }
 }
 .container-modal-web-app-img-two {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  flex-direction: row;
   gap: 10rem;
   margin-top: 4rem;
   p {
@@ -109,29 +101,7 @@
     line-height: 2.25rem;
     text-align: center;
     color: $white;
-  }
-  .modal-web-app-angular-logo {
-    display: flex;
-    flex-direction: column;
-    .web-app-modal-angular-img {
-      width: 100%;
-      max-width: 130px;
-    }
-    p {
-      margin-top: 1.5rem;
-    }
-  }
-  .modal-web-app-spring-logo {
-    display: flex;
-    flex-direction: column;
-
-    .web-app-modal-spring-img {
-      width: 100%;
-      max-width: 130px;
-    }
-    p {
-      margin-top: 1.5rem;
-    }
+    margin-top: 1rem;
   }
 }
 
@@ -156,17 +126,52 @@
       display: none;
     }
   }
-  .container-modal-web-app-img-first{
+  .container-modal-web-app-img-first {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4rem;
+    .modal-web-app-node-logo {
+      .web-app-modal-node-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-react-native-logo {
+      .web-app-modal-react-native-img {
+        max-width: 100%;
+      }
+      p {
+        white-space: nowrap;
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-net-logo {
+      .web-app-modal-net-img {
+        max-width: 100%;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
   }
-  .container-modal-web-app-img-two{
+  .container-modal-web-app-img-two {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
+    .modal-web-app-angular-logo {
+      p {
+        margin-top: 1rem;
+      }
+    }
+    .modal-web-app-spring-logo {
+      p {
+        margin-top: 1rem;
+      }
+    }
   }
 }
