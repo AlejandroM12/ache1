@@ -17,6 +17,7 @@ import logoMobile from "../../assets/Icons/logo-mobile.svg";
 import Navbar from "../../components/Navbar";
 import ContainerMobileHome from "../../layout/ContainerMobileHome";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import { useRef } from "react";
 
 const Home = () => {
   const [onSwipeHomeMobile, setOnSwipeHomeMobile] = useState(false);
@@ -38,11 +39,24 @@ const Home = () => {
       setTimeout(() => {
         setChange(true);
         setScrolled(false);
-      }, 500);
+      }, 3000);
     }
   };
+
+  const refButton = useRef();
   const swipeHome = () => {
-    setOnSwipeHomeMobile(true);
+    if (onSwipeHomeMobile === false) {
+      setTimeout(() => {
+        setOnSwipeHomeMobile(true);
+      }, 1500);
+      refButton.current.classList.add(
+        "swipe"
+      );
+    } else {
+      refButton.current.classList.remove(
+        "swipe"
+      );
+    }
   };
   const changeHome = () => {
     setChange(false);
@@ -162,54 +176,55 @@ const Home = () => {
             </ReactScrollWheelHandler>
           </ContainerLeft>
           <ContainerRight>
-            <ReactScrollWheelHandler downHandler={() => swipeHome()}>
-              <div className="content-right">
-                <h1
-                  data-aos="fade-right"
-                  data-aos-delay="750"
-                  data-aos-easing="ease-in-out"
-                >
-                  Have you
-                </h1>
-                <h1
-                  className="content-right-title-two"
-                  data-aos="fade-right"
-                  data-aos-delay="1500"
-                  data-aos-easing="ease-in-out"
-                >
-                  got an idea?
-                </h1>
-                <p
-                  data-aos="fade-right"
-                  data-aos-delay="2000"
-                  data-aos-easing="ease-in-out"
-                >
-                  Bring your idea, we make it happen.
-                </p>
-                <p
-                  data-aos="fade-right"
-                  data-aos-delay="2500"
-                  data-aos-easing="ease-in-out"
-                >
-                  Bring your brand, we make it growth.
-                </p>
-                <h2
-                  className="content-right-title-tree"
-                  data-aos="fade-right"
-                  data-aos-delay="3000"
-                  data-aos-easing="ease-in-out"
-                >
-                  Let´s create
-                </h2>
-              </div>
-            </ReactScrollWheelHandler>
+            <div className="content-right">
+              <h1
+                data-aos="fade-right"
+                data-aos-delay="750"
+                data-aos-easing="ease-in-out"
+              >
+                Have you
+              </h1>
+              <h1
+                className="content-right-title-two"
+                data-aos="fade-right"
+                data-aos-delay="1500"
+                data-aos-easing="ease-in-out"
+              >
+                got an idea?
+              </h1>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="2000"
+                data-aos-easing="ease-in-out"
+              >
+                Bring your idea, we make it happen.
+              </p>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="2500"
+                data-aos-easing="ease-in-out"
+              >
+                Bring your brand, we make it growth.
+              </p>
+              <h2
+                className="content-right-title-tree"
+                data-aos="fade-right"
+                data-aos-delay="3000"
+                data-aos-easing="ease-in-out"
+              >
+                Let´s create
+              </h2>
+            </div>
             <div
               style={{
                 transitionDuration: "500ms",
-                transform: `translateY(${scrolled ? 100 : 0}px)`,
+                transform: `translateY(${
+                  scrolled  ? 100 : 0
+                }px)`,
                 opacity: scrolled ? 0.5 : 1,
               }}
               className="content-down-arrow"
+              ref={refButton}
             >
               <button className="arrow-redir" onClick={handleInter}>
                 <img src={arrow} alt="icon arrow" className="arrow" />
