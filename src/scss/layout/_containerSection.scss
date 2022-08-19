@@ -20,6 +20,9 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
   }
 }
 .content-section {
@@ -34,6 +37,7 @@
   top: 0;
   width: 100%;
   height: 218px;
+  padding: 0.5rem;
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .content_container-section > .container-section {

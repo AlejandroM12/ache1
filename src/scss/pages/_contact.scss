@@ -31,6 +31,12 @@
       font-weight: $bold;
     }
   }
+  .social-media-container-mobile-contact-desktop{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0rem;
+    gap: 1rem;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .contact-content-right{

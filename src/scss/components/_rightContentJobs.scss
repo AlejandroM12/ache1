@@ -5,8 +5,7 @@
   overflow: scroll;
   width: 100%;
   margin-top: 18rem;
-  padding: 0rem 3rem;
-  padding-bottom: 20rem;
+  padding: 0rem 6rem 20rem 5rem;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     width: 0px;
@@ -36,7 +35,7 @@
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
     color: $grays;
   }

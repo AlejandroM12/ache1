@@ -1,9 +1,8 @@
 .content-services {
   @include flexCenter;
-  margin-top: 7rem;
- 
+  margin-top: 10rem;
   .content-services-card-right {
-    padding: 0rem 7.5rem;
+    padding: 0rem 5rem;
     .card-services-title-right {
       font-family: $font-alfa;
       font-style: normal;
@@ -52,7 +51,7 @@
       width: 100%;
       max-width: 500px;
       position: absolute;
-      transform: translate(3rem,-2rem);
+      transform: translate(4.5rem,-3rem);
     }
     .content-services-lottie-social-media {
       width: 100%;

@@ -37,15 +37,19 @@
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     line-height: 2.25rem;
     color: $grays;
+    max-width: 450px;
+    padding: 1.25rem 0rem;
 }
 @mixin cardDescriptionRight{
     font-family: $font-poppins;
     font-style: normal;
     font-weight: $semi-bold;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     line-height: 2.25rem;
     color: $white;
+    max-width: 450px;
+    padding: 1.25rem 0rem;
 }

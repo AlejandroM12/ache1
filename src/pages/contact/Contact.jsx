@@ -41,6 +41,28 @@ const Contact = () => {
           <p className="contact-description-right">
             <span>Let's have some coffee.</span>
           </p>
+          <div className="social-media-container-mobile-contact-desktop">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ache-uno-design-16988a205/"
+                className="social-media-mobile-contact-desktop"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedinIcon} alt="linkedin icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ache1.design/"
+                className="social-media-mobile-contact-desktop"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={instagramIcon} alt="instagram icon" />
+              </a>
+            </li>
+          </div>
         </div>
       </ContainerRightSection>
     </ContainerSection>

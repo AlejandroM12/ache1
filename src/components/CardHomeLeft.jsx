@@ -67,16 +67,6 @@ const CardHomeLeft = () => {
             }}
           />
         </div>
-        <div className="dots-icon-left">
-          <img
-            src={dots}
-            alt="button icon"
-            className={btnState === 4 ? "active-left" : ""}
-            onClick={() => {
-              setBtnState(4);
-            }}
-          />
-        </div>
       </div>
       <ReactScrollWheelHandler
         upHandler={() => downHandler()}
@@ -135,7 +125,8 @@ const CardHomeLeft = () => {
                 loop={true}
               />
             </div>
-            <h1 className="card-title-left">Best Websites</h1>
+            <h1 className="card-title-left">Best</h1>
+            <h1 className="card-title-left">Websites</h1>
             <p className="card-description-left ">
               Is your website still not responsive? Today 80% of accesses to
               your website are through mobile devices. To make your website

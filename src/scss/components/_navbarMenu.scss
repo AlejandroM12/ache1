@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   padding-top: 0.5rem;
+  padding-right: 1rem;
   background: transparent;
   z-index: 998;
   .hamburguer-icon {
@@ -43,7 +44,6 @@
     ul {
       display: flex;
       padding: 0;
-      margin-right: 10rem;
       li {
         margin: 0 1rem;
         .link-a {
@@ -71,7 +71,7 @@
     z-index: 800;
     top: 0;
     left: 0;
-    padding-top: 0rem;
+    padding: 0rem;
     .hamburguer-icon {
       display: block;
       position: absolute;

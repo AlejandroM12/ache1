@@ -33,8 +33,10 @@ const CardServices = () => {
   return (
     <>
       <ContainerLeftSection>
+        <div className="card-services">
         <div className="card-services-container">
-          <h3 className="card-services-title">Creativity & organization</h3>
+          <h3 className="card-services-title">Creativity &</h3>
+          <h3 className="card-services-title">organization</h3>
           
           <li
             className={
@@ -162,6 +164,7 @@ const CardServices = () => {
           >
             Marketing strategy
           </li>
+        </div>
         </div>
       </ContainerLeftSection>
       <ContainerRightSection>
