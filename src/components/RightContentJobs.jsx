@@ -108,7 +108,7 @@ const RightContentJobs = () => {
               Es necesario generar una API KEY de google maps para poder
               utilizar los mapas.
               Use la siguiente{" "}
-              <span className="content-jobs-challenge-criteria-items">AlzaSyBIUb7j9kBP7Erg_s2dfYcoUx59OEhF6oA</span>
+              <span className="content-jobs-challenge-criteria-items">AlzaSyBIUb7j9kBP7Erg_<br/>s2dfYcoUx59OEhF6oA</span>
             </p>
           </li>
           <li >

@@ -161,13 +161,13 @@
 }
 @media only screen and (min-width: 0px) and (max-width: 420px) {
   .background-header-about {
-    height: 450px;
+    height: 500px;
   }
   .content-left-about {
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
-    margin-top: -20rem;
+    margin-top: -25rem;
     padding: 0rem 2rem 0rem 0rem;
     margin-left: 3rem;
     .title-left-about {
@@ -188,6 +188,9 @@
     .about-m {
       margin-top: 1rem;
     }
+  }
+  .slide-content.sixth{
+    height: 100vh;
   }
   .slide-content {
     height: 550px;

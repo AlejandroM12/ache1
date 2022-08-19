@@ -85,12 +85,16 @@
     height: 100%;
     width: 100%;
     margin-top: 3rem;
-    padding: 0rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 5rem 2rem;
     .content-jobs-challenge-criteria{
       .content-jobs-challenge-criteria-items{
           font-size: 1rem;
           line-height: 1rem;
       }
+    }
+    .content-jobs-challenge-gl{
+     height: 400px;
+     overflow: hidden;
     }
   }
 }
